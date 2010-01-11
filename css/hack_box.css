@@ -1,0 +1,16 @@
+/*
+This hack is intended for IE5.5 and lower which have a wrong box model
+
+*/
+body                                                {text-align: center}
+#page                                               {text-align: left}
+#top h3                                             {width: 148px;}
+#top a                                              {width: 306px;}
+.home #left h3                                      {width: 250px;}
+#left h3                                            {width: 293px;}
+#middle h3                                          {width: 172px;}
+#top h3                                             {height: 33px;}
+#left h3, .home #left h3, #middle h3, form.search   {height: 50px;}
+.licencia textarea                                  {height: 4em;}
+#left img                                           {height: 240px;}
+li.newsletter input#fm_email                        {width: 93px; margin-right: 8px;}

@@ -1,0 +1,35 @@
+/*
+This CSS is intended for @media print
+
+*/
+.ir, .more-link, #right, #menu, form.search, 
+li.newsletter                         {display: none;}
+.home #right                          {display: block;}
+big, .excerpt, small, .item, .single p, .single h4, .single dl, .single table, 
+.single #left form, .trailers object  {border-left-width: 0px; border-right-width: 0px;}
+#footer a:link:after, #footer a:visited:after, p a:link:after, p a:visited:after,
+.home a:link:after, .home a:visited:after, a.item:link:after, 
+a.item:visited:after                  {content: " (" attr(href) ") "; font-size: 0.75em;}
+
+#left                                 {width: 100%; float: none; margin-right: 0;}
+.home #left                           {width: 480px; float: left; margin-right: 11px;}
+#left h3                              {margin-top: 0.25em;}    
+#top h3                               {padding-top: 0;}
+#top h2, #top h3                      {display: inline;}
+#top h2                               {float: none;}
+#left big                             {text-align: center;}
+.home #left img                       {clear: left;}
+.home #left big                       {clear: both;}
+#left h2, #left h3, .home #left h2, .home #left h3, #top h2, #top h3, #middle h2, 
+#middle h3, #right h2, #right h3, #left, 
+#left p                               {width: auto; height: auto; color: black;  background: none;}
+#left h2, #left h3, .home #left h2, .home #left h3, 
+#top h2                               {float: left; text-align: left;}
+#left h2, #left h3                    {padding: 20px 12px 0 12px; margin-bottom: 0; }
+#left h3                              {float: right;}
+#top h2, #left h2, #middle h2, 
+#right h2                             {text-indent: 0px;  overflow: visible;}
+.banner.full                          {width: 351px; height: 45px; margin-top: 18px; float: right;}
+
+tbody, tr, td hr                      {width: 100%;}
+th                                    {border: 0px;}

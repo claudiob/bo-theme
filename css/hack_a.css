@@ -1,0 +1,5 @@
+/*
+This CSS is intended for IE5.0.1 which scrolls when background changes
+
+*/
+a, a:hover  {background-color: transparent;}

@@ -1,0 +1,8 @@
+/*
+This CSS is intended for IE6 and lower which do not support multiple
+class selectors and apply li.predicciones.espana to every li.espana.
+*/
+#left li.espana h2              {background-position:     0px  -216px;}
+#left li.eeuu h2                {background-position:     0px  -266px;}
+#left li.predicciones h2        {background-position:     0px  -416px;}
+#right .twitter                 {background-position:  -793px  -134px;}

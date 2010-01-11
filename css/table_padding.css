@@ -1,0 +1,5 @@
+/*
+This CSS is intended for IE that does not apply padding OUTSIDE of TABLEs
+
+*/
+tbody, tr, td hr    {width: 785px;}
