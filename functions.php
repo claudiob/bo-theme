@@ -1,4 +1,4 @@
-<?php //
+<?php
 
 $my_categories = array( # I guess <meta> do not require HTML escaping for special characters
   'reports_spain'   => array('class'  => 'espana', 
