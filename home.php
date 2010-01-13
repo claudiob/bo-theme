@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 
 <ul id="top">
-<?php foreach (array('reports_spain','reports_usa','news') as $slug) {
-  $cat = get_category_by_slug($slug);
-	query_posts('cat=' . $cat->term_id . '&posts_per_page=1');
+<?php foreach (array(array('reports_spain'),array('reports_usa'),array('news','analysis')) as $my_slug) {
+  $my_cat = array_map("get_category_id_by_slug", $my_slug);
+	query_posts(array('posts_per_page' => 1, 'order_by' => date, 'category__in' => $my_cat));
 	while (have_posts()) : the_post(); ?>
+  <?php $cats = get_the_category(); $cat = $cats[0]; $slug = $cat->slug; ?>
   <li class="<?php echo get_class_by_slug($slug); ?>">
 	  <h2><?php echo get_h2_by_slug($slug); ?></h2>
     <h3><?php echo get_the_relative_time('d F'); ?></h3>
@@ -12,7 +13,7 @@
       <?php the_thumbnail(150, 222); ?>
       <big><?php the_title(); ?></big>
       <small><?php the_home_subtitle(); ?></small>
-      <span class="more-link">&raquo;&nbsp;<?php echo get_continue_by_slug($cat->slug); ?></span>
+      <span class="more-link">&raquo;&nbsp;<?php echo get_continue_by_slug($slug); ?></span>
     </a>
   </li>
   <?php endwhile;

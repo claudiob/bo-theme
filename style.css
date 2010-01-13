@@ -30,7 +30,7 @@ a img                                   {border:none}
 /* TYPOGRAPHY */
 
 body                                    {font-family: Georgia, "Times New Roman", Times, serif;}
-h1, big, h4, li.reportajes small, fieldset, .twitter .status, #footer, 
+h1, big, h4, #middle .reportajes small, fieldset, .twitter .status, #footer, 
 .halftitle, table                       {font-family: Helvetica, Arial, sans-serif;}
 
 .single #left big, .single #left h4     {font-size: 2.2em;}
@@ -43,7 +43,7 @@ small                                   {font-size: 1em;}
 .twitter small                          {font-size: 0.85em;}
 .more-link, .twitter ul, .item small, table    {font-size: 0.8em;}
 h3, h4, fieldset, #footer, .halftitle   {font-size: 0.75em;}
-li.reportajes small                     {font-size: 0.7em;}
+#middle .reportajes small               {font-size: 0.7em;}
 
 #top .more-link, #middle big, #middle small, #footer, .twitter .username, .twitter small, 
 .licencia textarea                      {text-align: center;}
@@ -73,7 +73,7 @@ li.sponsors, #facebook, .twitter li     {background-color: transparent;}
 #top h3, th                             {color: #ffffff;}
 a                                       {color: #773541;}
 #top big, small, a:hover                {color: #000000;}
-big, h4, li.reportajes small, fieldset, .twitter .time, 
+big, h4, #middle .reportajes small, fieldset, .twitter .time, 
 .halftitle                              {color: #888888;}
 .twitter ul                             {color: #0c93ba;}
 #left .eeuu big                         {color: #db5b23;}
@@ -130,8 +130,10 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #top .eeuu h3                           {background-position:  -815px  -799px;}
 #top .noticias h2                       {background-position:  -635px  -832px;}
 #top .noticias h3                       {background-position:  -815px  -832px;}
+#top .reportajes h2                     {background-position:  -635px  -942px;}
+#top .reportajes h3                     {background-position:  -815px  -942px;}
 #left li, #middle li.trailers, 
-#middle li.reportajes                   {background-image: url(images/b.png)}
+#middle .reportajes                     {background-image: url(images/b.png)}
 #left li li                             {background-image: none}
 #left h2                                {background-position:     0px -1466px;}
 #left h3                                {background-position:  -500px  -566px;}
@@ -343,7 +345,7 @@ input                   {padding-top: 2px; padding-bottom: 2px;}
 .prev, .next            {margin-top: 0.5em; margin-bottom: 1em;}
 
 .home #left img                       {margin-top: 5px;}
-#left big, #middle .trailers big, li.reportajes small {padding-bottom: 15px;}
+#left big, #middle .trailers big, #middle .reportajes small {padding-bottom: 15px;}
 .home #left big, #middle big          {padding-top: 15px;}
 
 .single #left big, .single #left h4, dt {padding-bottom: 0.5em;}
