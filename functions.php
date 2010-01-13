@@ -563,20 +563,13 @@ add_filter('category_link', 'my_category_link',1000,2);
     
 // for the Twitter Tools
 function post_to_tweet($tweet, $post) {
-  //
-  // This function should set $tweet->tw_text to a strcat of
-  // $post->category_name
-  // $post->title (shortened, so that the whole tw_text is shorter than 140),
-  // $post->link !!! THIS HAS TO BE IN THE short FROM http://<url>/?p=id
-  // and not with the the pretty permalink, which is longer
-	if (true) { // THIS CONDITION WILL THEN BE REMOVED
-		// will not tweet
-		return false;
-	}
-	else {
-		// must return the $tweet to send it
-		return $tweet;
-	}
+  $cats = get_the_category($post->ID);
+  $slug = get_h2_by_slug($cats[0]->slug, true) .": ";
+  $link = " ". get_bloginfo('url') . "/?p=". $post->ID;
+  $size = 140 - strlen($slug) - strlen($link);
+  $text = (strlen($post->post_title) > $size ? substr($post->post_title, 0, $size - 1). "…" : $post->post_title);
+  $tweet->tw_text = $slug . $text . $link;
+	return $tweet;
 }
 add_filter('aktt_do_blog_post_tweet', 'post_to_tweet', 10, 2);
     
