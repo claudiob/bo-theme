@@ -1,5 +1,5 @@
     	<div id="footer">
-    	   <div> Todos los textos son de <strong>Pau Brunet</strong> &bull; <?php echo antispambot(get_the_author_email()); ?> &bull; <acronym title="International Standard Serial Number">ISSN</acronym> 2013-6803<br />
+    	   <div> Todos los textos son de <strong>Pau Brunet</strong> &bull; <?php echo antispambot("pau@boxoffice.es"); ?> &bull; <acronym title="International Standard Serial Number">ISSN</acronym> 2013-6803<br />
     	     <a href="<?php echo get_page_link(get_page_by_slug('license')->ID); ?>">Licencia de uso</a> 
     	     | <a href="<?php echo get_page_link(get_page_by_slug('press')->ID); ?>">Kit de prensa</a> 
            <?php edit_post_link(); ?></div>
