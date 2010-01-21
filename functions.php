@@ -564,7 +564,7 @@ add_filter('category_link', 'my_category_link',1000,2);
 // for the Twitter Tools
 function post_to_tweet($tweet, $post) {
   $cats = get_the_category($post->ID);
-  $slug = get_h2_by_slug($cats[0]->slug, true) .": ";
+  $slug = utf8_encode(html_entity_decode(get_h2_by_slug($cats[0]->slug, true))) .": ";
   $link = " ". get_bloginfo('url') . "/?p=". $post->ID;
   $size = 140 - strlen($slug) - strlen($link);
   $text = (strlen($post->post_title) > $size ? substr($post->post_title, 0, $size - 1). "…" : $post->post_title);
