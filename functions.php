@@ -241,7 +241,7 @@ function the_home_subtitle() {
   if (get_post_custom_values(subtitle))
     echo "<span class='excerpt'>" . current(get_post_custom_values(subtitle)) . "</span>";
   else
-    my_excerpt(24, false);
+    my_excerpt(23, false);
 }
 
 function the_cat() {
