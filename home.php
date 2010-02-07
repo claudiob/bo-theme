@@ -21,7 +21,7 @@
 </ul>
 
 <ul id="left">
-	<?php query_posts('caller_get_posts=1&posts_per_page=3'); ?>
+	<?php query_posts('caller_get_posts=1&posts_per_page=3&cat=-5'); ?>
 	<?php while (have_posts()) : the_post();
 	  $cats = get_the_category(); ?>
     <li class="<?php echo get_class_by_slug($cats[0]->slug); ?>">
