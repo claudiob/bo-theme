@@ -12,6 +12,11 @@ $my_categories = array( # I guess <meta> do not require HTML escaping for specia
                            'category' => 'Informes de la taquilla en Estados Unidos',
                            'meta'     => 'Informes de películas estrenadas en la salas de cine de Estados Unidos: número de espectadores, recaudación, tipo de público, éxitos y fracasos..',
                            'continue' => 'Lee el informe semanal de taquilla americana'),
+  'reports_argentina' => array('class'  => 'argentina', 
+                           'single'   => 'Informe taquilla Argentina',
+                           'category' => 'Informes de la taquilla en Argentina',
+                           'meta'     => 'Informes de películas estrenadas en la salas de cine de Argentina: número de espectadores, recaudación, tipo de público, éxitos y fracasos..',
+                           'continue' => 'Lee el informe semanal de taquilla argentina'),
   'forecasts_spain' => array('class'  => 'predicciones espana', 
                            'single'   => 'Predicci&oacute;n taquilla Espa&ntilde;a',
                            'category' => 'Predicciones de los resultados de la taquilla espa&ntilde;ola',
@@ -103,7 +108,7 @@ function get_category_id_by_slug($slug) {
 	return $wpdb->get_var($wpdb->prepare("SELECT term_ID FROM $wpdb->terms WHERE slug = %s", $slug));
 }
 
-function menu_tab($type, $slug, $accesskey) {
+function menu_tab($type, $slug) {
   if($type == 'category') {
     $cat  = get_category_by_slug($slug); 
     $link = get_category_link($cat->term_id);
@@ -116,7 +121,7 @@ function menu_tab($type, $slug, $accesskey) {
     $desc = get_h2_by_slug($slug);
     $name = $page->post_title;
   }
-  echo '<li class="' . get_class_by_slug($slug) . '"><a href="' . $link . '" rel="contents" title="' . $desc . ' (tecla ' . $accesskey . ')" accesskey="' . $accesskey . '">' . $name . '</a></li>' . "\n";
+  echo '<li class="' . get_class_by_slug($slug) . '"><a href="' . $link . '" rel="contents" title="' . $desc . '">' . $name . '</a></li>' . "\n";
 }
 
 function the_body_class() {
@@ -146,7 +151,7 @@ function the_left_class() {
 
 function the_meta_description($curr_post = '', $search_term = '') {
   if (is_home())
-    $meta = "Recaudaciones de pel&iacute;culas estrenadas en Espa&ntilde;a y Estados Unidos, reportajes sobre el business de Hollywood, noticias de marketing cinematogr&aacute;fico.";
+    $meta = "Recaudaciones de pel&iacute;culas estrenadas en Espa&ntilde;a, Estados Unidos y Argentina, reportajes sobre el business de Hollywood y el marketing cinematogr&aacute;fico.";
   elseif (is_search())
     $meta = "Resultados de la b&uacute;squeda en Boxoffice.es para ". $search_term;
   elseif (is_404())

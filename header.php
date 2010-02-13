@@ -36,13 +36,14 @@
 
 	<ul id="menu">
 	<?php
-    menu_tab('category', 'reports_spain', 1);
-    menu_tab('category', 'reports_usa', 2);
-    menu_tab('category', 'forecasts', 3);
-    menu_tab('category', 'news', 4);
-    menu_tab('page',     'partners', 5);
-    menu_tab('category', 'links', 6);
-    menu_tab('page',     'about', 7);
+    menu_tab('category', 'reports_spain');
+    menu_tab('category', 'reports_usa');
+    menu_tab('category', 'reports_argentina');
+    menu_tab('category', 'forecasts');
+    menu_tab('category', 'news');
+    menu_tab('page',     'partners');
+    menu_tab('category', 'links');
+    menu_tab('page',     'about');
   ?>
   </ul>
 

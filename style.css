@@ -76,13 +76,14 @@ a                                       {color: #773541;}
 big, h4, #middle .reportajes small, fieldset, .twitter .time, 
 .halftitle                              {color: #888888;}
 .twitter ul                             {color: #0c93ba;}
-#left .eeuu big                         {color: #db5b23;}
 #left .espana big                       {color: #d33228;}
-#left .noticias big                     {color: #e9ad00;}
-#left .predicciones big                 {color: #e28800;}
-#left .partners big                     {color: #cab000;}
-#left .contacto big                     {color: #8c971b;}
-#left .enlaces big                      {color: #9ea218;}
+#left .eeuu big                         {color: #db5b23;}
+#left .argentina big                    {color: #e28800;}
+#left .predicciones big                 {color: #e9ad00;}
+#left .noticias big                     {color: #cab000;}
+#left .partners big                     {color: #9ea218;}
+#left .enlaces big                      {color: #8c971b;}
+#left .contacto big                     {color: #7da415;}
 
 big, .excerpt, small, .item, img, a img, li.newsletter form, #footer,  #left li li,
 .single table, .single #left form, .single h4, .single p, .single dl,  
@@ -104,20 +105,22 @@ th.theadleft                            {background-position: 613px -128px;}
 th.theadright                           {background-position: 618px -128px;}
 #menu, form.search                      {background-position:    0px 0px; background-repeat: repeat-x;}
 #menu .espana                           {background-position:    0px -50px;}
-#menu .eeuu                             {background-position: -122px -50px;}
-#menu .predicciones                     {background-position: -234px -50px;}
-#menu .noticias                         {background-position: -336px -50px;}
-#menu .partners                         {background-position: -416px -50px;}
-#menu .enlaces                          {background-position: -496px -50px;}
-#menu .contacto                         {background-position: -576px -50px;}
+#menu .eeuu                             {background-position:  -90px -50px;}
+#menu .argentina                        {background-position: -180px -50px;}
+#menu .predicciones                     {background-position: -270px -50px;}
+#menu .noticias                         {background-position: -360px -50px;}
+#menu .partners                         {background-position: -440px -50px;}
+#menu .enlaces                          {background-position: -520px -50px;}
+#menu .contacto                         {background-position: -600px -50px;}
 
 #menu .espana:hover, .espana #menu .espana                      {background-position:    0px -89px;}
-#menu .eeuu:hover, .eeuu #menu .eeuu                            {background-position: -122px -89px;}
-#menu .predicciones:hover, .predicciones #menu .predicciones    {background-position: -234px -89px;}
-#menu .noticias:hover, .noticias #menu .noticias                {background-position: -336px -89px;}
-#menu .partners:hover, .partners #menu .partners                {background-position: -416px -89px;}
-#menu .enlaces:hover, .enlaces #menu .enlaces                   {background-position: -496px -89px;}
-#menu .contacto:hover, .contacto #menu .contacto                {background-position: -576px -89px;}
+#menu .eeuu:hover, .eeuu #menu .eeuu                            {background-position:  -90px -89px;}
+#menu .argentina:hover, .argentina #menu .argentina             {background-position: -180px -89px;}
+#menu .predicciones:hover, .predicciones #menu .predicciones    {background-position: -270px -89px;}
+#menu .noticias:hover, .noticias #menu .noticias                {background-position: -360px -89px;}
+#menu .partners:hover, .partners #menu .partners                {background-position: -440px -89px;}
+#menu .enlaces:hover, .enlaces #menu .enlaces                   {background-position: -520px -89px;}
+#menu .contacto:hover, .contacto #menu .contacto                {background-position: -600px -89px;}
 
 li, h3, #left                           {background-position: right bottom;}
 li, h2, h3, #left, th                   {background-repeat: no-repeat;}
@@ -154,14 +157,14 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.eeuu h3                        {background-position:  -543px  -266px;}
 .eeuu #left li.eeuu h3, 
 .single #left li.eeuu h3                {background-position:  -500px  -266px;}
-#left li.noticias                       {background-position: -5081px  bottom;}
-.home #left li.noticias                 {background-position: -1920px  bottom;}
-#left li.noticias h2                    {background-position:     0px  -466px;}
-.noticias #left li.noticias h2          {background-position:     0px  -916px;}
-#left li.noticias h3                    {background-position:  -543px  -466px;}
-.noticias #left li.noticias h3, 
-.single #left li.noticias h3            {background-position:  -500px  -466px;}
-#left li.predicciones                   {background-position: -4288px  bottom;}
+#left li.argentina                      {background-position: -4288px  bottom;}
+.home #left li.argentina                {background-position: -9839px  bottom;}
+#left li.argentina h2                   {background-position:     0px  -166px;}
+.argentina #left li.argentina h2        {background-position:     0px -1566px;}
+#left li.argentina h3                   {background-position:  -543px  -166px;}
+.argentina #left li.argentina h3,       
+.single #left li.argentina h3           {background-position:  -500px  -166px;}
+#left li.predicciones                   {background-position: -5081px  bottom;}
 .home #left li.predicciones             {background-position: -1440px  bottom;}
 #left li.predicciones.espana h2         {background-position:     0px  -316px;}
 #left li.predicciones.eeuu h2           {background-position:     0px  -366px;}
@@ -169,14 +172,21 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.predicciones h3                {background-position:  -543px  -316px;}
 .predicciones #left li.predicciones h3, 
 .single #left li.predicciones h3        {background-position:  -500px  -316px;}
-#left li.partners                       {background-position: -5874px  bottom;}
+#left li.noticias                       {background-position: -5874px  bottom;}
+.home #left li.noticias                 {background-position: -1920px  bottom;}
+#left li.noticias h2                    {background-position:     0px  -466px;}
+.noticias #left li.noticias h2          {background-position:     0px  -916px;}
+#left li.noticias h3                    {background-position:  -543px  -466px;}
+.noticias #left li.noticias h3, 
+.single #left li.noticias h3            {background-position:  -500px  -466px;}
+#left li.partners                       {background-position: -6667px  bottom;}
 .partners #left li.partners h2          {background-position:     0px  -966px;}
-.partners #left li.partners h3          {background-position:  -500px  -416px;}
+.partners #left li.partners h3          {background-position:  -500px  -516px;}
 
-#left li.enlaces                        {background-position: -6667px  bottom;}
+#left li.enlaces                        {background-position: -7460px  bottom;}
 .enlaces #left li.enlaces h2            {background-position:     0px -1016px;}
-.enlaces #left li.enlaces h3            {background-position:  -500px  -516px;}
-#left li.contacto                       {background-position: -7460px  bottom;}
+.enlaces #left li.enlaces h3            {background-position:  -500px  -416px;}
+#left li.contacto                       {background-position: -9046px  bottom;}
 .contacto #left li.contacto h2          {background-position:     0px -1066px;}
 #left li.contacto h3                    {background-position:  -500px  -366px;}
 #left li.criticas h2                    {background-position:     0px  -700px;}
@@ -235,8 +245,8 @@ body, #page             {margin-left: auto; margin-right: auto;}
 h1, h1 a                {width: 488px;} 
 .banner.full            {width: 468px; border-left-width: 1px; border-right-width: 1px; margin-left: 14px; margin-right: 12px;}
 /* menu + form.search = #page */
-#menu                   {width: 710px;}
-form.search             {width: 262px; margin-right: 12px;}
+#menu                   {width: 740px;}
+form.search             {width: 232px; margin-right: 12px;}
 /* 3 x #top li = #page */
 #top li                 {width: 328px;} 
 /* #top h2 + #top h3 = #top li */
@@ -266,9 +276,8 @@ form.search             {width: 262px; margin-right: 12px;}
 .colab                  {width: 74px;}
 /* sum of #menu li <= #menu */
 #menu li                {width: 80px;}
-#menu li.espana         {width: 122px;}
-#menu li.eeuu           {width: 112px;}
-#menu li.predicciones   {width: 102px;}
+#menu li.espana, #menu li.eeuu, #menu li.argentina, 
+#menu li.predicciones   {width: 90px;}
 /* top a = top li */
 #top a                  {width: 302px; margin-left: 4px; margin-right: 16px; padding-left: 3px; padding-right: 3px;}
 /* #left h2 + #left h3 = #left */ 
