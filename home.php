@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <ul id="top">
-<?php foreach (array(array('reports_spain'),array('reports_usa'),array('news','analysis')) as $my_slug) {
+<?php foreach (array(array('reports_spain'),array('reports_usa'),array('news','analysis','reports_argentina')) as $my_slug) {
   $my_cat = array_map("get_category_id_by_slug", $my_slug);
 	query_posts(array('posts_per_page' => 1, 'order_by' => date, 'category__in' => $my_cat));
 	while (have_posts()) : the_post(); ?>
