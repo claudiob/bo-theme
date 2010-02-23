@@ -297,12 +297,12 @@ function the_full_banner() {
 
 function the_sky_banner() {
   if (!function_exists('adrotate_banner')) return;
+  echo '<span class="ir publ">Publicidad</span>';
   if(is_slug('reports_argentina'))
     echo adrotate_banner('5');
   else
-    echo '<span class="ir publ">Publicidad</span>';
   // <!--a href=""><img class="banner sky" src="..." alt="Banner" /></a-->
-  echo adrotate_banner('2');  
+    echo adrotate_banner('2');  
 }
 
 function the_medium_banner() {
