@@ -288,7 +288,7 @@ function get_the_relative_time($time_format) {
 function the_full_banner() {
   if(!function_exists('adrotate_banner')) return;
   if(is_slug('reports_argentina'))
-    echo adrotate_banner('7');
+    echo adrotate_banner('4');
   else
     echo adrotate_banner('1');
   // <!--a href=""><img class="banner full" src="..." alt="Banner" /></a-->
@@ -298,7 +298,7 @@ function the_full_banner() {
 function the_sky_banner() {
   if (!function_exists('adrotate_banner')) return;
   if(is_slug('reports_argentina'))
-    echo adrotate_banner('8');
+    echo adrotate_banner('5');
   else
     echo '<span class="ir publ">Publicidad</span>';
   // <!--a href=""><img class="banner sky" src="..." alt="Banner" /></a-->
