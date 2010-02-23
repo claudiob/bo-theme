@@ -131,6 +131,8 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #top .espana h3                         {background-position:  -815px  -766px;}
 #top .eeuu h2                           {background-position:  -635px  -799px;}
 #top .eeuu h3                           {background-position:  -815px  -799px;}
+#top .argentina h2                      {background-position:  -635px  -766px;}
+#top .argentina h3                      {background-position:  -815px  -766px;}
 #top .noticias h2                       {background-position:  -635px  -832px;}
 #top .noticias h3                       {background-position:  -815px  -832px;}
 #top .reportajes h2                     {background-position:  -635px  -942px;}
