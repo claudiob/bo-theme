@@ -286,15 +286,21 @@ function get_the_relative_time($time_format) {
 // }
 
 function the_full_banner() {
-  if (!function_exists('adrotate_banner')) return;
-  echo adrotate_banner('1');
+  if(!function_exists('adrotate_banner')) return;
+  if(is_slug('reports_argentina'))
+    echo adrotate_banner('7');
+  else
+    echo adrotate_banner('1');
   // <!--a href=""><img class="banner full" src="..." alt="Banner" /></a-->
   echo '<span class="ir publ">Publicidad</span>';  
 }
 
 function the_sky_banner() {
   if (!function_exists('adrotate_banner')) return;
-  echo '<span class="ir publ">Publicidad</span>';
+  if(is_slug('reports_argentina'))
+    echo adrotate_banner('8');
+  else
+    echo '<span class="ir publ">Publicidad</span>';
   // <!--a href=""><img class="banner sky" src="..." alt="Banner" /></a-->
   echo adrotate_banner('2');  
 }
