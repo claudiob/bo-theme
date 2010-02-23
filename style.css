@@ -391,8 +391,8 @@ h1 img                                {width: 488px; height:  88px;}
 #left .item img                       {width: 75px; height: 111px;}
 #top img, #left img, .twitter img     {margin-bottom: 2px; margin-right: 5px;}
 .single #left img                     {margin-left: 10px; margin-right: 10px;}
-img.banner.medium                     {width: 300px; height: 250px;}
-img.banner.sky                        {width: 120px; height: 600px; margin-left: 24px; margin-right: 24px;}
+.banner.medium                        {width: 300px; height: 250px;}
+.banner.sky                           {width: 120px; height: 600px; margin-left: 24px; margin-right: 24px;}
 .twitter img                          {width: 32px; height: 32px;}
 #middle .trailers object, 
 #middle .trailers img                 {width: 300px; height: 190px;}
