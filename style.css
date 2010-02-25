@@ -135,8 +135,8 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #top .argentina h3                      {background-position:  -180px -1616px;}
 #top .noticias h2                       {background-position:  -635px  -832px;}
 #top .noticias h3                       {background-position:  -815px  -832px;}
-#top .reportajes h2                     {background-position:  -635px  -942px;}
-#top .reportajes h3                     {background-position:  -815px  -942px;}
+#top .reportajes h2                     {background-position:     0px -1649px;}
+#top .reportajes h3                     {background-position:  -180px -1649px;}
 #left li, #middle li.trailers, 
 #middle .reportajes                     {background-image: url(images/b.png)}
 #left li li                             {background-image: none}
