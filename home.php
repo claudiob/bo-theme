@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <ul id="top">
-<?php foreach (array(array('reports_spain'),array('reports_usa'),array('news','analysis','reports_argentina')) as $my_slug) {
+<?php foreach (array(array('reports_spain'),array('reports_usa'),array('news','analysis','reports_argentina')) as $index => $my_slug) {
   $my_cat = array_map("get_category_id_by_slug", $my_slug);
 	query_posts(array('posts_per_page' => 1, 'order_by' => date, 'category__in' => $my_cat));
 	while (have_posts()) : the_post(); ?>
@@ -9,7 +9,7 @@
   <li class="<?php echo get_class_by_slug($slug); ?>">
 	  <h2><?php echo get_h2_by_slug($slug); ?></h2>
     <h3><?php echo get_the_relative_time('d F'); ?></h3>
-    <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+    <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" accesskey="<?php echo($index+1); ?>">
       <?php the_thumbnail(150, 222); ?>
       <big><?php the_title(); ?></big>
       <small><?php the_home_subtitle(); ?></small>

@@ -326,7 +326,7 @@ function the_navigation() {
   if($next)
     $output .= '<a href="'. get_permalink($next->ID) .'" rel="next" title="' . $next->post_title . ' (tecla 9)" accesskey="9">' . get_h2_by_slug($GLOBALS['my_slug'], true) . '  siguiente &raquo;</a>';
   else
-    $output .= '<a href="'. get_category_link($GLOBALS['my_cat']->term_id) .'" rel="contents" title="' . get_h2_by_slug($GLOBALS['my_slug']) . ' (tecla 8)" accesskey="8">Volver a ' . get_h2_by_slug($GLOBALS['my_slug']) . '</a>';
+    $output .= '<a href="'. get_category_link($GLOBALS['my_cat']->term_id) .'" rel="contents" title="' . get_h2_by_slug($GLOBALS['my_slug']) . ' (tecla 9)" accesskey="9">Volver a ' . get_h2_by_slug($GLOBALS['my_slug']) . '</a>';
   $output .= '</div>';
   echo $output;
 }
