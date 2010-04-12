@@ -28,7 +28,7 @@
   	  <h2><?php echo $cats[0]->name; ?></h2> <!-- use the new functions! -->
       <h3> <?php echo get_the_relative_time('d F'); ?> </h3>
       <?php the_thumbnail(225, 150, false); ?>
-      <big><?php the_title(); ?></big>
+      <big><a href="#"><?php the_title(); ?></a></big>
       <?php my_excerpt(150); ?>
     </li>   
   <?php endwhile; ?>
