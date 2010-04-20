@@ -245,7 +245,7 @@ body, #page             {margin-left: auto; margin-right: auto;}
 #page                   {width: 984px;}
 /* h1 + .top_banner = #page */
 h1, h1 a                {width: 488px;} 
-.banner.full            {width: 468px; border-left-width: 1px; border-right-width: 1px; margin-left: 14px; margin-right: 12px;}
+.banner.full            {width: 468px; border-left-width: 1px; border-right-width: 1px; margin-left: 14px; margin-right: 12px; padding-left: 0px; padding-right: 0px;}
 /* menu + form.search = #page */
 #menu                   {width: 740px;}
 form.search             {width: 232px; margin-right: 12px;}
