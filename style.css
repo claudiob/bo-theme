@@ -73,7 +73,7 @@ li.sponsors, #facebook, .twitter li     {background-color: transparent;}
 #top h3, th                                         {color: #ffffff;}
 a                                                   {color: #773541;}
 #top big, small, a:hover                            {color: #000000;}
-big, h4, #middle .reportajes small, fieldset, .twitter .time, 
+big, big a, h4, #middle .reportajes small, fieldset, .twitter .time, 
 .halftitle                                          {color: #888888;}
 .twitter ul                                         {color: #0c93ba;}
 #left .espana big, #left .espana big a              {color: #d33228;}
