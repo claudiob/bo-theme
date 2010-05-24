@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 
 <ul id="top">
-<?php foreach (array(array('reports_spain'),array('reports_usa'),array('news','analysis','reports_argentina')) as $index => $my_slug) {
+<?php 
+  $top_articles = array();
+  foreach (array(array('reports_spain'),array('reports_usa'),array('news','analysis','reports_argentina')) as $index => $my_slug) {
   $my_cat = array_map("get_category_id_by_slug", $my_slug);
 	query_posts(array('posts_per_page' => 1, 'order_by' => date, 'category__in' => $my_cat));
 	while (have_posts()) : the_post(); ?>
+	<?php $top_articles[] = get_the_ID(); ?>
   <?php $cats = get_the_category(); $cat = $cats[0]; $slug = $cat->slug; ?>
   <li class="<?php echo get_class_by_slug($slug); ?>">
 	  <h2><?php echo get_h2_by_slug($slug); ?></h2>
@@ -21,7 +24,7 @@
 </ul>
 
 <ul id="left">
-	<?php query_posts('caller_get_posts=1&posts_per_page=3&cat=-5'); ?>
+  <?php query_posts(array('caller_get_posts' => 1,  'posts_per_page' => 3, 'cat' => -5, 'post__not_in' => $top_articles)); ?>
 	<?php while (have_posts()) : the_post();
 	  $cats = get_the_category(); ?>
     <li class="<?php echo get_class_by_slug($cats[0]->slug); ?>">
