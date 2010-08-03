@@ -160,8 +160,11 @@ function the_meta_description($curr_post = '', $search_term = '') {
     if (get_post_custom_values(subtitle, $curr_post->ID))
       $meta = current(get_post_custom_values(subtitle, $curr_post->ID));
     else
-      $meta = wp_title('', 0); # this should never occur (occurs with news..)
-      # May insert titles of movies in the article
+      # Google Webmaster does not like 'Short meta descriptions' so repeat the
+      # title multiple times. It's a partial solution, the proper way would be
+      # the show the title of the movies in the article when this information
+      # will be available.
+      $meta = substr(str_repeat(wp_title('', 0), 10), 0, 150);
   } else
     $meta = get_meta_by_slug($GLOBALS['my_slug']);  
   echo $meta;
