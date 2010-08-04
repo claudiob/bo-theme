@@ -167,6 +167,7 @@ function the_meta_description($curr_post = '', $search_term = '') {
       $meta = substr(str_repeat(wp_title('', 0), 10), 0, 150);
   } else
     $meta = get_meta_by_slug($GLOBALS['my_slug']);  
+    # Add year to distinguish /reports_usa/2010, /2009, ..
   echo $meta;
 }
 
@@ -410,6 +411,15 @@ function get_the_years($cat) {
 
 /* ********************* IMAGE MANAGEMENT ********************** */
 
+// Returns wp_upload_dir but from a cookie-less subdomain (for static files)
+function static_upload_dir() {
+  $upload_dir = wp_upload_dir(); 
+  if(preg_match('@^(.*?)://(?:|www\.)boxoffice.es/(.*?)$@i', $upload_dir['url'], $matches)) {
+    $upload_dir['url'] = "$matches[1]://bov2.boxoffice.es/$matches[2]";
+  }
+  return $upload_dir;
+}
+
 # // WP2.9 can make use of post thumbnails, uncommenting these lines: 
 # if ( function_exists( 'add_theme_support' ) )
 #   add_theme_support( 'post-thumbnails' );
@@ -417,7 +427,7 @@ function get_the_years($cat) {
 // there are 3 thumbnail size: 75x11 (category), 150x222 (top) and 225x150 (left)
 // then, in posts, image should be resized with fixed width: 360
 function the_thumbnail($dst_w = 75, $dst_h = 111, $use_poster = true) {
-  $upload_dir = wp_upload_dir(); 
+  $upload_dir = static_upload_dir(); 
   $alt = array('alt="'. strip_tags(get_the_title()) .'"');
   $title = array('title="'. strip_tags(get_the_title()) .'"');
 
@@ -550,7 +560,7 @@ function widget_boxoffice_fotogramas() {
   $file = "/widget_fotogramas.png";
   $dest = get_option('upload_path') . $file;
   $src = TEMPLATEPATH . "/images/template" . $file;
-  $upload_dir = wp_upload_dir(); 
+  $upload_dir = static_upload_dir(); 
   $url = $upload_dir['url'] . $file;
   $secs_in_week = 60*60*24*1; // changed 7 days for 1 day
   if(!(file_exists($dest)) || (time() - filemtime($dest) > $secs_in_week)) {
@@ -602,7 +612,7 @@ add_filter('aktt_do_blog_post_tweet', 'post_to_tweet', 10, 2);
 //     if(!(file_exists(get_option('upload_path') . $wm_file)))
 //       $src_file = get_the_first_image();
 //   
-//     //   $upload_dir = wp_upload_dir(); 
+//     //   $upload_dir = static_upload_dir(); 
 //     //   $dest = imagecreatefromgif($upload_dir['url'] . "/informe/9.jpg");
 //     //   $src = imagecreatefromgif($upload_dir['url'] . "/informe/12.jpg");
 //     // 
@@ -618,7 +628,7 @@ add_filter('aktt_do_blog_post_tweet', 'post_to_tweet', 10, 2);
 // 
 //       do something
 // 
-//     $upload_dir = wp_upload_dir(); 
+//     $upload_dir = static_upload_dir(); 
 //     echo '<img class="poster" src="'. $upload_dir['url'] . $wm_file .'" alt="'. get_the_title() . '" />';
 // }
 // 
@@ -636,7 +646,7 @@ add_filter('aktt_do_blog_post_tweet', 'post_to_tweet', 10, 2);
 
 // function test_watermark() {
 //   // Create image instances
-//   $upload_dir = wp_upload_dir(); 
+//   $upload_dir = static_upload_dir(); 
 //   $dest = imagecreatefromgif($upload_dir['url'] . "/informe/9.jpg");
 //   $src = imagecreatefromgif($upload_dir['url'] . "/informe/12.jpg");
 // 
