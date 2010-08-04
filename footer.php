@@ -8,22 +8,20 @@
   </div>
   <?php wp_footer(); ?>
   <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js"></script>
-  <script type="text/javascript">addLoadEvent(SlimStat);</script>
-  <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
   <script type="text/javascript">
-    if (typeof(_gat)=='object')
-      setTimeout(function(){_gat._getTracker("UA-754675-1")._trackPageview()}, 1500);
+    <?php if(is_single()) { ?>
+    zebra_table();
+    <?php } ?>
+    $timeout = 4000;
+    setTimeout("activate_analytics()", $timeout);
+    <?php if (is_active_widget('widget_boxoffice_twitter')) { ?>
+    setTimeout("activate_twitter()", $timeout);
+    <?php } ?>
+    <?php if(is_home()) { ?>
+    setTimeout("activate_facebook()", $timeout);
+    setTimeout("activate_trailers()", $timeout);
+    <?php } ?>
   </script>
-  <?php if(is_single()) { ?>
-  <script type="text/javascript">zebra_table();</script>
-  <?php } ?>
-  <?php if (is_active_widget('widget_boxoffice_twitter')) { ?>
-  <script type="text/javascript" src="http://twitter.com/BoxOfficeSpain/lists/boxoffice/statuses.json?callback=twitterCallback2&amp;per_page=4"></script>
-  <?php } ?>
-  <?php if(is_home()) { ?>
-  <script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/es_ES"></script>
-  <script type="text/javascript">setTimeout(facebook_activate, 1500);</script>
-  <?php } ?>
   </body>
 </html>
 

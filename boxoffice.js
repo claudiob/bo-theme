@@ -1,26 +1,71 @@
-/// ZEBRA TABLE
+/// GENERIC
+
+function get_object(id) {
+ if (document.layers) {return document.layers[id];} 
+ else if (document.all) {return document.all[id];} 
+ else if (document.getElementById) {return document.getElementById(id);}
+}
 
 function zebra_table() {
   if (document.getElementsByTagName) {
-  	tables = document.getElementsByTagName("table");
-  	for(j = 0; j < tables.length; j++) {
-  	    ncols = tables[j].rows[0].cells.length;
-  	    tables[j].rows[0].className='header';
-  	    tables[j].rows[0].cells[0].className='first';
-  	    tables[j].rows[0].cells[ncols-1].className='last';
-  		for (k = 1; k < tables[j].rows.length; k = k + 1) {
-  		    tables[j].rows[k].cells[0].className='first';
-  		    if(k % 2)
-  			    tables[j].rows[k].className='odd';
-  		}
-    	  var newRow = tables[j].insertRow(1);
-    	  newRow.className = 'empty';
-    	  var newCell = newRow.insertCell(0);
-    	  newCell.colSpan = ncols;
+    tables = document.getElementsByTagName("table");
+    for(j = 0; j < tables.length; j++) {
+        ncols = tables[j].rows[0].cells.length;
+        tables[j].rows[0].className='header';
+        tables[j].rows[0].cells[0].className='first';
+        tables[j].rows[0].cells[ncols-1].className='last';
+      for (k = 1; k < tables[j].rows.length; k = k + 1) {
+          tables[j].rows[k].cells[0].className='first';
+          if(k % 2)
+            tables[j].rows[k].className='odd';
+      }
+        var newRow = tables[j].insertRow(1);
+        newRow.className = 'empty';
+        var newCell = newRow.insertCell(0);
+        newCell.colSpan = ncols;
         newCell.innerHTML = '<hr />';
-  	}	    
+    }      
   }  
 }
+
+/// DEFERRED SCRIPTS (DELAY)
+
+function import_script(url) {
+  var scriptElem = document.createElement('script');
+  scriptElem.setAttribute('src', url);
+  scriptElem.setAttribute('type', 'text/javascript');
+  document.getElementsByTagName('head')[0].appendChild(scriptElem);
+}
+
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {window.onload = func;} 
+  else {window.onload = function() {oldonload(); func();};}
+}
+
+/// SLIMSTAT
+
+var slimstatfile = '/slimstat-js/js.stats.php';
+
+function SlimStat() {
+  var ref = escape(document.referrer);
+  var res = escape(document.URL);
+  
+  var img = document.createElement('img');
+  img.setAttribute('id','slimstatimg');
+  img.setAttribute('width','1');
+  img.setAttribute('height','1');
+  img.setAttribute('alt','');
+  img.setAttribute('src',slimstatfile+'?ref='+ref+'&res='+res);
+  if (document.documentElement) {
+    document.documentElement.appendChild(img);
+  } else {
+    document.appendChild(img);
+  }
+}
+
+addLoadEvent(SlimStat);
+
 
 /// TWITTER
 
@@ -66,47 +111,43 @@ function twitterCallback2(twitters) {
   document.getElementById('twitter_update_list').innerHTML = statusHTML.join('');
 }
 
+function activate_twitter() { // loaded with a delay to improve site performance
+  import_script('http://twitter.com/BoxOfficeSpain/lists/boxoffice/statuses.json?callback=twitterCallback2&per_page=4');
+}
+
 /// FACEBOOK
 
-function facebook_activate() {
-  FB.init("eb07de4c9a3a7c4e710dadc6d44aef93");
-  fan = document.createElement("fb:fan");
-  fan.setAttribute("profile_id", "121079989452");
-  fan.setAttribute("stream", "");
-  fan.setAttribute("connections", "10");
-  fan.setAttribute("width", "302");
-  document.getElementById("facebook").appendChild(fan);  
+function activate_facebook() { // loaded with a delay to improve site performance
+  import_script('http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/es_ES');
+  setTimeout(function() {
+    FB.init("eb07de4c9a3a7c4e710dadc6d44aef93");
+    fan = document.createElement("fb:fan");
+    fan.setAttribute("profile_id", "121079989452");
+    fan.setAttribute("stream", "");
+    fan.setAttribute("connections", "10");
+    fan.setAttribute("width", "302");
+    document.getElementById("facebook").appendChild(fan);  
+  }, 4000);
 }
 
-/// SLIMSTAT
+/// TRAILERS
 
-var slimstatfile = '/slimstat-js/js.stats.php';
-
-function addLoadEvent(func) {
-	var oldonload = window.onload;
-	if (typeof window.onload != 'function') {
-		window.onload = func;
-	} else {
-		window.onload = function() {
-			oldonload();
-			func();
-		};
-	}
+function activate_trailers() { // loaded with a delay to improve site performance
+  object = get_object("trailer_object");
+  trailer_url = "http://www.player.filmtrailer.com/v3.4/player.swf?file=http://es.player-feed.previewnetworks.com/cinema/now-5/341100112-1/&display_title=always&menu=true&enable_link=true&default_quality=small&controlbar=over&autostart=false&backcolor=888888&frontcolor=000000&lightcolor=ffffff&screencolor=ffffff&share=0&repeat=always&shuffle=true&volume=80";
+  var param = document.createElement("param");
+  param.setAttribute("name", "movie");
+  param.setAttribute("value", trailer_url);
+  object.appendChild(param);
+  object.setAttribute("data", trailer_url);
 }
 
-function SlimStat() {
-	var ref = escape(document.referrer);
-	var res = escape(document.URL);
-	
-	var img = document.createElement('img');
-	img.setAttribute('id','slimstatimg');
-	img.setAttribute('width','1');
-	img.setAttribute('height','1');
-	img.setAttribute('alt','');
-	img.setAttribute('src',slimstatfile+'?ref='+ref+'&res='+res);
-	if (document.documentElement) {
-		document.documentElement.appendChild(img);
-	} else {
-		document.appendChild(img);
-	}
+/// GOOGLE ANALYTICS
+
+function activate_analytics() { // loaded with a delay to improve site performance
+  import_script('http://www.google-analytics.com/ga.js');
+  setTimeout(function() {
+    if(typeof(_gat)=='object')
+      _gat._getTracker("UA-754675-1")._trackPageview()
+  }, 1500);
 }
