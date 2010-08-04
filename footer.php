@@ -6,8 +6,8 @@
       </div>
     
   </div>
-  <?php wp_footer(); ?>
-  <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js"></script>
+<?php wp_footer(); ?>
+  <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js?min"></script>
   <script type="text/javascript">
     <?php if(is_single()) { ?>
     zebra_table();
