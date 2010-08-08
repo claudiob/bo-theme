@@ -15,7 +15,6 @@
     <meta name="DC.rights" scheme="DCTERMS.URI" content="http://creativecommons.org/licenses/by-nd/3.0/es" />
     <meta name="DC.rights" content="(c) Pau Brunet" />
     <meta name="version" content="2.0" />
-    <meta http-equiv="imagetoolbar" content="false" />
     <link rel="icon" type="image/vnd.microsoft.icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/favicon_iphone.png" />
     <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
@@ -25,7 +24,7 @@
     <!--[if lt IE 6]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/hack_box.css" type="text/css" /><![endif]-->
     <!--[if lt IE 5.5]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/hack_a.css" type="text/css" /><![endif]-->
     <link rel="stylesheet" media="print" href="<?php bloginfo('template_url'); ?>/css/print.css" type="text/css" />
-    <?php the_feeds(); ?>
+<?php the_feeds(); ?>
     <link rel="alternate pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
   </head>
@@ -34,8 +33,8 @@
       <?php the_h1(); ?>
       <?php the_full_banner(); ?>
 
-	<ul id="menu">
-	<?php
+      <ul id="menu">
+<?php
     menu_tab('category', 'reports_spain');
     menu_tab('category', 'reports_usa');
     menu_tab('category', 'reports_argentina');
@@ -44,21 +43,18 @@
     menu_tab('page',     'partners');
     menu_tab('category', 'links');
     menu_tab('page',     'about');
-  ?>
-  </ul>
-
-  <form class="search" method="get" action="<?php bloginfo('url'); ?>/">
-  <fieldset>
-  <legend>Busca:</legend>
-  <label for="s">Texto:</label>
-  <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" alt="Escribe que buscar"  />
-	<input type="submit" value="Busca" />
-  </fieldset>
-  </form>
-
-
+?>
+      </ul>
+      <form class="search" method="get" action="<?php bloginfo('url'); ?>/">
+        <fieldset>
+          <legend>Busca:</legend>
+          <label for="s">Texto:</label>
+          <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" alt="Escribe que buscar"  />
+          <input type="submit" value="Busca" />
+        </fieldset>
+      </form>
 <?php if(!is_home()) : ?>
-  <ul id="left"><li class="<?php the_left_class(); ?>">
-  <?php the_h2(); ?>
-  <?php the_h3(); ?>
+      <ul id="left"><li class="<?php the_left_class(); ?>">
+<?php the_h2(); ?>
+<?php the_h3(); ?>
 <?php endif; ?>

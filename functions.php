@@ -121,7 +121,7 @@ function menu_tab($type, $slug) {
     $desc = get_h2_by_slug($slug);
     $name = $page->post_title;
   }
-  echo '<li class="' . get_class_by_slug($slug) . '"><a href="' . $link . '" rel="contents" title="' . $desc . '">' . $name . '</a></li>' . "\n";
+  echo '        <li class="' . get_class_by_slug($slug) . '"><a href="' . $link . '" rel="contents" title="' . $desc . '">' . $name . '</a></li>' . "\n";
 }
 
 function the_body_class() {
@@ -209,14 +209,19 @@ function the_h3() {
 
 function the_feeds() {
   if (is_category() || is_single()) {
-    echo '<link title="'. get_h2_by_slug($GLOBALS['my_slug'], false) .' (RSS 2.0)"  href="'. get_category_feed_link($GLOBALS['my_cat']->term_id, 'rss2') .'" rel="alternate contents" type="application/rss+xml" />'."\n";
-    echo '<link title="'. get_h2_by_slug($GLOBALS['my_slug'], false) .' (Atom 0.3)" href="'. get_category_feed_link($GLOBALS['my_cat']->term_id, 'atom') .'" rel="alternate contents" type="application/atom+xml" />'."\n";
+    echo '    <link title="'. get_h2_by_slug($GLOBALS['my_slug'], false) .' (RSS 2.0)"  href="'. get_category_feed_link($GLOBALS['my_cat']->term_id, 'rss2') .'" rel="alternate contents" type="application/rss+xml" />'."\n";
+    echo '    <link title="'. get_h2_by_slug($GLOBALS['my_slug'], false) .' (Atom 0.3)" href="'. get_category_feed_link($GLOBALS['my_cat']->term_id, 'atom') .'" rel="alternate contents" type="application/atom+xml" />'."\n";
   }
-  echo '<link title="Todo el contenido de Boxoffice.es (RSS 2.0)"  href="'. get_bloginfo('rss2_url') .'" rel="alternate index" type="application/rss+xml" />'."\n";
-  echo '<link title="Todo el contenido de Boxoffice.es (Atom 0.3)" href="'. get_bloginfo('atom_url') .'" rel="alternate index" type="application/atom+xml" />'."\n";
+  echo '    <link title="Todo el contenido de Boxoffice.es (RSS 2.0)"  href="'. get_bloginfo('rss2_url') .'" rel="alternate index" type="application/rss+xml" />'."\n";
+  echo '    <link title="Todo el contenido de Boxoffice.es (Atom 0.3)" href="'. get_bloginfo('atom_url') .'" rel="alternate index" type="application/atom+xml" />'."\n";
   remove_action('wp_head', 'feed_links_extra', 3); // Removes the links to the extra feeds such as category feeds
   remove_action('wp_head', 'feed_links', 2); // Removes links to the general feeds: Post and Comment Feed
-  remove_action( 'wp_head', 'wp_generator'); // Removes the Wordpress version i.e. - to avoid hacking
+  remove_action('wp_head', 'wp_generator'); // Removes the Wordpress version i.e. - to avoid hacking
+  remove_action('wp_head', 'wlwmanifest_link'); // Remove, it's only used by Windows Live Editor
+  remove_action('wp_head', 'rsd_link'); // Remove, it's only used by Windows Live Editor
+  remove_action('wp_head', 'aktt_head'); // Twitter Tools is only used for admin (post tweets), no need for its client css and js
+  wp_deregister_script('jquery'); // We don't need jQuery, do we?
+  
 }
 
 function my_rss_head() {
@@ -373,7 +378,7 @@ function my_excerpt($length = 100, $continue = true, $wpautop = false, $exclude=
     the_title();
     echo '">&raquo;&nbsp;Contin&uacute;a</a>';
   }
-  echo '</span>';
+  echo "</span>";
   	
   if(!$wpautop)
   	add_filter('the_excerpt', 'wpautop');
@@ -503,17 +508,20 @@ if (function_exists('register_sidebar'))
 function widget_boxoffice_newsletter() {
   if (is_slug('newsletter')) return; // don't show form twice
   global $ddfm; 
-  echo '<li class="newsletter"><h2>Newsletter</h2>'. $ddfm{1}->generate_data() .'</li>';
+  echo "      <li class=\"newsletter\">\n";
+  echo "        <h2>Newsletter</h2>\n";
+  echo $ddfm{1}->generate_data();
+  echo "      </li>\n";
 }
 if (function_exists('register_sidebar_widget'))
   register_sidebar_widget(__('Boxoffice Newsletter'), 'widget_boxoffice_newsletter');    
 
 function widget_boxoffice_twitter() {
-  echo '<li class="twitter"><h2>Twitter</h2>';
-  // TO ADD: <big>Follow boxoffice.es</big> or Join List..
-  echo '<ul id="twitter_update_list"><li></li></ul>';
-  echo '<small><a href="http://twitter.com/BoxOfficeSpain/lists/boxoffice" title="Follow @BoxofficeSpain/boxoffice on Twitter">Follow this Twitter list</a></small>';
-  echo '</li>';
+  echo "      <li class=\"twitter\">\n";
+  echo "        <h2>Twitter</h2>\n";
+  echo "        <ul id=\"twitter_update_list\"><li></li></ul>\n";
+  echo "        <small><a href=\"http://twitter.com/BoxOfficeSpain/lists/boxoffice\" title=\"Follow @BoxofficeSpain/boxoffice on Twitter\">Follow this Twitter list</a></small>\n";
+  echo "      </li>\n";
 }
 if (function_exists('register_sidebar_widget'))
   register_sidebar_widget(__('Boxoffice Twitter'), 'widget_boxoffice_twitter');    
@@ -567,11 +575,12 @@ function widget_boxoffice_fotogramas() {
     $text = get_last_feed_title('http://www.fotogramas.es/feeds/blog/304406');
     text_to_image($src, $dest, $text);
   }
-  echo '<li class="colaboraciones"><span class="ir colab">Colaboraciones</span>';
-  echo '<a href="http://www.fotogramas.es/Blogs/Lo-que-la-taquilla-se-llevo" title="Fotogramas.es">';
-  echo '<img alt="Fotogramas.es" src="'. $url .'" />';
-  echo '</a>';
-  echo '</li>';
+  echo "      <li class=\"colaboraciones\">\n";
+  echo "        <span class=\"ir colab\">Colaboraciones</span>\n";
+  echo "        <a href=\"http://www.fotogramas.es/Blogs/Lo-que-la-taquilla-se-llevo\" title=\"Fotogramas.es\">\n";
+  echo "          <img alt=\"Fotogramas.es\" src=\"". $url ."\" />\n";
+  echo "        </a>\n";
+  echo "      </li>\n";
 }    
 if (function_exists('register_sidebar_widget'))
   register_sidebar_widget(__('Boxoffice Fotogramas'), 'widget_boxoffice_fotogramas');    
