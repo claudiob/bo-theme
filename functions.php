@@ -420,7 +420,7 @@ function get_the_years($cat) {
 function static_upload_dir() {
   $upload_dir = wp_upload_dir(); 
   if(preg_match('@^(.*?)://(?:|www\.)boxoffice.es/(.*?)$@i', $upload_dir['url'], $matches)) {
-    $upload_dir['url'] = "$matches[1]://bov2.boxoffice.es/$matches[2]";
+    $upload_dir['url'] = "$matches[1]://images.boxoffice.es/$matches[2]";
   }
   return $upload_dir;
 }
