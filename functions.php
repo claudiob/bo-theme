@@ -298,8 +298,8 @@ function the_full_banner() {
   if(!function_exists('adrotate_banner')) return;
   if(is_slug('reports_argentina'))
     echo adrotate_banner('4');
-  elseif(is_slug('reports_spain'))
-    echo adrotate_banner('6');
+  // elseif(is_slug('reports_spain'))
+  //  echo adrotate_banner('6');
   else
     echo adrotate_banner('1');
   // <!--a href=""><img class="banner full" src="..." alt="Banner" /></a-->
