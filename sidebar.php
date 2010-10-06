@@ -8,9 +8,7 @@
   wp_meta();
 endif; ?>
       <li class="sponsors">
-        <a title="4K SDCA - The Spanish Digital Cinema Alliance" href="http://www.4kdci.com"><img src="<?php bloginfo('template_url') ?>/images/logo/4ksdca.png" alt="4KSDCA"/></a>
-        <a title="Cine 365" href="http://www.cine365.com/noticias"><img src="<?php bloginfo('template_url') ?>/images/logo/cine365.png" alt="Cine 365"/></a>
-        <a title="Canal TCM - El cine que ya ten&iacute;as que haber visto" href="http://www.canaltcm.com/"><img src="<?php bloginfo('template_url') ?>/images/logo/tcm.png" alt="TCM"/></a>
+        <a title="Boxoffice Consulting - Consultor&iacute;a de an&aacute;lisis, ventas y compras de pel&iacute;culas" href="http://www.boxoffice-consulting.com/"><img src="<?php bloginfo('template_url') ?>/images/logo/boxoffice_consulting.png" alt="Boxoffice Consulting"/></a>
       </li>
 <?php  if(!is_home() && !is_404() && !is_slug('license') && !is_slug('partners') && !is_slug('press') && !is_slug('trailers')) : ?>
       <li class="transparent">

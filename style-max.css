@@ -90,6 +90,7 @@ big, .excerpt, small, .item, img, a img, li.newsletter form, #footer,  #left li 
 li.search p, #middle .trailers object   {border-color: #cecac3;}
 #left .item                             {border-top-color: #ede7e0;}
 img, a img                              {border-top-color:#7e7e7e;}
+.sponsors img                           {border-top-color: #cecac3;}
 .twitter li                             {border-color: #a1e8f7;}
 .twitter small                          {border-color: #5aa5bc;}
 
@@ -386,7 +387,7 @@ h1 img                                {width: 488px; height:  88px;}
 #top img                              {width: 150px; height: 222px;}
 #left img                             {width: 360px; height: auto;}
 .colaboraciones img                   {width: 170px; height: 134px;}
-.sponsors img                         {width: 170px; height:  45px;}
+.sponsors img                         {width: 170px; height:  92px;}
 .home #left img                       {width: 225px; height: 150px;}
 #left .item img                       {width: 75px; height: 111px;}
 #top img, #left img, .twitter img     {margin-bottom: 2px; margin-right: 5px;}
@@ -426,6 +427,8 @@ td                        {border-color: #cccccc;}
 tr.empty td               {padding: 0.1em 0  0.4em 0; border-right-width: 0px;}
 tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 td.first                  {border-left-width: 1px; border-left-style: solid; }
+
+.sponsors img             {border-top-width: 1px;}
 
 /* Firefox does not draw borders around OBJECT. Fixed with: */
 #middle .trailers object  {border-left: 0; border-right: 0; margin-left: 1px; margin-right: 1px;}
