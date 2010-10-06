@@ -5,7 +5,7 @@
     <title><?php echo get_bloginfo('name'); if(!is_search()) echo " &mdash; ". get_the_h2(); if(!is_category() || is_year()) wp_title('&mdash;'); ?></title>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="description" content="<?php the_meta_description($post, $wp_query->query_vars['s']); ?>" />
-    <meta name="keywords" content="película, españa, cine, taquilla, estreno, salas, filme, film, público, dólares, recaudaciones, espectadores, spain" />
+    <meta name="keywords" content="taquilla, cine, españa, recaudaciones, espectadores, spain" />
     <meta http-equiv="Content-Language" content="es" />
     <meta name="language" content="es" /> 
     <meta name="viewport" content="width=1000" />
