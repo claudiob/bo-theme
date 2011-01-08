@@ -65,6 +65,29 @@ function SlimStat() {
 
 addLoadEvent(SlimStat);
 
+/// SLIMSTAT OLD (temporarily, store stats in BOTH systems)
+
+var slimstatfile = '/slimstat-js/js.stats.php';
+
+function SlimStatOld() {
+  var ref = escape(document.referrer);
+  var res = escape(document.URL);
+  
+  var img = document.createElement('img');
+  img.setAttribute('id','slimstatimg');
+  img.setAttribute('width','1');
+  img.setAttribute('height','1');
+  img.setAttribute('alt','');
+  img.setAttribute('src',slimstatfile+'?ref='+ref+'&res='+res);
+  if (document.documentElement) {
+    document.documentElement.appendChild(img);
+  } else {
+    document.appendChild(img);
+  }
+}
+
+addLoadEvent(SlimStatOld);
+
 
 /// TWITTER
 
