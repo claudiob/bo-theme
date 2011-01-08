@@ -37,31 +37,30 @@ function import_script(url) {
   document.getElementsByTagName('head')[0].appendChild(scriptElem);
 }
 
+/// SLIMSTAT
+
 function addLoadEvent(func) {
   var oldonload = window.onload;
   if (typeof window.onload != 'function') {window.onload = func;} 
   else {window.onload = function() {oldonload(); func();};}
 }
 
-/// SLIMSTAT
-
-var slimstatfile = '/slimstat-js/js.stats.php';
-
 function SlimStat() {
-  var ref = escape(document.referrer);
-  var res = escape(document.URL);
-  
-  var img = document.createElement('img');
-  img.setAttribute('id','slimstatimg');
-  img.setAttribute('width','1');
-  img.setAttribute('height','1');
-  img.setAttribute('alt','');
-  img.setAttribute('src',slimstatfile+'?ref='+ref+'&res='+res);
-  if (document.documentElement) {
-    document.documentElement.appendChild(img);
-  } else {
-    document.appendChild(img);
-  }
+  // NOTE: This won´t work locally where the ROOT is not /
+	var ssSrc = '/slimstat2.2/stats_js.php?ref=' + encodeURIComponent(document.referrer)
+		+ '&url=' + encodeURIComponent(document.URL)
+		+ '&res=' + encodeURIComponent(screen.width+'x'+screen.height)
+		+ '&ttl=' + encodeURIComponent(document.title)
+		+ '&ts=1294484089';
+	
+	var ssImg = document.createElement('img');
+	ssImg.setAttribute('id', 'slimstat2.2img');
+	ssImg.setAttribute('src', ssSrc);
+	ssImg.setAttribute('style', 'position:absolute;top:-10px;left:0');
+	ssImg.setAttribute('width', '1');
+	ssImg.setAttribute('height', '1');
+	ssImg.setAttribute('alt', '');
+	document.body.appendChild(ssImg);
 }
 
 addLoadEvent(SlimStat);
