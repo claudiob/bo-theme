@@ -41,12 +41,13 @@ small                                   {font-size: 1em;}
 .twitter .status                        {font-size: 0.95em;}
 .excerpt, .twitter .time                {font-size: 0.9em;}
 .twitter small                          {font-size: 0.85em;}
-.more-link, .twitter ul, .item small, table    {font-size: 0.8em;}
+.more-link, .twitter ul, .item small, 
+table, caption                          {font-size: 0.8em;}
 h3, h4, fieldset, #footer, .halftitle   {font-size: 0.75em;}
 #middle .reportajes small               {font-size: 0.7em;}
 
 #top .more-link, #middle big, #middle small, #footer, .twitter .username, .twitter small, 
-.licencia textarea                      {text-align: center;}
+.licencia textarea, caption             {text-align: center;}
 h3, .firma                              {text-align: right;}
 
 big, h4                                 {letter-spacing: -1px;}
@@ -55,7 +56,7 @@ p, #footer                              {line-height: 1.5em;}
 .twitter li                             {line-height: 1.1em;}
 #top h3                                 {font-weight: normal;}
 big, h4, th, .single #left a            {font-weight: bold;}
-a, .firma                               {font-style: italic;}
+a, .firma, caption                      {font-style: italic;}
 big, small, .halftitle, big a           {font-style: normal;}
 a                                       {text-decoration: none;}
 p, dd                                   {text-indent: 1em;}
@@ -230,7 +231,7 @@ h1, #menu, #left, .colab                {clear: left;}
 h1 a, table, #top a, big, small, object, iframe, #top .more-link, #menu li a, .excerpt, 
 .twitter .username, .twitter .time, .twitter .status, #left .item, .sponsors a,
 .colaboraciones a, #left .item .halftitle, #middle .publ, .colab,
-li.newsletter label                     {display: block;}
+li.newsletter label, caption            {display: block;}
 fieldset, .twitter .username            {display: inline;}
 form.search legend, form.search label,
 img.tracker                             {display: none;}
@@ -361,7 +362,7 @@ input                   {padding-top: 2px; padding-bottom: 2px;}
 .home #left big, #middle big          {padding-top: 15px;}
 
 .single #left big, .single #left h4, dt {padding-bottom: 0.5em;}
-.more-link, dt                        {padding-top: 0.5em;}
+.more-link, dt, caption               {padding-top: 0.5em;}
 
 #left li, #middle li, #right li       {margin-top: 5px; margin-bottom: 15px;}
 #left li li                           {margin-top: 0px; margin-bottom: 0px;}
