@@ -172,7 +172,7 @@ function the_meta_description($curr_post = '', $search_term = '') {
 }
 
 function the_h1() {
-  $h1 = '<img alt="'. get_bloginfo('name') .'" src="'. get_bloginfo('template_url') .'/images/logo/boxoffice_es.png" />';
+  $h1 = '<img alt="'. get_bloginfo('name') .'" src="'. get_bloginfo('template_url') .'/images/logo/boxoffice_es_goyared.png" />';
   if (!is_home()) // add link to home
     $h1 = '<a href="'. get_bloginfo('url') .'" rel="index" title="'. get_bloginfo('name') .' &bull; Portada (tecla 0)" accesskey="0">'. $h1 . '</a>';
   echo "<h1>$h1</h1>";  
@@ -556,11 +556,11 @@ function break_in_lines($text) {
 }
 
 function text_to_image($src_file, $dest_file, $text) {
-  $text = break_in_lines($text);
-  $src = imagecreatefrompng($src_file);
-  imagettftext($src, 15, 0, 6, 65, 1, ABSPATH .'/wp-content/fonts/fotogramas.ttf.php', $text);
-  imagepng($src, $dest_file);
-  imagedestroy($src);
+  // $text = break_in_lines($text);
+  // $src = imagecreatefrompng($src_file);
+  // imagettftext($src, 15, 0, 6, 65, 1, ABSPATH .'/wp-content/fonts/fotogramas.ttf.php', $text);
+  // imagepng($src, $dest_file);
+  // imagedestroy($src);
 }
 
 
