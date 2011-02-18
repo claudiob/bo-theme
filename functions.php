@@ -516,11 +516,23 @@ function widget_boxoffice_newsletter() {
 if (function_exists('register_sidebar_widget'))
   register_sidebar_widget(__('Boxoffice Newsletter'), 'widget_boxoffice_newsletter');    
 
+function widget_boxoffice_pledge() {
+  $page = get_page_by_slug('partners');
+  $link = get_page_link($page->ID);
+  echo "      <li class=\"pledge\">\n";
+  echo "        <a href=\"";
+  echo $link;
+  echo "\">Contribuye a Boxoffice.es</a>\n";
+  echo "      </li>\n";
+}
+if (function_exists('register_sidebar_widget'))
+  register_sidebar_widget(__('Boxoffice Pledge'), 'widget_boxoffice_pledge');    
+
 function widget_boxoffice_twitter() {
   echo "      <li class=\"twitter\">\n";
   echo "        <h2>Twitter</h2>\n";
+  echo "        <small><a href=\"http://twitter.com/BoxOfficeSpain\" title=\"Follow @BoxOfficeSpain on Twitter\">Follow @BoxofficeSpain</a></small>\n";
   echo "        <ul id=\"twitter_update_list\"><li></li></ul>\n";
-  echo "        <small><a href=\"http://twitter.com/BoxOfficeSpain/lists/boxoffice\" title=\"Follow @BoxofficeSpain/boxoffice on Twitter\">Follow this Twitter list</a></small>\n";
   echo "      </li>\n";
 }
 if (function_exists('register_sidebar_widget'))
@@ -556,11 +568,13 @@ function break_in_lines($text) {
 }
 
 function text_to_image($src_file, $dest_file, $text) {
-  $text = break_in_lines($text);
-  $src = imagecreatefrompng($src_file);
-  imagettftext($src, 15, 0, 6, 65, 1, ABSPATH .'/wp-content/fonts/fotogramas.ttf.php', $text);
-  imagepng($src, $dest_file);
-  imagedestroy($src);
+  if (function_exists("imagettftext")) {
+    $text = break_in_lines($text);
+    $src = imagecreatefrompng($src_file);
+    imagettftext($src, 15, 0, 6, 65, 1, ABSPATH .'/wp-content/fonts/fotogramas.ttf.php', $text);
+    imagepng($src, $dest_file);
+    imagedestroy($src);
+  }
 }
 
 

@@ -128,7 +128,7 @@ function twitterCallback2(twitters) {
     }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
       return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
     });
-    statusHTML.push('<li><img src="'+icon+'" alt="Profile image" /><a title="Twitter account" class="username" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id+'">'+username+'</a><span class="time">'+relative_time(twitters[i].created_at)+'</span><span class="status">'+status+'</span></li>');
+    statusHTML.push('<li><img src="'+icon+'" alt="Profile image" /><!--a title="Twitter account" class="username" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id+'"-->'+username+'<!--/a--><span class="time">'+relative_time(twitters[i].created_at)+'</span><span class="status">'+status+'</span></li>');
   }
   document.getElementById('twitter_update_list').innerHTML = statusHTML.join('');
 }

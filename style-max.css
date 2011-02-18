@@ -46,8 +46,9 @@ table, caption                          {font-size: 0.8em;}
 h3, h4, fieldset, #footer, .halftitle   {font-size: 0.75em;}
 #middle .reportajes small               {font-size: 0.7em;}
 
-#top .more-link, #middle big, #middle small, #footer, .twitter .username, .twitter small, 
-.licencia textarea, caption             {text-align: center;}
+#top .more-link, #middle big, #middle small, #footer, .twitter .username, 
+.twitter small, .licencia textarea, caption,
+form.donate                             {text-align: center;}
 h3, .firma                              {text-align: right;}
 
 big, h4                                 {letter-spacing: -1px;}
@@ -68,8 +69,9 @@ li                                      {background-color: #fff;}
 a:hover                                 {background-color: #fe8;}
 tr.odd td                               {background-color: #f4f6d7;}
 .search_hit                             {background-color: #ffff66;}
-#menu a:hover, h1 a:hover, #top li, li.transparent, li.colaboraciones, li.twitter,
-li.sponsors, #facebook, .twitter li     {background-color: transparent;}
+#menu a:hover, h1 a:hover, #top li, li.transparent, li.colaboraciones, 
+li.twitter, li.pledge, li.sponsors, #facebook, 
+.twitter li                             {background-color: transparent;}
 
 #top h3, th                                         {color: #ffffff;}
 a                                                   {color: #773541;}
@@ -97,10 +99,11 @@ img, a img                              {border-top-color:#7e7e7e;}
 
 /* BACKGROUNDS */
 
-.publ, .colab, #menu li, h2             {text-indent: -9999px; overflow: hidden;}
+.publ, .colab, #menu li, h2, .pledge a  {text-indent: -9999px; overflow: hidden;}
 .publ, .colab, th.theadleft, th.theadright,  #menu, #menu li, form.search,
 #top li, #top h2, #top h3, #left h2, #left h3, #middle h2, #middle h3,
-#right h2, #right li.twitter            {background-image: url(images/sprite.png)}
+#right h2, #right li.twitter,
+#right li.pledge a                      {background-image: url(images/sprite.png)}
 .publ                                   {background-position: 475px -128px;}
 .colab                                  {background-position: 424px -128px;}
 th.theadleft                            {background-position: 613px -128px;}
@@ -213,11 +216,12 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #right li.newsletter h2                 {background-position:  -539px  -667px;}
 #right .twitter                         {background-position:  -793px   -84px;}
 #right .twitter h2                      {background-position:  -793px   -50px;}
+#right li.pledge a                      {background-position:  -963px -1761px;}
 
 /* LAYOUT */
 
 h1, .banner.full, #menu, #menu li, #top li, li h2,
-#top li img, #left, #middle, #right, .twitter img,  #left img,
+#top li img, #left, #middle, #right, .twitter img,  #left img, .pledge a,
 #left .item img, .prev, li.sponsors a   {float: left;}
 .publ, form.search, form.search fieldset, li h3,  
 .next, #left img.alignright             {float: right;}
@@ -230,7 +234,7 @@ h1, #menu, #left, .colab                {clear: left;}
 #right .banner, dl, dt                  {clear: both;}
 h1 a, table, #top a, big, small, object, iframe, #top .more-link, #menu li a, .excerpt, 
 .twitter .username, .twitter .time, .twitter .status, #left .item, .sponsors a,
-.colaboraciones a, #left .item .halftitle, #middle .publ, .colab,
+.colaboraciones a, #left .item .halftitle, #middle .publ, .colab, .pledge a,
 li.newsletter label, caption            {display: block;}
 fieldset, .twitter .username            {display: inline;}
 form.search legend, form.search label,
@@ -273,6 +277,9 @@ form.search             {width: 232px; margin-right: 12px;}
 /* #right ads = #right */
 .colaboraciones img, 
 .sponsors img           {width: 170px;}
+/* #right pledge = #right */
+.pledge a               {width: 170px;}
+    
 /* #footer = #page */
 #footer                 {width: 982px; border-left-width: 1px; border-right-width: 1px;}
 /* margin-right >= 12px (shadow) for .banner.full, form.search, .publ, top a */
@@ -314,7 +321,7 @@ li.newsletter fieldset                  {padding-left: 6px; padding-right: 6px;}
 big, .excerpt, small, .item, .single p, .single h4, .single dl, li.search p, 
 #left li li, .single table, .single #left form, 
 #middle .trailers object                {border-left-width: 1px; border-right-width: 1px; border-left-style: solid; border-right-style: solid;}
-#top big, .item big, #top .excerpt, .item .excerpt, #top small, 
+#top big, .item big, #top .excerpt, .item .excerpt, #top small,
 .item small, .twitter small             {border-left-width: 0px; border-right-width: 0px;}
 
 /* HEIGHTS */
@@ -346,7 +353,7 @@ form.search             {height: 40px; margin-top: 10px; padding-top: 10px;}
 
 input                   {padding-top: 2px; padding-bottom: 2px;}
 
-#right h2               {height: 50px;}
+#right h2, .pledge a    {height: 50px;}
 #footer                 {padding-top: 0.4em; padding-bottom: 0.4em; margin-bottom: 0.5em;}
 
 #left .item             {min-height: 117px; padding: 6px; border-top-width: 10px; border-top-style: solid;}
@@ -367,7 +374,8 @@ input                   {padding-top: 2px; padding-bottom: 2px;}
 #left li, #middle li, #right li       {margin-top: 5px; margin-bottom: 15px;}
 #left li li                           {margin-top: 0px; margin-bottom: 0px;}
 #right .twitter li                    {margin-top: 0px; margin-bottom: 0px;}
-.twitter li, .twitter small           {padding-top: 8px; padding-bottom: 8px; border-bottom-width: 1px;}
+.twitter li                           {padding-top: 8px; padding-bottom: 8px;}
+.twitter small                        {padding-bottom: 12px;}
 
 
 #left li, #middle li, #left .excerpt, #middle .excerpt, li.newsletter fieldset, 
@@ -375,6 +383,7 @@ li.newsletter label                   {padding-bottom: 6px;}
 .single big                           {padding-top: 0.5em;}
 
 p, table, h4, dl, .single #left form  {padding-bottom: 1em;}
+.single #left form.donate             {padding-bottom: 2em;}
 
 .licencia textarea                    {height: 2em; padding-top: 1em; padding-bottom: 1em;}
 .sponsors img                         {margin-bottom: 5px;}
@@ -409,7 +418,8 @@ h1 img, .colaboraciones img, .sponsors img {border-width: 0px;}
 img.banner                            {border-style: dotted;}
 
 #right li.newsletter form, #footer    {border-width: 1px; border-style: solid;}
-.twitter li, .twitter small           {border-bottom-width: 1px; border-bottom-style: solid;}
+.twitter li          {border-top-width: 1px; border-top-style: solid;}
+.twitter ul          {border-bottom-width: 1px; border-bottom-style: solid;}
 
 tbody, tr, td hr          {width: 767px;}
 th, td                    {padding-left: 0.5em; padding-right: 0.5em; border-right-width: 1px; border-right-style: solid; border-bottom-width: 1px; border-bottom-style: solid;}
