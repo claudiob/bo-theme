@@ -172,7 +172,7 @@ function the_meta_description($curr_post = '', $search_term = '') {
 }
 
 function the_h1() {
-  $h1 = '<img alt="'. get_bloginfo('name') .'" src="'. get_bloginfo('template_url') .'/images/logo/boxoffice_es.png" />';
+  $h1 = '<img alt="'. get_bloginfo('name') .'" src="'. get_bloginfo('template_url') .'/images/logo/boxoffice_es_oscar.png" />';
   if (!is_home()) // add link to home
     $h1 = '<a href="'. get_bloginfo('url') .'" rel="index" title="'. get_bloginfo('name') .' &bull; Portada (tecla 0)" accesskey="0">'. $h1 . '</a>';
   echo "<h1>$h1</h1>";  
