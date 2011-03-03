@@ -2,7 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
   <head profile="http://gmpg.org/xfn/11">
-    <title><?php echo get_bloginfo('name'); if(!is_search()) echo " &mdash; ". get_the_h2(); if(!is_category() || is_year()) wp_title('&mdash;'); ?></title>
+    <title><?php if(!is_search()) echo get_the_h2(); if(!is_category() || is_year()) wp_title('&mdash;'); ?></title>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="description" content="<?php the_meta_description($post, $wp_query->query_vars['s']); ?>" />
     <meta name="keywords" content="taquilla, cine, españa, recaudaciones, espectadores, spain" />
