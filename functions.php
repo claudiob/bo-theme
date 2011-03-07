@@ -180,7 +180,7 @@ function the_h1() {
 
 function get_the_h2() {
   if (is_home())
-    $h2 = "La web de la industria del cine";
+    $h2 = "Boxoffice.es &mdash; La web de la industria del cine";
   if (is_search())
     $h2 = "Resultados de la b&uacute;squeda";
   elseif (is_404())
