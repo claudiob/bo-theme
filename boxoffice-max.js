@@ -140,7 +140,6 @@ function activate_twitter() { // loaded with a delay to improve site performance
 /// FACEBOOK
 
 function activate_facebook() { // loaded with a delay to improve site performance
-  import_script('http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/es_ES');
   setTimeout(function() {
     FB.init("eb07de4c9a3a7c4e710dadc6d44aef93");
     fan = document.createElement("fb:fan");
