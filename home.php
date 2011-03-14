@@ -37,6 +37,9 @@
     <ul id="middle">
       <li id="facebook">
       </li>
+      <li class="transparent">
+        <?php the_google_medium_banner(); ?>
+      </li>
       <li class="trailers">
         <h2>Trailers</h2>
         <h3><a href="<?php echo get_page_link(get_page_by_slug('trailers')->ID); ?>" rel="contents" title="Todos los trailers">&raquo; M&aacute;s trailers</a></h3>
@@ -44,9 +47,6 @@
         <object id="trailer_object" type="application/x-shockwave-flash">
           <img src="<?php bloginfo('template_url') ?>/images/blank_300x190.png" alt="Adobe Flash is required to watch trailers" />
         </object>
-      </li>
-      <li class="transparent">
-        <?php the_google_medium_banner(); ?>
       </li>
 <?php 
     $slug = 'analysis';
