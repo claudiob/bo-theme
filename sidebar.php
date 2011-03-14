@@ -12,7 +12,7 @@ endif; ?>
       </li>
 <?php  if(!is_home() && !is_404() && !is_slug('license') && !is_slug('partners') && !is_slug('press') && !is_slug('trailers')) : ?>
       <li class="transparent">
-<?php the_sky_banner(); ?>
+<?php the_google_sky_banner(); ?>
       </li>
 <?php endif; ?>
     </ul>

@@ -403,7 +403,8 @@ h1 img                                {width: 488px; height:  88px;}
 #top img, #left img, .twitter img     {margin-bottom: 2px; margin-right: 5px;}
 .single #left img                     {margin-left: 10px; margin-right: 10px;}
 .banner.medium                        {width: 300px; height: 250px;}
-.banner.sky                           {width: 120px; height: 600px; margin-left: 24px; margin-right: 24px;}
+img.banner.sky                        {width: 120px; height: 600px; margin-left: 24px; margin-right: 24px;}
+span.banner.sky                       {margin-left: 12px; margin-right: 12px; display: block;} /* Google already adds 12px margin on each side */
 .twitter img                          {width: 32px; height: 32px;}
 #middle .trailers object, 
 #middle .trailers img                 {width: 300px; height: 190px;}

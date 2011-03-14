@@ -334,6 +334,24 @@ function the_sky_banner() {
     echo adrotate_banner('2');  
 }
 
+function the_google_sky_banner() {
+  $google_code = '
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-2975283179368133";
+    /* 2011-Skyscraper */
+    google_ad_slot = "9490306656";
+    google_ad_width = 120;
+    google_ad_height = 600;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  ';
+  echo '<span class="ir publ">Publicidad</span>';
+  echo "<span class=\"banner sky\">$google_code</span>";
+}
+
 function the_medium_banner() {
   if (!function_exists('adrotate_banner')) return;
   echo '<span class="ir publ">Publicidad</span>';
