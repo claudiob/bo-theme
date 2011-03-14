@@ -31,7 +31,7 @@
   <body class="<?php the_body_class(); ?>">
     <div id="page">
       <?php the_h1(); ?>
-      <?php the_full_banner(); ?>
+      <?php the_google_full_banner(); ?>
 
       <ul id="menu">
 <?php

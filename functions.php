@@ -306,6 +306,24 @@ function the_full_banner() {
   echo '<span class="ir publ">Publicidad</span>';  
 }
 
+function the_google_full_banner() {
+  $google_code = '
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-2975283179368133";
+    /* 2011-Full BAnner */
+    google_ad_slot = "9196645418";
+    google_ad_width = 468;
+    google_ad_height = 60;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  ';
+  echo $google_code;
+  echo '<span class="ir publ">Publicidad</span>';
+}
+
 function the_sky_banner() {
   if (!function_exists('adrotate_banner')) return;
   echo '<span class="ir publ">Publicidad</span>';
