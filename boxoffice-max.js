@@ -148,7 +148,7 @@ function activate_facebook() { // loaded with a delay to improve site performanc
     fan.setAttribute("connections", "10");
     fan.setAttribute("width", "302");
     document.getElementById("facebook").appendChild(fan);  
-  }, 4000);
+  }, 1000);
 }
 
 /// TRAILERS

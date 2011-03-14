@@ -350,7 +350,7 @@ form.search             {height: 40px; margin-top: 10px; padding-top: 10px;}
 /* #middle h2 = #middle h3 */
 #middle h2              {height: 50px;}
 #middle h3              {height: 30px; padding-top: 20px;}
-
+#facebook               {height: 250px;} /* prepare space to load applet */
 input                   {padding-top: 2px; padding-bottom: 2px;}
 
 #right h2, .pledge a    {height: 50px;}

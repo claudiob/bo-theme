@@ -35,6 +35,8 @@
 <?php endwhile; ?>
     </ul>
     <ul id="middle">
+      <li id="facebook">
+      </li>
       <li class="trailers">
         <h2>Trailers</h2>
         <h3><a href="<?php echo get_page_link(get_page_by_slug('trailers')->ID); ?>" rel="contents" title="Todos los trailers">&raquo; M&aacute;s trailers</a></h3>
@@ -59,8 +61,6 @@
         <?php my_excerpt(); ?>
       </li>
 <?php endwhile; ?>
-      <li id="facebook">
-      </li>
     </ul>
 
 <?php get_sidebar(); ?>

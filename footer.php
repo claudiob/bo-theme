@@ -14,7 +14,7 @@
 <?php if(is_single()) { ?>
     zebra_table();
 <?php } ?>
-    $timeout = 4000;
+    $timeout = 3000;
     setTimeout("activate_analytics()", $timeout);
 <?php if (is_active_widget('widget_boxoffice_twitter')) { ?>
     setTimeout("activate_twitter()",   $timeout);
