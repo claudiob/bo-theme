@@ -44,7 +44,7 @@
         </object>
       </li>
       <li class="transparent">
-        <?php the_medium_banner(); ?>
+        <?php the_google_medium_banner(); ?>
       </li>
 <?php 
     $slug = 'analysis';

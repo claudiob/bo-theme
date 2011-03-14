@@ -323,6 +323,24 @@ function the_medium_banner() {
   echo adrotate_banner('3');  
 }
 
+function the_google_medium_banner() {
+  $google_code = '
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-2975283179368133";
+    /* Medium Rectangle */
+    google_ad_slot = "3374876557";
+    google_ad_width = 300;
+    google_ad_height = 250;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  ';
+  echo '<span class="ir publ">Publicidad</span>';
+  echo $google_code;
+}
+
 function the_navigation() {
   $prev = get_previous_post(true); 
   $output = '<div class="more-link prev">';
