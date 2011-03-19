@@ -210,10 +210,10 @@ function the_h3() {
 function the_feeds() {
   if (is_category() || is_single()) {
     echo '    <link title="'. get_h2_by_slug($GLOBALS['my_slug'], false) .' (RSS 2.0)"  href="'. get_category_feed_link($GLOBALS['my_cat']->term_id, 'rss2') .'" rel="alternate contents" type="application/rss+xml" />'."\n";
-    echo '    <link title="'. get_h2_by_slug($GLOBALS['my_slug'], false) .' (Atom 0.3)" href="'. get_category_feed_link($GLOBALS['my_cat']->term_id, 'atom') .'" rel="alternate contents" type="application/atom+xml" />'."\n";
+    # echo '    <link title="'. get_h2_by_slug($GLOBALS['my_slug'], false) .' (Atom 0.3)" href="'. get_category_feed_link($GLOBALS['my_cat']->term_id, 'atom') .'" rel="alternate contents" type="application/atom+xml" />'."\n";
   }
   echo '    <link title="Todo el contenido de Boxoffice.es (RSS 2.0)"  href="'. get_bloginfo('rss2_url') .'" rel="alternate index" type="application/rss+xml" />'."\n";
-  echo '    <link title="Todo el contenido de Boxoffice.es (Atom 0.3)" href="'. get_bloginfo('atom_url') .'" rel="alternate index" type="application/atom+xml" />'."\n";
+  # echo '    <link title="Todo el contenido de Boxoffice.es (Atom 0.3)" href="'. get_bloginfo('atom_url') .'" rel="alternate index" type="application/atom+xml" />'."\n";
   remove_action('wp_head', 'feed_links_extra', 3); // Removes the links to the extra feeds such as category feeds
   remove_action('wp_head', 'feed_links', 2); // Removes links to the general feeds: Post and Comment Feed
   remove_action('wp_head', 'wp_generator'); // Removes the Wordpress version i.e. - to avoid hacking
