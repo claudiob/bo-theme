@@ -134,7 +134,7 @@ function twitterCallback2(twitters) {
 }
 
 function activate_twitter() { // loaded with a delay to improve site performance
-  import_script('http://twitter.com/BoxOfficeSpain/lists/boxoffice/statuses.json?callback=twitterCallback2&per_page=4');
+  import_script('http://api.twitter.com/1/BoxOfficeSpain/lists/boxoffice/statuses.json?callback=twitterCallback2&per_page=4');
 }
 
 /// FACEBOOK
