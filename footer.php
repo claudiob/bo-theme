@@ -8,7 +8,9 @@
     </div>
   </div>
 <?php wp_footer(); ?>
+<?php if(is_home()) { ?>
   <script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/es_ES"></script>
+<?php } ?>
   <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js?min"></script>
   <script type="text/javascript">
 <?php if(is_single()) { ?>

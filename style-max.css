@@ -89,7 +89,7 @@ big, big a, h4, #middle .reportajes small, fieldset, .twitter .time,
 #left .contacto big, #left .contacto big a          {color: #7da415;}
 
 big, .excerpt, small, .item, img, a img, li.newsletter form, #footer,  #left li li,
-.single table, .single #left form, .single h4, .single p, .single dl,  
+.single table, .single #left form, .single h4, .single p, .single dl, #fb-like,  
 li.search p, #middle .trailers object   {border-color: #cecac3;}
 #left .item                             {border-top-color: #ede7e0;}
 img, a img                              {border-top-color:#7e7e7e;}
@@ -314,12 +314,12 @@ input                                   {padding-left: 2px; padding-right: 2px;}
 big, h4, #left small, #middle small, #left .excerpt, #middle .excerpt, 
 li.newsletter fieldset                  {padding-left: 6px; padding-right: 6px;}
 .single big, .single p, .single table, .single object, .single iframe, .single #left form, #left li li,
-.single h4, .single dl                  {padding-left: 12px; padding-right: 12px;}
+.single h4, .single dl, #fb-like        {padding-left: 12px; padding-right: 12px;}
 .home #left img                         {margin-left: 6px;}
 .twitter li                             {margin-left: 6px; margin-right: 6px;}
 
 big, .excerpt, small, .item, .single p, .single h4, .single dl, li.search p, 
-#left li li, .single table, .single #left form, 
+#left li li, .single table, .single #left form, #fb-like,
 #middle .trailers object                {border-left-width: 1px; border-right-width: 1px; border-left-style: solid; border-right-style: solid;}
 #top big, .item big, #top .excerpt, .item .excerpt, #top small,
 .item small, .twitter small             {border-left-width: 0px; border-right-width: 0px;}
@@ -382,7 +382,8 @@ input                   {padding-top: 2px; padding-bottom: 2px;}
 li.newsletter label                   {padding-bottom: 6px;}
 .single big                           {padding-top: 0.5em;}
 
-p, table, h4, dl, .single #left form  {padding-bottom: 1em;}
+p, table, h4, dl, .single #left form, 
+#fb-like                              {padding-bottom: 1em;}
 .single #left form.donate             {padding-bottom: 2em;}
 
 .licencia textarea                    {height: 2em; padding-top: 1em; padding-bottom: 1em;}
