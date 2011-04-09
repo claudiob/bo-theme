@@ -6,9 +6,7 @@
       	<?php my_content(); ?>
       	<p class="firma"><?php the_author() ?></p>
       	<div id="fb-like">
-          <div id="fb-root"></div>
-          <script src="http://connect.facebook.net/es_ES/all.js#appId=165208306866578&amp;xfbml=1"></script>
-          <fb:like href="<?php the_permalink() ?>" show_faces="true" width="767" font=""></fb:like>
+  				<iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink()) ?>&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
         </div>
         <?php the_navigation(); ?>
       	<!-- TO ADD: Print this article, tweet, etc. > Maybe on top as well -->

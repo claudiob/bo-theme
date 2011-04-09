@@ -15,6 +15,7 @@
     <meta name="DC.rights" scheme="DCTERMS.URI" content="http://creativecommons.org/licenses/by-nd/3.0/es" />
     <meta name="DC.rights" content="(c) Pau Brunet" />
     <meta name="version" content="2.0" />
+<?php the_meta_facebook(); ?>
     <link rel="icon" type="image/vnd.microsoft.icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/favicon_iphone.png" />
     <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
