@@ -148,7 +148,7 @@ function the_meta_facebook() {
   echo "    <meta property='og:url' content='$url' />\n";
   echo "    <meta property='og:image' content='$image' />\n";
   echo "    <meta property='og:site_name' content='Boxoffice.es' />\n";
-  echo "    <meta property='fb:admins' content='100002170351036' />\n";
+  echo "    <meta property='fb:admins' content='665788321' />\n";
   // $title = is_search() ? "" : get_the_h2();
   // $title += (!is_category() || is_year()) ? wp_title('&mdash;', False) : "";
   // $type = is_home() ? "website" : "article";
