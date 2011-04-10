@@ -8,15 +8,21 @@
     </div>
   </div>
 <?php wp_footer(); ?>
-<?php if(is_home()) { ?>
-  <script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/es_ES"></script>
+<?php if(is_home() || is_single()) { ?>
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({appId:'121079989452', status: true, cookie: true, xfbml: true});
+      FB.XFBML.parse(document.getElementById());
+    };
+  </script>
 <?php } ?>
-  <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js?min"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice-max.js"></script>
   <script type="text/javascript">
+    $timeout = 3000;
 <?php if(is_single()) { ?>
     zebra_table();
 <?php } ?>
-    $timeout = 3000;
     setTimeout("activate_analytics()", $timeout);
 <?php if (is_active_widget('widget_boxoffice_twitter')) { ?>
     setTimeout("activate_twitter()",   $timeout);
@@ -24,6 +30,8 @@
 <?php if(is_home()) { ?>
     setTimeout("activate_facebook()",  $timeout);
     setTimeout("activate_trailers()",  $timeout);
+<?php } elseif(is_single()) { ?>
+    setTimeout("activate_facebook()",  $timeout);
 <?php } ?>
   </script>
   </body>

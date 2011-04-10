@@ -36,6 +36,7 @@
     </ul>
     <ul id="middle">
       <li id="facebook">
+        <fb:like-box href="http://www.facebook.com/boxoffice.es" width="302" show_faces="true" stream="false" header="false"></fb:like-box>
       </li>
       <li class="transparent">
         <?php the_google_medium_banner(); ?>

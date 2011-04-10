@@ -140,15 +140,7 @@ function activate_twitter() { // loaded with a delay to improve site performance
 /// FACEBOOK
 
 function activate_facebook() { // loaded with a delay to improve site performance
-  setTimeout(function() {
-    FB.init("eb07de4c9a3a7c4e710dadc6d44aef93");
-    fan = document.createElement("fb:fan");
-    fan.setAttribute("profile_id", "121079989452");
-    fan.setAttribute("stream", "");
-    fan.setAttribute("connections", "10");
-    fan.setAttribute("width", "302");
-    document.getElementById("facebook").appendChild(fan);  
-  }, 1000);
+  import_script('http://connect.facebook.net/es_ES/all.js#xfbml=1');
 }
 
 /// TRAILERS

@@ -6,7 +6,6 @@
       	<?php my_content(); ?>
       	<p class="firma"><?php the_author() ?></p>
       	<div id="fb-like">
-          <script src="http://connect.facebook.net/es_ES/all.js#xfbml=1"></script>
           <fb:like href="<?php the_permalink(); ?>" show_faces="true" width="450" font=""></fb:like>
         </div>
         <?php the_navigation(); ?>

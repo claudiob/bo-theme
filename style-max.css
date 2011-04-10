@@ -65,7 +65,7 @@ p, dd                                   {text-indent: 1em;}
 /* COLORS */
 
 body, .licencia textarea                {background-color: #ede7e0;}
-li                                      {background-color: #fff;}
+li, .fb_iframe_widget                   {background-color: #fff;}
 a:hover                                 {background-color: #fe8;}
 tr.odd td                               {background-color: #f4f6d7;}
 .search_hit                             {background-color: #ffff66;}
