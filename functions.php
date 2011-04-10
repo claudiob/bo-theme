@@ -141,13 +141,14 @@ function the_body_class() {
 function the_meta_facebook() {
   $title = get_the_title();
   $type = is_home() ? "website" : "article";
-  $image = "http://boxoffice.es/wp-content/themes/boxoffice10/images/logo/boxoffice_es_logo_facebook.jpg";
+  $image = "http://boxoffice.es/wp-content/themes/boxoffice10/images/logo/boxoffice_es_logo_twitter.png";
   $url = get_permalink();
   echo "    <meta property='og:title' content='$title' />\n";
   echo "    <meta property='og:type' content='$type' />\n";
   echo "    <meta property='og:url' content='$url' />\n";
   echo "    <meta property='og:image' content='$image' />\n";
   echo "    <meta property='og:site_name' content='Boxoffice.es' />\n";
+  echo "    <meta property='fb:page_id' content='121079989452' />\n";
   echo "    <meta property='fb:admins' content='665788321' />\n";
   // $title = is_search() ? "" : get_the_h2();
   // $title += (!is_category() || is_year()) ? wp_title('&mdash;', False) : "";
@@ -156,7 +157,6 @@ function the_meta_facebook() {
   // // $url = is_home() ? "boh" : is_search() ? "boh" : is_single() ? get_permalink() : is_404() ? "boh" : \
   //   is_page() ? get_page_link($page->ID);
 }
-
 
 // TO DO: merge or clean with the_body_class
 function the_left_class() {
