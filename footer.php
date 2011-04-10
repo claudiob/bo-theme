@@ -13,11 +13,11 @@
   <script>
     window.fbAsyncInit = function() {
       FB.init({appId:'121079989452', status: true, cookie: true, xfbml: true});
-      FB.XFBML.parse(document.getElementById());
+      FB.XFBML.parse();
     };
   </script>
 <?php } ?>
-  <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice-max.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js"></script>
   <script type="text/javascript">
     $timeout = 3000;
 <?php if(is_single()) { ?>
