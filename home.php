@@ -36,6 +36,14 @@
     </ul>
     <ul id="middle">
       <li id="facebook">
+        <div id="fb-root"></div>
+        <!--[if IE]>
+        <script src="http://connect.facebook.net/es_ES/all.js#xfbml=1" ></script>
+        <script>
+        // IE does not support window.fbAsyncInit, so it's called directly
+        FB.init({appId: '121079989452', status: true, cookie: true, xfbml: true});
+        </script>
+        <![endif]-->
         <fb:like-box href="http://www.facebook.com/boxoffice.es" width="302" show_faces="true" stream="false" header="false"></fb:like-box>
       </li>
       <li class="transparent">

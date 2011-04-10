@@ -9,13 +9,15 @@
   </div>
 <?php wp_footer(); ?>
 <?php if(is_home() || is_single()) { ?>
-  <div id="fb-root"></div>
+  <!--[if !IE]><!-->
   <script>
+    // IE does not support window.fbAsyncInit, so it's called directly
     window.fbAsyncInit = function() {
       FB.init({appId:'121079989452', status: true, cookie: true, xfbml: true});
       FB.XFBML.parse();
     };
   </script>
+  <!--<![endif]-->
 <?php } ?>
   <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js"></script>
   <script type="text/javascript">
