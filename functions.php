@@ -147,6 +147,7 @@ function the_meta_facebook() {
   echo "    <meta property='og:type' content='$type' />\n";
   echo "    <meta property='og:url' content='$url' />\n";
   echo "    <meta property='og:image' content='$image' />\n";
+  echo "    <meta property='og:author' content='Pau Brunet' />\n";
   echo "    <meta property='og:site_name' content='Boxoffice.es' />\n";
   echo "    <meta property='fb:page_id' content='121079989452' />\n";
   echo "    <meta property='fb:admins' content='665788321' />\n";
