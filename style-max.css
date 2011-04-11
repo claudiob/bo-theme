@@ -83,8 +83,9 @@ big, big a, h4, #middle .reportajes small, fieldset, .twitter .time,
 #left .eeuu big, #left .eeuu big a                  {color: #db5b23;}
 #left .world big, #left .world big a                {color: #e28800;}
 #left .predicciones big, #left .predicciones big a  {color: #e9ad00;}
-#left .noticias big, #left .noticias big a          {color: #cab000;}
-#left .reportajes big, #left .reportajes big a      {color: #cab000;}
+#left .noticias big, #left .noticias big a          {color: #e9ad00;}
+#left .reportajes big, #left .reportajes big a,
+#middle .reportajes big      {color: #cab000;}
 #left .partners big, #left .partners big a          {color: #9ea218;}
 #left .enlaces big, #left .enlaces big a            {color: #8c971b;}
 #left .contacto big, #left .contacto big a          {color: #7da415;}
@@ -181,7 +182,7 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 .predicciones #left li.predicciones h3, 
 .single #left li.predicciones h3        {background-position:  -500px  -316px;}
 
-#left li.noticias                       {background-position: -5874px  bottom;}
+#left li.noticias                       {background-position: -5081px  bottom;}
 .home #left li.noticias                 {background-position: -1920px  bottom;}
 #left li.noticias h2                    {background-position:     0px  -466px;}
 .noticias #left li.noticias h2          {background-position:     0px  -916px;}
