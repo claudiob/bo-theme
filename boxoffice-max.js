@@ -152,7 +152,6 @@ function activate_trailers() { // loaded with a delay to improve site performanc
   param.setAttribute("name", "movie");
   param.setAttribute("value", trailer_url);
   object.appendChild(param);
-  object.setAttribute("type", "application/x-shockwave-flash");
   object.setAttribute("data", trailer_url);
 }
 

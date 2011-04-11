@@ -32,14 +32,9 @@
 <?php if(is_home() || is_single()) { ?>
   setTimeout("activate_facebook()",  $timeout);
 <?php } ?>
-  </script>
-  <!--[if !IE]><!-->
-  <script type="text/javascript">
-  // IE does not support empty OBJECT, so they are injected directly
 <?php if(is_home()) { ?>
     setTimeout("activate_trailers()",  $timeout);
 <?php } ?>
   </script>
-  <!--<![endif]-->
   </body>
 </html>
