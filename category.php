@@ -10,9 +10,9 @@
       query_posts($query_string); 
   }
   get_header();
-  $first = true; $forecast = false;
+  $first = true;
   while (have_posts()) : the_post();
-   if(!is_forecast() || !$forecast) {     
+   if(!is_forecast() || $first) {     
   ?>
     <a class="item<?php if($first) {echo ' first'; $first = false;} ?>" href="<?php (is_slug('links') ? the_link() : the_permalink()) ?>" title="<?php the_title(); ?>">
 			<?php the_thumbnail(75, 111); ?>
@@ -27,7 +27,6 @@
 			</a>
 <?php 
     }
-    $forecast |= is_forecast(); 
   endwhile; 
   get_sidebar();
   get_footer(); ?>
