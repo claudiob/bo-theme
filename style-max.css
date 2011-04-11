@@ -84,6 +84,7 @@ big, big a, h4, #middle .reportajes small, fieldset, .twitter .time,
 #left .world big, #left .world big a                {color: #e28800;}
 #left .predicciones big, #left .predicciones big a  {color: #e9ad00;}
 #left .noticias big, #left .noticias big a          {color: #cab000;}
+#left .reportajes big, #left .reportajes big a      {color: #cab000;}
 #left .partners big, #left .partners big a          {color: #9ea218;}
 #left .enlaces big, #left .enlaces big a            {color: #8c971b;}
 #left .contacto big, #left .contacto big a          {color: #7da415;}
@@ -112,20 +113,20 @@ th.theadright                           {background-position: 618px -128px;}
 #menu .espana                           {background-position:    0px -50px;}
 #menu .eeuu                             {background-position:  -90px -50px;}
 #menu .world                            {background-position: -180px -50px;}
-#menu .predicciones                     {background-position: -270px -50px;}
-#menu .noticias                         {background-position: -360px -50px;}
+#menu .noticias                         {background-position: -270px -50px;}
+#menu .reportajes                       {background-position: -350px -50px;}
 #menu .partners                         {background-position: -440px -50px;}
 #menu .enlaces                          {background-position: -520px -50px;}
 #menu .contacto                         {background-position: -600px -50px;}
 
-#menu .espana:hover, .espana #menu .espana                      {background-position:    0px -89px;}
-#menu .eeuu:hover, .eeuu #menu .eeuu                            {background-position:  -90px -89px;}
-#menu .world:hover, .world #menu .world                         {background-position: -180px -89px;}
-#menu .predicciones:hover, .predicciones #menu .predicciones    {background-position: -270px -89px;}
-#menu .noticias:hover, .noticias #menu .noticias                {background-position: -360px -89px;}
-#menu .partners:hover, .partners #menu .partners                {background-position: -440px -89px;}
-#menu .enlaces:hover, .enlaces #menu .enlaces                   {background-position: -520px -89px;}
-#menu .contacto:hover, .contacto #menu .contacto                {background-position: -600px -89px;}
+#menu .espana:hover, .espana #menu .espana               {background-position:    0px -89px;}
+#menu .eeuu:hover, .eeuu #menu .eeuu                     {background-position:  -90px -89px;}
+#menu .world:hover, .world #menu .world                  {background-position: -180px -89px;}
+#menu .noticias:hover, .noticias #menu .noticias         {background-position: -270px -89px;}
+#menu .reportajes:hover, .reportajes #menu .reportajes   {background-position: -350px -89px;}
+#menu .partners:hover, .partners #menu .partners         {background-position: -440px -89px;}
+#menu .enlaces:hover, .enlaces #menu .enlaces            {background-position: -520px -89px;}
+#menu .contacto:hover, .contacto #menu .contacto         {background-position: -600px -89px;}
 
 li, h3, #left                           {background-position: right bottom;}
 li, h2, h3, #left, th                   {background-repeat: no-repeat;}
@@ -179,6 +180,7 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.predicciones h3                {background-position:  -543px  -316px;}
 .predicciones #left li.predicciones h3, 
 .single #left li.predicciones h3        {background-position:  -500px  -316px;}
+
 #left li.noticias                       {background-position: -5874px  bottom;}
 .home #left li.noticias                 {background-position: -1920px  bottom;}
 #left li.noticias h2                    {background-position:     0px  -466px;}
@@ -198,8 +200,15 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.contacto h3                    {background-position:  -500px  -366px;}
 #left li.criticas h2                    {background-position:     0px  -700px;}
 .criticas #left li.criticas h2          {background-position:     0px -1316px;}
+
+#left li.reportajes                       {background-position: -5874px  bottom;}
+.home #left li.reportajes                 {background-position: -10319px  bottom;}
 #left li.reportajes h2                  {background-position:     0px  -566px;}
 .reportajes #left li.reportajes h2      {background-position:     0px -1266px;}
+#left li.reportajes h3                    {background-position:  -543px  -566px;}
+.reportajes #left li.reportajes h3, 
+.single #left li.reportajes h3            {background-position:  -500px  -566px;}
+
 #left li.search h2                      {background-position:     0px -1366px;}
 #left li.trailers h2                    {background-position:     0px -1116px;}
 #left li.e404 h2                        {background-position:     0px -1216px;}
@@ -209,8 +218,8 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
                                         
 #middle li.trailers                     {background-position: -2400px  bottom;}
 #middle li.trailers h2                  {background-position:     0px  -666px;}
-#middle li.trailers h3                  {background-position:  -621px  -566px;}
-#middle li.reportajes                   {background-position: -2400px  bottom;}
+#middle li.trailers h3                  {background-position:  -621px  -616px;}
+#middle li.reportajes                   {background-position:-10799px  bottom;}
 #middle li.reportajes h2                {background-position:     0px  -566px;}
 #middle li.reportajes h3                {background-position:  -621px  -566px;}
 #right li.newsletter h2                 {background-position:  -539px  -667px;}
@@ -288,7 +297,7 @@ form.search             {width: 232px; margin-right: 12px;}
 /* sum of #menu li <= #menu */
 #menu li                {width: 80px;}
 #menu li.espana, #menu li.eeuu, #menu li.world, 
-#menu li.predicciones   {width: 90px;}
+#menu li.reportajes     {width: 90px;}
 /* top a = top li */
 #top a                  {width: 302px; margin-left: 4px; margin-right: 16px; padding-left: 3px; padding-right: 3px;}
 /* #left h2 + #left h3 = #left */ 

@@ -39,8 +39,8 @@
     menu_tab('category', 'reports_spain');
     menu_tab('category', 'reports_usa');
     menu_tab('category', 'reports_world');
-    menu_tab('category', 'forecasts');
     menu_tab('category', 'news');
+    menu_tab('category', 'analysis');
     menu_tab('page',     'partners');
     menu_tab('category', 'links');
     menu_tab('page',     'about');
