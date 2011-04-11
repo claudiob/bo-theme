@@ -81,7 +81,7 @@ big, big a, h4, #middle .reportajes small, fieldset, .twitter .time,
 .twitter ul                                         {color: #0c93ba;}
 #left .espana big, #left .espana big a              {color: #d33228;}
 #left .eeuu big, #left .eeuu big a                  {color: #db5b23;}
-#left .argentina big, #left .argentina big a        {color: #e28800;}
+#left .world big, #left .world big a                {color: #e28800;}
 #left .predicciones big, #left .predicciones big a  {color: #e9ad00;}
 #left .noticias big, #left .noticias big a          {color: #cab000;}
 #left .partners big, #left .partners big a          {color: #9ea218;}
@@ -111,7 +111,7 @@ th.theadright                           {background-position: 618px -128px;}
 #menu, form.search                      {background-position:    0px 0px; background-repeat: repeat-x;}
 #menu .espana                           {background-position:    0px -50px;}
 #menu .eeuu                             {background-position:  -90px -50px;}
-#menu .argentina                        {background-position: -180px -50px;}
+#menu .world                            {background-position: -180px -50px;}
 #menu .predicciones                     {background-position: -270px -50px;}
 #menu .noticias                         {background-position: -360px -50px;}
 #menu .partners                         {background-position: -440px -50px;}
@@ -120,7 +120,7 @@ th.theadright                           {background-position: 618px -128px;}
 
 #menu .espana:hover, .espana #menu .espana                      {background-position:    0px -89px;}
 #menu .eeuu:hover, .eeuu #menu .eeuu                            {background-position:  -90px -89px;}
-#menu .argentina:hover, .argentina #menu .argentina             {background-position: -180px -89px;}
+#menu .world:hover, .world #menu .world                         {background-position: -180px -89px;}
 #menu .predicciones:hover, .predicciones #menu .predicciones    {background-position: -270px -89px;}
 #menu .noticias:hover, .noticias #menu .noticias                {background-position: -360px -89px;}
 #menu .partners:hover, .partners #menu .partners                {background-position: -440px -89px;}
@@ -136,8 +136,8 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #top .espana h3                         {background-position:  -815px  -766px;}
 #top .eeuu h2                           {background-position:  -635px  -799px;}
 #top .eeuu h3                           {background-position:  -815px  -799px;}
-#top .argentina h2                      {background-position:     0px -1616px;}
-#top .argentina h3                      {background-position:  -180px -1616px;}
+#top .world h2                          {background-position:     0px -1616px;}
+#top .world h3                          {background-position:  -180px -1616px;}
 #top .noticias h2                       {background-position:  -635px  -832px;}
 #top .noticias h3                       {background-position:  -815px  -832px;}
 #top .reportajes h2                     {background-position:     0px -1649px;}
@@ -164,13 +164,13 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.eeuu h3                        {background-position:  -543px  -266px;}
 .eeuu #left li.eeuu h3, 
 .single #left li.eeuu h3                {background-position:  -500px  -266px;}
-#left li.argentina                      {background-position: -4288px  bottom;}
-.home #left li.argentina                {background-position: -9839px  bottom;}
-#left li.argentina h2                   {background-position:     0px  -166px;}
-.argentina #left li.argentina h2        {background-position:     0px -1566px;}
-#left li.argentina h3                   {background-position:  -543px  -166px;}
-.argentina #left li.argentina h3,       
-.single #left li.argentina h3           {background-position:  -500px  -166px;}
+#left li.world                          {background-position: -4288px  bottom;}
+.home #left li.world                    {background-position: -9839px  bottom;}
+#left li.world h2                       {background-position:     0px  -166px;}
+.world #left li.world h2                {background-position:     0px -1566px;}
+#left li.world h3                       {background-position:  -543px  -166px;}
+.world #left li.world h3,               
+.single #left li.world h3               {background-position:  -500px  -166px;}
 #left li.predicciones                   {background-position: -5081px  bottom;}
 .home #left li.predicciones             {background-position: -1440px  bottom;}
 #left li.predicciones.espana h2         {background-position:     0px  -316px;}
@@ -287,7 +287,7 @@ form.search             {width: 232px; margin-right: 12px;}
 .colab                  {width: 74px;}
 /* sum of #menu li <= #menu */
 #menu li                {width: 80px;}
-#menu li.espana, #menu li.eeuu, #menu li.argentina, 
+#menu li.espana, #menu li.eeuu, #menu li.world, 
 #menu li.predicciones   {width: 90px;}
 /* top a = top li */
 #top a                  {width: 302px; margin-left: 4px; margin-right: 16px; padding-left: 3px; padding-right: 3px;}
@@ -420,8 +420,8 @@ h1 img, .colaboraciones img, .sponsors img {border-width: 0px;}
 img.banner                            {border-style: dotted;}
 
 #right li.newsletter form, #footer    {border-width: 1px; border-style: solid;}
-.twitter li          {border-top-width: 1px; border-top-style: solid;}
-.twitter ul          {border-bottom-width: 1px; border-bottom-style: solid;}
+.twitter li                           {border-top-width: 1px; border-top-style: solid;}
+.twitter ul                           {border-bottom-width: 1px; border-bottom-style: solid;}
 
 tbody, tr, td hr          {width: 767px;}
 th, td                    {padding-left: 0.5em; padding-right: 0.5em; border-right-width: 1px; border-right-style: solid; border-bottom-width: 1px; border-bottom-style: solid;}

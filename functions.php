@@ -12,11 +12,11 @@ $my_categories = array( # I guess <meta> do not require HTML escaping for specia
                            'category' => 'Informes de la taquilla en Estados Unidos',
                            'meta'     => 'Informes de películas estrenadas en la salas de cine de Estados Unidos: número de espectadores, recaudación, tipo de público, éxitos y fracasos..',
                            'continue' => 'Lee el informe semanal de taquilla americana'),
-  'reports_argentina' => array('class'  => 'argentina', 
-                           'single'   => 'Informe taquilla Argentina',
-                           'category' => 'Informes de la taquilla en Argentina',
-                           'meta'     => 'Informes de películas estrenadas en la salas de cine de Argentina: número de espectadores, recaudación, tipo de público, éxitos y fracasos..',
-                           'continue' => 'Lee el informe semanal de taquilla argentina'),
+  'reports_world' => array('class'  => 'world', 
+                           'single'   => 'Informe taquilla internacional',
+                           'category' => 'Informes de la taquilla en otros pa&iacute;ses',
+                           'meta'     => 'Informes de películas estrenadas en la salas de cine de otros pa&iacute;ses: número de espectadores, recaudación, tipo de público, éxitos y fracasos..',
+                           'continue' => 'Lee el informe semanal de taquilla internacional'),
   'forecasts_spain' => array('class'  => 'predicciones espana', 
                            'single'   => 'Predicci&oacute;n taquilla Espa&ntilde;a',
                            'category' => 'Predicciones de los resultados de la taquilla espa&ntilde;ola',
@@ -317,7 +317,7 @@ function get_the_relative_time($time_format) {
 
 function the_full_banner() {
   if(!function_exists('adrotate_banner')) return;
-  if(is_slug('reports_argentina'))
+  if(is_slug('reports_world'))
     echo adrotate_banner('4');
   // elseif(is_slug('reports_spain'))
   //  echo adrotate_banner('6');
@@ -348,7 +348,7 @@ function the_google_full_banner() {
 function the_sky_banner() {
   if (!function_exists('adrotate_banner')) return;
   echo '<span class="ir publ">Publicidad</span>';
-  if(is_slug('reports_argentina'))
+  if(is_slug('reports_world'))
     echo adrotate_banner('5');
   else
   // <!--a href=""><img class="banner sky" src="..." alt="Banner" /></a-->
