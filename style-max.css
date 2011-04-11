@@ -82,7 +82,6 @@ big, big a, h4, #middle .reportajes small, fieldset, .twitter .time,
 #left .espana big, #left .espana big a              {color: #d33228;}
 #left .eeuu big, #left .eeuu big a                  {color: #db5b23;}
 #left .world big, #left .world big a                {color: #e28800;}
-#left .predicciones big, #left .predicciones big a  {color: #e9ad00;}
 #left .noticias big, #left .noticias big a          {color: #e9ad00;}
 #left .reportajes big, #left .reportajes big a,
 #middle .reportajes big      {color: #cab000;}
@@ -135,10 +134,13 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #top h2                                 {background-position:  -635px  -865px;}
 #top h3                                 {background-position:  -815px  -865px;}
 #top .espana h2                         {background-position:  -635px  -766px;}
+#top .espana.previsiones h2             {background-position:     0px -1715px;}
 #top .espana h3                         {background-position:  -815px  -766px;}
 #top .eeuu h2                           {background-position:  -635px  -799px;}
+#top .eeuu.previsiones h2               {background-position:     0px -1682px;}
 #top .eeuu h3                           {background-position:  -815px  -799px;}
 #top .world h2                          {background-position:     0px -1616px;}
+#top .world.previsiones h2              {background-position:     0px -1616px;}
 #top .world h3                          {background-position:  -180px -1616px;}
 #top .noticias h2                       {background-position:  -635px  -832px;}
 #top .noticias h3                       {background-position:  -815px  -832px;}
@@ -148,8 +150,8 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #middle .reportajes                     {background-image: url(images/b.png)}
 #left li li                             {background-image: none}
 #left h2                                {background-position:     0px -1466px;}
-#left h3                                {background-position:  -500px  -566px;}
-.home #left h3                          {background-position:  -543px  -566px;}
+#left h3                                {background-position:  -500px  -616px;}
+.home #left h3                          {background-position:  -543px  -616px;}
 #left li                                {background-position: -8253px  bottom;}
 .home #left li                          {background-position:     0px  bottom;}
 #left li.espana                         {background-position: -2702px  bottom;}
@@ -173,14 +175,9 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.world h3                       {background-position:  -543px  -166px;}
 .world #left li.world h3,               
 .single #left li.world h3               {background-position:  -500px  -166px;}
-#left li.predicciones                   {background-position: -5081px  bottom;}
-.home #left li.predicciones             {background-position: -1440px  bottom;}
-#left li.predicciones.espana h2         {background-position:     0px  -316px;}
-#left li.predicciones.eeuu h2           {background-position:     0px  -366px;}
-.predicciones #left li.predicciones h2  {background-position:     0px  -866px;}
-#left li.predicciones h3                {background-position:  -543px  -316px;}
-.predicciones #left li.predicciones h3, 
-.single #left li.predicciones h3        {background-position:  -500px  -316px;}
+#left li.previsiones.espana h2          {background-position:     0px  -316px;}
+#left li.previsiones.eeuu h2            {background-position:     0px  -366px;}
+.previsiones #left li.previsiones h2    {background-position:     0px  -866px;}
 
 #left li.noticias                       {background-position: -5081px  bottom;}
 .home #left li.noticias                 {background-position: -1920px  bottom;}
@@ -199,7 +196,7 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.contacto                       {background-position: -9046px  bottom;}
 .contacto #left li.contacto h2          {background-position:     0px -1066px;}
 #left li.contacto h3                    {background-position:  -500px  -366px;}
-#left li.criticas h2                    {background-position:     0px  -700px;}
+#left li.criticas h2                    {background-position:     0px  -616px;}
 .criticas #left li.criticas h2          {background-position:     0px -1316px;}
 
 #left li.reportajes                       {background-position: -5874px  bottom;}

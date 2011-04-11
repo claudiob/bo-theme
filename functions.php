@@ -17,21 +17,16 @@ $my_categories = array( # I guess <meta> do not require HTML escaping for specia
                            'category' => 'Informes de la taquilla en otros pa&iacute;ses',
                            'meta'     => 'Informes de películas estrenadas en la salas de cine de otros pa&iacute;ses: número de espectadores, recaudación, tipo de público, éxitos y fracasos..',
                            'continue' => 'Lee el informe semanal de taquilla internacional'),
-  'forecasts_spain' => array('class'  => 'predicciones espana', 
-                           'single'   => 'Predicci&oacute;n taquilla Espa&ntilde;a',
-                           'category' => 'Predicciones de los resultados de la taquilla espa&ntilde;ola',
+  'forecasts reports_spain' => array('class'  => 'previsiones espana', 
+                           'single'   => 'Previsi&oacute;n taquilla Espa&ntilde;a',
+                           'category' => 'Previsiones de los resultados de la taquilla espa&ntilde;ola',
                            'meta'     => 'Previsiones sobre la películas que se estrenar&aacute;n en la salas de cine de España: número de espectadores, recaudación, tipo de público.',
-                           'continue' => 'Lee la &uacute;ltima predicci&oacute;n espa&ntilde;ola'),                             
-  'forecasts_usa'   => array('class'  => 'predicciones eeuu', 
-                           'single'   => 'Predicci&oacute;n taquilla Estados Unidos',
-                           'category' => 'Predicciones de los resultados de la taquilla americana',
+                           'continue' => 'Lee la &uacute;ltima previsi&oacute;n espa&ntilde;ola'),                             
+  'forecasts reports_usa'   => array('class'  => 'previsiones eeuu', 
+                           'single'   => 'Previsi&oacute;n taquilla Estados Unidos',
+                           'category' => 'Previsiones de los resultados de la taquilla americana',
                            'meta'     => 'Previsiones sobre la películas que se estrenar&aacute;n en la salas de cine de Estados Unidos: número de espectadores, recaudación, tipo de público',
-                           'continue' => 'Lee la &uacute;ltima predicci&oacute;n americana'),
-  'forecasts'       => array('class'  => 'predicciones', 
-                           'single'   => 'Predicci&oacute;n taquilla',
-                           'category' => 'Predicciones de los resultados de la taquilla',
-                           'meta'     => 'Previsiones sobre la películas que se estrenarán: número de espectadores, recaudación, tipo de público',
-                           'continue' => 'Lee la &uacute;ltima predicci&oacute;n'),
+                           'continue' => 'Lee la &uacute;ltima previsi&oacute;n americana'),
   'news'            => array('class'  => 'noticias', 
                            'single'   => 'Noticia',
                            'category' => 'Noticias sobre el negocio del cine',
@@ -81,6 +76,48 @@ function get_class_by_slug($slug) {return $GLOBALS['my_categories'][$slug]['clas
 function get_format_by_slug($slug) {return $GLOBALS['my_categories'][$slug]['format'];}
 function get_meta_by_slug($slug) {return $GLOBALS['my_categories'][$slug]['meta'];}
 
+function category_to_slug($category) {
+  return $category->slug;
+}
+
+function category_to_name($category) {
+  return $category->name;
+}
+
+function get_the_slugs() {
+  $slugs = array_map(category_to_slug, get_the_category());
+  sort($slugs);
+  return join($slugs, " ");
+}
+
+function is_forecast() {
+  return in_array('forecasts', array_map(category_to_slug, get_the_category()));
+}
+
+function the_classes() {
+  echo get_class_by_slug(get_the_slugs());
+}
+
+function the_names() {
+  $cats = get_the_category();
+  $cat = count($cats) == 2 && $cats[1]->slug == 'forecasts' ? $cats[1] : $cats[0];  
+  echo $cat->name;
+}
+
+function the_h2s() {
+  $slugs = get_the_slugs();
+  $slug = count($slugs) == 2 && $slugs[1] == 'forecasts' ? 'forecasts' : $slugs[0];
+  echo $GLOBALS['my_categories'][$slug]['category'];
+}
+
+function the_continues() {
+  $slugs = get_the_slugs();
+  if(array_key_exists('continue', $GLOBALS['my_categories'][$slugs]))
+    echo $GLOBALS['my_categories'][$slugs]['continue'];
+  else
+    echo "Contin&uacute;a";
+}
+
 function get_h2_by_slug($slug, $single=false) {
   if($single)
       return $GLOBALS['my_categories'][$slug]['single'];
@@ -89,6 +126,7 @@ function get_h2_by_slug($slug, $single=false) {
 }
 
 function get_continue_by_slug($slug) {
+  // Deprecated (use the_continues)
   if(array_key_exists('continue', $GLOBALS['my_categories'][$slug]))
     return $GLOBALS['my_categories'][$slug]['continue'];
   else
@@ -397,6 +435,9 @@ function the_google_medium_banner() {
   echo '<span class="ir publ">Publicidad</span>';
   echo $google_code;
 }
+
+   
+
 
 function the_navigation() {
   $prev = get_previous_post(true); 
