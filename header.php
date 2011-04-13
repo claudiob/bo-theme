@@ -46,14 +46,16 @@
     menu_tab('page',     'about');
 ?>
       </ul>
+            
       <form class="search" method="get" action="<?php bloginfo('url'); ?>/">
-        <fieldset>
-          <legend>Busca:</legend>
-          <label for="s">Texto:</label>
-          <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" alt="Escribe que buscar"  />
-          <input type="submit" value="Busca" />
+        <fieldset style="padding-right: 3px">
+          <legend style="display: hidden;">Busca:</legend>
+          <label for="s" style="display: hidden;">Texto:</label>
+          <input type="text" placeholder="Busca pel&iacute;cula" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" alt="Escribe que buscar" style="width: 190px; font-size: 12px; margin: 1px; padding: 3px; line-height: 15px;font-family: 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif; border-color:#dfdfdf;background-color:#fff;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border-width:1px;border-style:solid;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border-width:1px;border-style:solid;">
+          <input type="submit" class="button" value="Busca" style="border-color: #666, color: black; background: #EEE url(http://localhost/~claudiob/boxoffice.es/rsync/wp-admin/images/white-grad-active.png) repeat-x scroll 0% 0%; -webkit-box-sizing: content-box;         -webkit-box-sizing: content-box;         border-bottom-left-radius: 11px 11px;         border-bottom-left-radius: 11px 11px;         border-bottom-left-radius: 11px 11px;         border-bottom-right-radius: 11px 11px;         border-bottom-right-radius: 11px 11px;         border-bottom-right-radius: 11px 11px;         border-style: solid;         border-width: 1px;         border-top-left-radius: 11px 11px;         border-top-left-radius: 11px 11px;         border-top-left-radius: 11px 11px;         border-top-right-radius: 11px 11px;         border-top-right-radius: 11px 11px;         border-top-right-radius: 11px 11px;         cursor: pointer;         font-size: 11px !important;         line-height: 13px;         padding: 3px 8px;         text-decoration: none; text-indent: -9999px; overflow: hidden;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zx/r/Pvubnmvx_0f.png);background-repeat:no-repeat;background-position:0 -159px; width: 8px">
         </fieldset>
       </form>
+
 <?php if(!is_home()) : ?>
       <ul id="left"><li class="<?php the_left_class(); ?>">
 <?php the_h2(); ?>
