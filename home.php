@@ -35,13 +35,27 @@
       <li id="facebook">
         <div id="fb-root"></div>
         <!--[if IE]>
+        <fb:like-box href="http://www.facebook.com/boxoffice.es" width="302" show_faces="true" stream="false" header="false"></fb:like-box>
         <script src="http://connect.facebook.net/es_ES/all.js#xfbml=1" ></script>
         <script>
         // IE does not support window.fbAsyncInit, so it's called directly
         FB.init({appId: '121079989452', status: true, cookie: true, xfbml: true});
         </script>
         <![endif]-->
-        <fb:like-box href="http://www.facebook.com/boxoffice.es" width="302" show_faces="true" stream="false" header="false"></fb:like-box>
+        <!--[if !IE]><!-->
+        <script type="text/javascript">
+          window.fbAsyncInit = function() {
+            fan = document.createElement("fb:like-box");
+            fan.setAttribute("href", "http://www.facebook.com/boxoffice.es");
+            fan.setAttribute("width", "302");
+            fan.setAttribute("show_faces", "true");
+            fan.setAttribute("stream", "false");
+            fan.setAttribute("header", "false");
+            document.getElementById("facebook").appendChild(fan);
+            FB.init({appId:'121079989452', status: true, cookie: true, xfbml: true});
+            FB.XFBML.parse();
+          };
+        </script>
       </li>
       <li class="transparent">
         <?php the_google_medium_banner(); ?>
