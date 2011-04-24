@@ -10,12 +10,12 @@
       	<div id="fb-like">
           <div id="fb-root"></div>
           <!--[if IE]>
-          <fb:like href="<?php the_permalink(); ?>" show_faces="true" width="450" font=""></fb:like>
           <script src="http://connect.facebook.net/es_ES/all.js#xfbml=1" ></script>
           <script>
           // IE does not support window.fbAsyncInit, so it's called directly
           FB.init({appId: '121079989452', status: true, cookie: true, xfbml: true});
           </script>
+          <fb:like href="<?php the_permalink(); ?>" show_faces="true" width="450" font=""></fb:like>
           <![endif]-->
           <!--[if !IE]><!-->
           <script type="text/javascript">
@@ -30,6 +30,7 @@
               FB.XFBML.parse();
             };
           </script>
+          <!--<![endif]-->
         </div>
         <?php the_navigation(); ?>
       	<!-- TO ADD: Print this article, tweet, etc. > Maybe on top as well -->

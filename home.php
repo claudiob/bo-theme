@@ -35,12 +35,12 @@
       <li id="facebook">
         <div id="fb-root"></div>
         <!--[if IE]>
-        <fb:like-box href="http://www.facebook.com/boxoffice.es" width="302" show_faces="true" stream="false" header="false"></fb:like-box>
         <script src="http://connect.facebook.net/es_ES/all.js#xfbml=1" ></script>
         <script>
         // IE does not support window.fbAsyncInit, so it's called directly
         FB.init({appId: '121079989452', status: true, cookie: true, xfbml: true});
         </script>
+        <fb:like-box href="http://www.facebook.com/boxoffice.es" width="302" show_faces="true" stream="false" header="false"></fb:like-box>
         <![endif]-->
         <!--[if !IE]><!-->
         <script type="text/javascript">
@@ -56,6 +56,7 @@
             FB.XFBML.parse();
           };
         </script>
+        <!--<![endif]-->
       </li>
       <li class="transparent">
         <?php the_google_medium_banner(); ?>
@@ -64,9 +65,17 @@
         <h2>Trailers</h2>
         <h3><a href="<?php echo get_page_link(get_page_by_slug('trailers')->ID); ?>" rel="contents" title="Todos los trailers">&raquo; M&aacute;s trailers</a></h3>
         <big>Ahora en cine</big>
-        <object id="trailer_object" type="application/x-shockwave-flash">
-          <img src="<?php bloginfo('template_url') ?>/images/blank_300x190.png" alt="Adobe Flash is required to watch trailers" />
+        <!--[if IE]>
+        <object type="application/x-shockwave-flash" id="trailer_object" data="http://www.player.filmtrailer.com/v3.4/player.swf?file=http://es.player-feed.previewnetworks.com/cinema/now-5/341100112-1/&amp;display_title=always&amp;menu=true&amp;enable_link=true&amp;default_quality=small&amp;controlbar=over&amp;autostart=false&amp;backcolor=888888&amp;frontcolor=000000&amp;lightcolor=ffffff&amp;screencolor=ffffff&amp;share=0&amp;repeat=always&amp;shuffle=true&amp;volume=80">
+          <img alt="Adobe Flash is required to watch trailers" src="http://jamie.local/~claudiob/boxoffice.es/rsync/wp-content/themes/boxoffice10/images/blank_300x190.png">
+          <param name="movie" value="http://www.player.filmtrailer.com/v3.4/player.swf?file=http://es.player-feed.previewnetworks.com/cinema/now-5/341100112-1/&amp;display_title=always&amp;menu=true&amp;enable_link=true&amp;default_quality=small&amp;controlbar=over&amp;autostart=false&amp;backcolor=888888&amp;frontcolor=000000&amp;lightcolor=ffffff&amp;screencolor=ffffff&amp;share=0&amp;repeat=always&amp;shuffle=true&amp;volume=80">
         </object>
+        <![endif]-->
+        <!--[if !IE]><!-->
+        <object id="trailer_object" type="application/x-shockwave-flash">
+          <img src="<?php bloginfo('template_url') ?>/images/blank_300x190.png" alt="Adobe Flash is required to watch trailers" />  
+        </object>
+        <!--<![endif]-->
       </li>
 <?php 
     $slug = 'analysis';

@@ -10,7 +10,7 @@
 <?php wp_footer(); ?>
   <script type="text/javascript" src="<?php bloginfo('template_url') ?>/boxoffice.js"></script>
   <script type="text/javascript">
-    $timeout = 3000;
+    $timeout = 2500;
 <?php if(is_single()) { ?>
     zebra_table();
 <?php } ?>
@@ -18,18 +18,19 @@
 <?php if (is_active_widget('widget_boxoffice_twitter')) { ?>
     setTimeout("activate_twitter()",   $timeout);
 <?php } ?>
-<?php if(is_home()) { ?>
-    setTimeout("activate_trailers()",  $timeout);
-<?php } ?>
   </script>
-<?php if(is_home() || is_single()) { ?>
-  <!--[if !IE]><!-->
-  <script type="text/javascript">
-    // IE does not support window.fbAsyncInit, so it's called directly
-    setTimeout("activate_facebook()",  $timeout);
-  </script>
-  <!--<![endif]-->
-<?php } ?>
+<!--[if !IE]><!-->
+<script type="text/javascript">
+  <?php if(is_home() || is_single()) { ?>
+  // IE does not support window.fbAsyncInit, so it's called directly
+  setTimeout("activate_facebook()",  $timeout);
+  <?php } ?>
+  <?php if(is_home()) { ?>
+  // IE messes with fb-like if an OBJECT with no PARAM is injected
+  setTimeout("activate_trailers()",  $timeout);
+  <?php } ?>
+</script>
+<!--<![endif]-->
 
   </body>
 </html>
