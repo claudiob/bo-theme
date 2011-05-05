@@ -67,7 +67,7 @@
         <big>Ahora en cine</big>
         <!--[if IE]>
         <object type="application/x-shockwave-flash" id="trailer_object" data="http://www.player.filmtrailer.com/v3.4/player.swf?file=http://es.player-feed.previewnetworks.com/cinema/now-5/341100112-1/&amp;display_title=always&amp;menu=true&amp;enable_link=true&amp;default_quality=small&amp;controlbar=over&amp;autostart=false&amp;backcolor=888888&amp;frontcolor=000000&amp;lightcolor=ffffff&amp;screencolor=ffffff&amp;share=0&amp;repeat=always&amp;shuffle=true&amp;volume=80">
-          <img alt="Adobe Flash is required to watch trailers" src="http://jamie.local/~claudiob/boxoffice.es/rsync/wp-content/themes/boxoffice10/images/blank_300x190.png">
+          <img alt="Adobe Flash is required to watch trailers" src="<?php bloginfo('template_url') ?>/images/blank_300x190.png">
           <param name="movie" value="http://www.player.filmtrailer.com/v3.4/player.swf?file=http://es.player-feed.previewnetworks.com/cinema/now-5/341100112-1/&amp;display_title=always&amp;menu=true&amp;enable_link=true&amp;default_quality=small&amp;controlbar=over&amp;autostart=false&amp;backcolor=888888&amp;frontcolor=000000&amp;lightcolor=ffffff&amp;screencolor=ffffff&amp;share=0&amp;repeat=always&amp;shuffle=true&amp;volume=80">
         </object>
         <![endif]-->
