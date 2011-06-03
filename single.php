@@ -20,12 +20,20 @@
           <!--[if !IE]><!-->
           <script type="text/javascript">
             window.fbAsyncInit = function() {
+              // Like Button
               fan = document.createElement("fb:like");
               fan.setAttribute("href", "<?php the_permalink(); ?>");
               fan.setAttribute("width", "450");
               fan.setAttribute("show_faces", "true");
               fan.setAttribute("font", "");
               document.getElementById("fb-like").appendChild(fan);
+              // Comment box
+              fan = document.createElement("fb:comments");
+              fan.setAttribute("href", "<?php the_permalink(); ?>");
+              fan.setAttribute("width", "700");
+              fan.setAttribute("num_posts", "2");
+              document.getElementById("fb-like").appendChild(fan);
+              // Facebook!
               FB.init({appId:'121079989452', status: true, cookie: true, xfbml: true});
               FB.XFBML.parse();
             };
