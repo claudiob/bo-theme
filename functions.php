@@ -655,6 +655,7 @@ if (function_exists('register_sidebar_widget'))
   register_sidebar_widget(__('Boxoffice Twitter'), 'widget_boxoffice_twitter');    
 
 function get_last_feed_title($feed) {
+  // TODO: If the feed is offline, this SHOULD NOT raise an error
   $rss = fetch_feed($feed);
   $last_item = $rss->get_item(0);
   $title = $last_item->get_title();
@@ -702,7 +703,7 @@ function widget_boxoffice_fotogramas() {
   $url = $upload_dir['url'] . $file;
   $secs_in_week = 60*60*24*1; // changed 7 days for 1 day
   if(!(file_exists($dest)) || (time() - filemtime($dest) > $secs_in_week)) {
-    $text = get_last_feed_title('http://www.fotogramas.es/feeds/blog/304406');
+    $text = get_last_feed_title('http://lo-que-la-taquilla-se-llevo.blogs.fotogramas.es/feed/');
     text_to_image($src, $dest, $text);
   }
   echo "      <li class=\"colaboraciones\">\n";
