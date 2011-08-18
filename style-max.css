@@ -417,6 +417,7 @@ span.banner.sky                       {margin-left: 12px; margin-right: 12px; di
 .twitter img                          {width: 32px; height: 32px;}
 #middle .trailers object, 
 #middle .trailers img                 {width: 300px; height: 190px;}
+#middle .trailers .ebuzzing_box       {width: 300px; height: 248px;}
 .single .trailers object,
 .single .trailers iframe              {width: 743px; height: 1200px;}
 #left dd img                          {width: auto; float: none; vertical-align: middle;}
