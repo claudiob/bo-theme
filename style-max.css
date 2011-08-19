@@ -47,7 +47,7 @@ h3, h4, fieldset, #footer, .halftitle   {font-size: 0.75em;}
 #middle .reportajes small               {font-size: 0.7em;}
 
 #top .more-link, #middle big, #middle small, #footer, .twitter .username, 
-.twitter small, .licencia textarea, caption,
+.twitter small, .licencia textarea, caption, .banner.leaderboard,
 form.donate                             {text-align: center;}
 h3, .firma                              {text-align: right;}
 
@@ -89,9 +89,10 @@ big, big a, h4, #middle .reportajes small, fieldset, .twitter .time,
 #left .enlaces big, #left .enlaces big a            {color: #8c971b;}
 #left .contacto big, #left .contacto big a          {color: #7da415;}
 
-big, .excerpt, small, .item, img, a img, li.newsletter form, #footer,  #left li li,
-.single table, .single #left form, .single h4, .single p, .single dl, #fb-like,  
-li.search p, #middle .trailers object   {border-color: #cecac3;}
+big, .excerpt, small, .item, img, a img, li.newsletter form, #footer, 
+#left li li, .single table, .single #left form, .single h4, .single p, 
+.single dl, #fb-like,  li.search p, 
+#middle .trailers object, #page         {border-color: #cecac3;}
 #left .item                             {border-top-color: #ede7e0;}
 img, a img                              {border-top-color:#7e7e7e;}
 .sponsors img                           {border-top-color: #cecac3;}
@@ -327,7 +328,7 @@ li.newsletter fieldset                  {padding-left: 6px; padding-right: 6px;}
 
 big, .excerpt, small, .item, .single p, .single h4, .single dl, li.search p, 
 #left li li, .single table, .single #left form, #fb-like,
-#middle .trailers object                {border-left-width: 1px; border-right-width: 1px; border-left-style: solid; border-right-style: solid;}
+#middle .trailers object, #page         {border-left-width: 1px; border-right-width: 1px; border-left-style: solid; border-right-style: solid;}
 #top big, .item big, #top .excerpt, .item .excerpt, #top small,
 .item small, .twitter small             {border-left-width: 0px; border-right-width: 0px;}
 
@@ -449,7 +450,7 @@ th                        {border-color: #d1ce92;}
 td                        {border-color: #cccccc;}
 tr.empty td               {padding: 0.1em 0  0.4em 0; border-right-width: 0px;}
 tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
-td.first                  {border-left-width: 1px; border-left-style: solid; }
+td.first                  {border-left-width: 1px; border-left-style: solid;}
 
 .sponsors img             {border-top-width: 1px;}
 

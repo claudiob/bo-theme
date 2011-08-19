@@ -58,7 +58,7 @@
         </fieldset>
       </form>
       -->
-<?php if(!is_home()) : ?>
+<?php if(!is_home()) : ?>    
       <ul id="left"><li class="<?php the_left_class(); ?>">
 <?php the_h2(); ?>
 <?php the_h3(); ?>

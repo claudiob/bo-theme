@@ -1,4 +1,17 @@
 <?php get_header(); ?>
+  <div class="banner leaderboard">
+      <script type="text/javascript"><!--
+      google_ad_client = "ca-pub-2975283179368133";
+      /* 2011-Leaderboard */
+      google_ad_slot = "0854595069";
+      google_ad_width = 728;
+      google_ad_height = 90;
+      //-->
+      </script>
+      <script type="text/javascript"
+      src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>  
+  </div>
       <ul id="top">
 <?php 
   $top_articles = array();
