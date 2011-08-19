@@ -14,12 +14,14 @@
     <meta name="copyright" content="Pau Brunet" />
     <meta name="DC.rights" scheme="DCTERMS.URI" content="http://creativecommons.org/licenses/by-nd/3.0/es" />
     <meta name="DC.rights" content="(c) Pau Brunet" />
-    <meta name="version" content="2.0" />
+    <meta name="version" content="2011" />
 <?php the_meta_facebook(); ?>
     <link rel="icon" type="image/vnd.microsoft.icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/favicon_iphone.png" />
     <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
-    <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+    <!-- DON'T COMMIT!!!!!!!!! link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" /-->
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_url'); ?>/style-max.css" type="text/css" />
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_url'); ?>/css/eco.css" type="text/css" />
     <!--[if lt IE 9]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/table_padding.css" type="text/css" /><![endif]-->
     <!--[if lt IE 7]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/multiple_class.css" type="text/css" /><![endif]-->
     <!--[if lt IE 6]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/hack_box.css" type="text/css" /><![endif]-->
@@ -31,6 +33,7 @@
   </head>
   <body class="<?php the_body_class(); ?>">
     <div id="page">
+      <!--
       <?php the_h1(); ?>
       <?php the_google_full_banner(); ?>
 
@@ -54,6 +57,7 @@
           <input type="submit" value="Busca" />
         </fieldset>
       </form>
+      -->
 <?php if(!is_home()) : ?>
       <ul id="left"><li class="<?php the_left_class(); ?>">
 <?php the_h2(); ?>

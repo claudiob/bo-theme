@@ -1,0 +1,151 @@
+.cabecera {margin:10px 10px 0}
+.logo {
+    float: left;
+    margin-bottom: 0;
+    width: 300px;
+}
+.logo img{
+    border:none;
+	margin-top:5px;
+}
+.ruta {
+    border-left: 3px solid #666666;
+    color: #666666;
+    float: left;
+    font-family: 'Trebuchet MS';
+    font-size: 22px;
+    margin-top: 12px;
+    padding-left: 10px;
+	width:188px;
+}
+/* RED ECONOMISTA */
+.menu3 { margin: 0; border-left: 1px solid #999; overflow: hidden; width:auto; float: left;}
+.menu3 ul { margin: 0;border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    overflow: hidden;}
+.menu3 li { height: 15px;
+    padding: 5px 5px 0;display: inline; float: left; font-size: 11px;  border-right: 1px solid #999; background: url(http://s03.s3c.es/imag3/fondo-red.gif) repeat-x top; text-transform: none; font-weight: bold; font-family: Arial, Helvetica;}
+.menu3 li:hover {background: #eee;}
+.menu3 li.nr:hover { background:url(http://s03.s3c.es/imag3/fondo-red.gif) repeat-x;}
+.menu3 a:link, .menu3 a:active, .menu3 a:visited { text-decoration: none; color: #666; font-style:normal}
+.menu3 li.mo-ea { width: 99px; text-align: center; background: url(http://s04.s3c.es/imagenes/3/b-ea.png) no-repeat scroll top center; height: 26px;}
+.nar3 {color: #f60;}
+.dor3 {color: #D5B036;}
+.roj3 {color: #c00;}
+.azu3 { color: #3b7fce;}
+/* COMUNIDAD */
+#login-superior {
+    float: right;
+    font-size: 11px;
+    line-height: 23px;
+    padding: 0 0 5px;
+    text-align: right;
+    width: 300px;
+}
+#login-superior a.login-boton {
+    background: none repeat scroll 0 0 #FF6600;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 4px 6px 6px;
+    text-decoration: none;
+}
+a.login-boton {
+    margin-left: 3px;
+    position: relative;
+}
+.login-menu {
+    background-color: #ECEBE5;
+    border: 1px none transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #778899;
+    display: none;
+    font-size: 11px;
+    margin-right: 0;
+    margin-top: 5px;
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 24.5px;
+    width: 420px;
+    z-index: 9900;}
+.sl-corner { background: #f60; padding: 5px; color: #fff !important; *height: 32px !important; *padding: 10px 5px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            border-radius: 3px;}
+.sl-corner span { color: #000;}
+.sl-corner:hover { background: #999;}
+.sl-corner{background:#f60;padding:5px;color:#fff!important;*height:32px!important;*padding:10px 5px;-moz-border-radius:3px;-webkit-border-radius:3px;-khtml-border-radius:3px;border-radius:3px;}
+.sl-corner span{color:#000;}
+.sl-corner:hover{background:#999;}
+.cont2{text-align:right;float:right;width:360px;}
+.cont2 h3{font-size:11px;margin:0;margin-top:-10px;margin-right:7px;*font-weight:normal;}
+.cont2 h3 a:link,.cont2 h3 a:active,.cont2 h3 a:visited{text-decoration:none;color:#333;}
+.cont2 h3 a:hover{color:#f60;}
+.cont3{float:left;width:92px;}
+#login-cont{margin:0 auto;position:relative;}
+#login-superior{padding:0 0 5px;font-size:11px;line-height:23px;text-align:right;width:300px;float:right;}
+#login-superior a.login-boton{background:#f60;padding:4px 6px 6px;text-decoration:none;font-weight:bold;color:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;cursor:pointer;*padding:0 3px 0 3px!important;}
+#login-superior a.login-boton:hover{background:#333;*padding:0 3px 0 3px!important;}
+#login-superior a.login-boton,#login-superior a.login-boton:hover{*background-position:0 3px!important;}
+a.login-boton{position:relative;margin-left:3px;*position:inherit;}
+a.login-boton span{background-image:url(http://s01.s3c.es/imag3/log-in/toggle_down_light.png);background-repeat:no-repeat;background-position:100% 50%;padding:4px 16px 6px 0;}
+#login-superior a.menu-open{background:#ECEBE5!important;color:#666!important;outline:none;}
+/* MENÚ */
+.menu {clear:both; font-family: Arial;background-color: #f60; height: 25px; border-bottom: 3px solid #C34E00; margin-top:5px}
+.menu ul { clear: both; width: 100%; margin-left: 1px; _margin-left:1px;}
+.menu ul li { background-color:#f60; float: left;margin: 0 ;  padding: 5px 4px; border-right:1px solid #C34E00;}
+.menu ul li#gest-menu {border-right:none;}
+.menu ul li a:link, .menu ul li a:active, .menu ul li a:visited { text-decoration: none; color: #fff; font-size: 13px; font-style:normal; font-weight: bold;}
+.menu ul li a:hover {color:#333;}
+.menu ul li.sel { background: #fff; border: 1px solid #C34E00; border-bottom: none; height: 20px; margin-top: -3px;}
+.menu ul li.sel a:link, .menu ul li.sel a:active, .menu ul li.sel a:visited { color: #f60;}
+.menu ul li#ecod-menu { background: #f5f5f5; border: 1px solid #999; border-bottom: 2px solid #fff; height: 16px; margin-top: -1px; margin-left: 3px; _height: 18px; _border-bottom:none; color: #D8B237;}
+.menu ul li#ecod-menu a { color:#9B843B;}
+.menu ul li#ecot-menu { background: #f5f5f5; border: 1px solid #999; border-bottom: 2px solid #fff; height: 16px; margin-top: -1px; margin-left: 1px; _height: 18px; _border-bottom:none; }
+.menu ul li#ecot-menu a { color: #f00;}
+.menu ul li#ecoa-menu {background: #f5f5f5; border: 1px solid #999; border-bottom: 2px solid #fff; height: 16px; margin-top: -1px; margin-left: 3px; _height: 18px; _border-bottom:none}
+.menu ul li#ecoa-menu a {color: #e75112;}
+.menu ul li#ecom-menu { background: #f5f5f5; border: 1px solid #999; border-bottom: 2px solid #fff; height: 16px; margin-top: -1px; margin-left: 3px; _height: 18px; _border-bottom:none; }
+.menu ul li#ecom-menu a { color: #3B7FCE;}
+.menu ul li.eva-pat { background: #f5f5f5; border: 1px solid #999; border-bottom: 2px solid #fff; height: 16px; margin-top: -1px; margin-left: 3px; _height: 18px; _border-bottom:none; width:50px; text-align:center; color:#333;}
+.menu ul li.eva-pat-b {background:#000 url(http://s01.s3c.es/imag3/logosmen/pg.png) no-repeat center; }
+.menu ul li.eva-pat-b a span{visibility: hidden;}
+.menu ul li#eva-menu a { color:#333 }
+.menu ul li#eva-menu a:hover { background: none;}
+.ecod-link { color: #fff;}
+.menu ul li.sel a.ecod-link { color: #D5B036;}
+/*Fin submenu portada eE*/
+.menu ul li a:hover { background: #fff; color: #333;}
+.flecha-box {background: url(http://www.eleconomista.es/imag3/fondos/fondo-flecha.gif) no-repeat scroll right 5px transparent;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+   height: 25px;
+    padding-left: 6px;
+    padding-top: 14px;
+    width: 95px;}
+/*Pie*/
+.pie {
+background: #666;
+border-top:1px solid #666;
+margin-top: 0;
+overflow:hidden;}
+.pie h3 {float:left; margin:0 5px; padding:10px; font-weight:bold; color:#ccc;}
+.editorial { background: #333;}
+.editorial a{ color: #ccc;}
+.editorial p { text-align:left; padding:10px; color:#ccc; font-size:10px; font-family:Verdana, Geneva, sans-serif}
+.red3 a, .bcom3 a {font-style: normal;}
+.red3, .bcom3 {font-family: Verdana, Arial, Helvetica, sans-serif;}
+#footer {background: none repeat scroll 0 0 #A4A4A4;
+    overflow: hidden;
+    padding: 0;
+	color:#fff;
+	width:auto;
+	border:none;
+	}
