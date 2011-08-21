@@ -379,7 +379,7 @@ function the_google_full_banner() {
     </script>
   ';
   echo $google_code;
-  echo '<span class="ir publ">Publicidad</span>';
+  // echo '<span class="ir publ">Publicidad</span>';
 }
 
 

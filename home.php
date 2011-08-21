@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-  <div class="banner leaderboard">
-    <?php the_google_leaderboard_banner(); ?>
-  </div>
       <ul id="top">
 <?php 
   $top_articles = array();

@@ -52,6 +52,9 @@
           <input type="submit" value="Busca" />
         </fieldset>
       </form>
+      <div class="banner leaderboard">
+        <?php the_google_leaderboard_banner(); ?>
+      </div>
 <?php if(!is_home()) : ?>    
       <ul id="left"><li class="<?php the_left_class(); ?>">
 <?php the_h2(); ?>
