@@ -33,10 +33,7 @@
   </head>
   <body class="<?php the_body_class(); ?>">
     <div id="page">
-      <!--
       <?php the_h1(); ?>
-      <?php the_google_full_banner(); ?>
-
       <ul id="menu">
 <?php
     menu_tab('category', 'reports_spain');
@@ -44,8 +41,8 @@
     menu_tab('category', 'reports_world');
     menu_tab('category', 'news');
     menu_tab('category', 'analysis');
-    menu_tab('page',     'partners');
-    menu_tab('category', 'links');
+//    menu_tab('page',     'partners');
+//    menu_tab('category', 'links');
     menu_tab('page',     'about');
 ?>
       </ul>
@@ -57,7 +54,6 @@
           <input type="submit" value="Busca" />
         </fieldset>
       </form>
-      -->
 <?php if(!is_home()) : ?>    
       <ul id="left"><li class="<?php the_left_class(); ?>">
 <?php the_h2(); ?>

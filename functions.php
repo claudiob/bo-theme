@@ -48,7 +48,7 @@ $my_categories = array( # I guess <meta> do not require HTML escaping for specia
   'about'           => array('class'  => 'contacto', 
                            'single'   => 'Contacto',
                            'meta'     => 'Informaciones sobre el autor de Boxoffice.es y direcci&oacute;n de contacto.',
-                           'category' => 'Contacta con el autor de Boxoffice.es'),
+                           'category' => 'Historia de Boxoffice.es'),
   'license'         => array('class'  => 'licencia', 
                            'single'   => 'Condiciones de uso',
                            'meta'     => 'Condiciones de uso del material publicado en Boxoffice.es y licencia Creative Commons utilizada.',
@@ -231,7 +231,7 @@ function the_meta_description($curr_post = '', $search_term = '') {
 }
 
 function the_h1() {
-  $h1 = '<img alt="'. get_bloginfo('name') .'" src="'. get_bloginfo('template_url') .'/images/logo/boxoffice_es.png" />';
+  $h1 = '<img alt="'. get_bloginfo('name') .'" src="'. get_bloginfo('template_url') .'/images/logo/boxoffice_es_logo_menu.png" />';
   if (!is_home()) // add link to home
     $h1 = '<a href="'. get_bloginfo('url') .'" rel="index" title="'. get_bloginfo('name') .' &bull; Portada (tecla 0)" accesskey="0">'. $h1 . '</a>';
   echo "<h1>$h1</h1>";  
@@ -380,6 +380,23 @@ function the_google_full_banner() {
   ';
   echo $google_code;
   echo '<span class="ir publ">Publicidad</span>';
+}
+
+
+function the_google_leaderboard_banner() {
+  $google_code = '
+    <script type="text/javascript">
+    google_ad_client = "ca-pub-2975283179368133";
+    /* 2011-Leaderboard Banner */
+    google_ad_slot = "0854595069";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  ';
+  echo $google_code;
 }
 
 function the_sky_banner() {
