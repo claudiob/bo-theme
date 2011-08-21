@@ -471,3 +471,23 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 
 /* IE7 does non properly clear floats. Fixed with: */
 #menu, .publ, #left       {clear: none;}
+
+/* ECO begins */
+
+.ecolinks {border-bottom: 1px dotted #ccc; margin-right: 12px; height: 30px; margin-bottom: 5px; font-family: Arial, Helvetica; font-size: 0.7em; }
+.ecolinks li {float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px; font-weight: bold;}
+/* .ecologo + .ruta + .fullbanner (468) = #page (990) */
+.ecologo {width: 300px; margin-left: 5px;}
+.ruta {width:188px; padding-left: 10px; padding-right: 5px;}
+
+.ecologo {margin-top:10px;}
+.ruta {margin-top:15px; padding-top: 5px;}
+
+.ecologin {line-height: 2.5em; float: right;}
+.ecologin a {margin-left: 5px; background-color: #f60; padding: 5px 20px 5px 5px; color: #fff; border-radius: 4px; font-style: normal; font-weight: bold; background-image:url(images/toggle_down_light.png);background-repeat:no-repeat;background-position:100% 50%;}
+.ecologin a:hover {background-color:#333;}
+
+.ecomenu {margin-left: 5px; /* as .ecologo */ margin-right: 12px; background-color:#f60; height: 25px; font-size: 0.8em;  border-bottom: 3px solid #C34E00; font-family: Arial, Helvetica; }
+.ecomenu li {float: left; background-color:#f60; padding: 5px; border-right:1px solid #C34E00;}
+.ecomenu li:last-child {border-right-width: 0px;}
+.ecomenu a {font-style: normal; color: #fff; font-weight: bold;}

@@ -19,7 +19,8 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/favicon_iphone.png" />
     <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
-    <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+    <!-- DON'T COMMIT !!!! link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" /-->
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_url'); ?>/style-max.css" type="text/css" />
     <!--[if lt IE 9]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/table_padding.css" type="text/css" /><![endif]-->
     <!--[if lt IE 7]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/multiple_class.css" type="text/css" /><![endif]-->
     <!--[if lt IE 6]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/hack_box.css" type="text/css" /><![endif]-->
@@ -31,6 +32,48 @@
   </head>
   <body class="<?php the_body_class(); ?>">
     <div id="page">
+      <!-- eco start -->
+      <div class="ecolinks">
+        <ul>
+          <li>Nuestra red:</li>
+          <li>Ecotrader</li>
+          <li>elEconomista.es</li>
+          <li>EcoDiario.es</li>
+          <li>EcoMotor</li>
+          <li>Ecoaula</li>
+          <li>Evasi&oacute;n</li>
+        </ul>
+        <div class="ecologin">
+          &iquest;Eres usuario de elEconomista? <a href="#">Con&eacute;ctate</a>
+        </div>
+      </div>
+      <div class="ecoheader">
+        <a class="ecologo" href="/" style="float: left; margin-bottom: 0;"><img alt="elEconomista.es" style=" border:none;" src="http://s01.s3c.es/imag3/logo-h1.gif" /></a>
+        <div class="ruta" style="border-left: 2px solid #666666;
+            color: #666666;
+            float: left;
+            font-size: 1.4em;        
+        ">Industria del cine</div>
+        <?php the_google_full_banner(); ?>
+
+      </div>
+      <ul class="ecomenu">
+        <li><a href="#">Portada</a></li>
+        <li><a href="#">Mercados y Cotizaciones</a></li>
+        <li><a href="#">Opini&oacute;n</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li><a href="#">Econom&iacute;a</a></li>
+        <li><a href="#">Tecnolog&iacute;a</a></li>
+        <li><a href="#">Vivienda</a></li>
+        <li><a href="#">Ecoley</a></li>
+        <li><a href="#">Gesti&oacute;n</a></li>
+        <li><a href="#"><span style="color: #000;">Eco</span>trader</a></li>
+        <li><a href="#"><span style="color: #000;">Eco</span>motor</a></li>
+        <li><a href="#"><span>Evasión</span></a></li>
+        <li><a href="#"><span style="color: #000;">Eco</span>Diario</a></li>
+      </ul>
+      <!-- eco end -->
+
       <?php the_h1(); ?>
       <ul id="menu">
 <?php
