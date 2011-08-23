@@ -262,9 +262,9 @@ body, #page             {margin-left: auto; margin-right: auto;}
 .banner.full            {width: 468px; border-left-width: 1px; border-right-width: 1px; margin-right: 12px; padding-left: 0px; padding-right: 0px;}
 */
 /* h1 = h1 img */
-h1, h1 img, h1 a        {width: 212px;}
+h1, h1 img, h1 a        {width: 150px;}
 /* h1 + menu + form.search = #page */
-h1                      {padding-right: 25px; margin-left: 3px;}
+h1                      {padding-right: 77px; padding-left: 10px; margin-left: 3px;}
 #menu                   {width: 522px;}
 form.search             {width: 216px; margin-right: 12px;}
 /* 3 x #top li = #page */
@@ -363,7 +363,7 @@ h1                      {margin-top: 10px;}
 #menu, form.search, h1  {margin-bottom: 5px;}
 form.search             {height: 40px; margin-top: 10px; padding-top: 15px;}
 /* h1 = h1 img */
-h1 img                  {height:  38px; padding-top: 8px; padding-bottom: 9px;}
+h1 img                  {height:  27px; padding-top: 14px; padding-bottom: 14px;}
 /* #left h2 = #left h3 */
 #left h2                {height: 50px;}
 #left h3                {height: 30px; padding-top: 20px;}
