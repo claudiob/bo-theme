@@ -106,8 +106,8 @@ img, a img                              {border-top-color:#7e7e7e;}
 #top li, #top h2, #top h3, #left h2, #left h3, #middle h2, #middle h3,
 #right h2, #right li.twitter, h1,
 #right li.pledge a                      {background-image: url(images/sprite.png)}
-.publ                                   {background-position: 481px -148px;}
-.colab                                  {background-position: 430px -148px;}
+.publ                                   {background-position: 441px -148px;}
+.colab                                  {background-position: 390px -148px;}
 th.theadleft                            {background-position: 613px -128px;}
 th.theadright                           {background-position: 618px -128px;}
 #menu, form.search, h1                  {background-position:    0px 0px; background-repeat: repeat-x;}
@@ -359,7 +359,7 @@ big, .excerpt, small, .item, .single p, .single h4, .single dl, li.search p,
 h1, h1 a                {height: 55px;}
 h1                      {margin-top: 10px;}
 #menu                   {height: 55px; margin-top: 10px; list-style: none;}
-#menu li, #menu li a    {height: 49px;}
+#menu li, #menu li a    {height: 55px;}
 #menu, form.search, h1  {margin-bottom: 5px;}
 form.search             {height: 40px; margin-top: 10px; padding-top: 15px;}
 /* h1 = h1 img */
@@ -418,7 +418,8 @@ p, table, h4, dl, .single #left form,
 #top img                              {width: 150px; height: 222px;}
 #left img                             {width: 360px; height: auto;}
 .colaboraciones img                   {width: 170px; height: 134px;}
-.sponsors img                         {width: 170px; height:  92px;}
+.sponsors img.consulting              {width: 170px; height:  92px;}
+.sponsors img.script                  {width: 170px; height:  52px;}
 .home #left img                       {width: 225px; height: 150px;}
 #left .item img                       {width: 75px; height: 111px;}
 #top img, #left img, .twitter img     {margin-bottom: 2px; margin-right: 5px;}
