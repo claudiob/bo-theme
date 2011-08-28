@@ -330,8 +330,8 @@ li.newsletter fieldset                  {padding-left: 6px; padding-right: 6px;}
 .home #left img                         {margin-left: 6px;}
 .twitter li                             {margin-left: 6px; margin-right: 6px;}
 
-#middle big, #middle .excerpt, small, .single h4, .single dl, td.first,
-#left li li, /*.single #left form, #fb-like, */
+#middle big, #middle .excerpt, small, td.first,
+#left li li, /*.single #left form, #fb-like, .single dl, .single h4, */
 #middle .trailers object, #page         {border-left-width: 1px; border-left-style: solid;}
 
 
