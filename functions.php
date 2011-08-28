@@ -362,7 +362,7 @@ function the_full_banner() {
   else
     echo adrotate_banner('1');
   // <!--a href=""><img class="banner full" src="..." alt="Banner" /></a-->
-  echo '<span class="ir publ">Publicidad</span>';  
+  // echo '<span class="ir publ">Publicidad</span>';  
 }
 
 function the_google_full_banner() {
@@ -401,7 +401,7 @@ function the_google_leaderboard_banner() {
 
 function the_sky_banner() {
   if (!function_exists('adrotate_banner')) return;
-  echo '<span class="ir publ">Publicidad</span>';
+  // echo '<span class="ir publ">Publicidad</span>';
   if(is_slug('reports_world'))
     echo adrotate_banner('5');
   else
@@ -423,13 +423,13 @@ function the_google_sky_banner() {
     src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     </script>
   ';
-  echo '<span class="ir publ">Publicidad</span>';
+  // echo '<span class="ir publ">Publicidad</span>';
   echo "<span class=\"banner sky\">$google_code</span>";
 }
 
 function the_medium_banner() {
   if (!function_exists('adrotate_banner')) return;
-  echo '<span class="ir publ">Publicidad</span>';
+  // echo '<span class="ir publ">Publicidad</span>';
   // <!--a href=""><img class="banner medium" src="..." alt="Banner" /></a-->
   echo adrotate_banner('3');  
 }
@@ -448,7 +448,7 @@ function the_google_medium_banner() {
     src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     </script>
   ';
-  echo '<span class="ir publ">Publicidad</span>';
+  // echo '<span class="ir publ">Publicidad</span>';
   echo $google_code;
 }
 
@@ -723,7 +723,7 @@ function widget_boxoffice_fotogramas() {
     text_to_image($src, $dest, $text);
   }
   echo "      <li class=\"colaboraciones\">\n";
-  echo "        <span class=\"ir colab\">Colaboraciones</span>\n";
+  // echo "        <span class=\"ir colab\">Colaboraciones</span>\n";
   echo "        <a href=\"http://www.fotogramas.es/Blogs/Lo-que-la-taquilla-se-llevo\" title=\"Fotogramas.es\">\n";
   echo "          <img alt=\"Fotogramas.es\" src=\"". $url ."\" />\n";
   echo "        </a>\n";
