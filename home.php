@@ -64,12 +64,18 @@
       <li class="trailers">
         <h2>Trailers</h2>
         <h3><a href="<?php echo get_page_link(get_page_by_slug('trailers')->ID); ?>" rel="contents" title="Todos los trailers">&raquo; M&aacute;s trailers</a></h3>
-        <big>Max the Lion</big>
-        <div class="ebuzzing_box">
-          <script type="text/javascript" src="http://www.ebuzzing.es/player_blog/player.php?parametre=474070"></script>
-          <a href="http://www.ebuzzing.es" class="wikio-widget-ebmini" >Viral video by ebuzzing</a>
-          <script type="text/javascript" src="http://www.ebuzzing.es/player_blog/js/mini_share.php" charset="utf-8"></script>
-        </div>
+        <big>Ahora en cine</big>
+        <!--[if IE]>
+        <object type="application/x-shockwave-flash" id="trailer_object" data="http://www.player.filmtrailer.com/v3.4/player.swf?file=h
+          <img alt="Adobe Flash is required to watch trailers" src="<?php bloginfo('template_url') ?>/images/blank_300x190.png">
+          <param name="movie" value="http://www.player.filmtrailer.com/v3.4/player.swf?file=http://es.player-feed.previewnetworks.com/c
+        </object>
+        <![endif]-->
+        <!--[if !IE]><!-->
+        <object id="trailer_object" type="application/x-shockwave-flash">
+          <img src="<?php bloginfo('template_url') ?>/images/blank_300x190.png" alt="Adobe Flash is required to watch trailers" />  
+        </object>
+        <!--<![endif]-->
       </li>
 <?php 
     $slug = 'analysis';

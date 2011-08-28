@@ -27,7 +27,7 @@
   <?php } ?>
   <?php if(is_home()) { ?>
   // IE messes with fb-like if an OBJECT with no PARAM is injected
-  // setTimeout("activate_trailers()",  $timeout);
+  setTimeout("activate_trailers()",  $timeout);
   <?php } ?>
 </script>
 <!--<![endif]-->
