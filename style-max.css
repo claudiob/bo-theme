@@ -264,9 +264,9 @@ body, #page             {margin-left: auto; margin-right: auto;}
 /* h1 = h1 img */
 h1, h1 img, h1 a        {width: 150px;}
 /* h1 + menu + form.search = #page */
-h1                      {padding-right: 77px; padding-left: 10px; margin-left: 3px;}
+h1                      {padding-right: 77px; margin-left: 3px;}
 #menu                   {width: 522px;}
-form.search             {width: 216px; margin-right: 12px;}
+form.search             {width: 226px; margin-right: 12px;}
 /* 3 x #top li = #page */
 #top li                 {width: 330px;} 
 /* #top h2 + #top h3 = #top li */
@@ -374,7 +374,7 @@ h1 img                  {height:  27px; padding-top: 14px; padding-bottom: 14px;
 input                   {padding-top: 2px; padding-bottom: 2px;}
 
 #right h2, .pledge a    {height: 50px;}
-#footer                 {padding-top: 0.4em; padding-bottom: 0.4em; margin-bottom: 0.5em;}
+#footer                 {margin-bottom: 0.5em;}
 
 #left .item             {min-height: 117px; padding: 6px; border-top-width: 2px; border-top-style: solid;}
 #left .item.first       {border-top-width: 0px;}
@@ -441,7 +441,7 @@ h1 img, .colaboraciones img, .sponsors img {border-width: 0px;}
 img.banner                            {border-style: dotted;}
 
 #right li.newsletter form             {border-width: 1px; border-style: solid;}
-#footer, .twitter li                  {border-top-width: 1px; border-top-style: solid;}
+.twitter li                           {border-top-width: 1px; border-top-style: solid;}
 #footer, .twitter ul                  {border-bottom-width: 1px; border-bottom-style: solid;}
 
 tbody, tr, td hr          {width: 767px;}
@@ -473,20 +473,115 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 
 /* ECO begins */
 
-.ecolinks {border-bottom: 1px dotted #ccc; margin-right: 12px; height: 30px; margin-bottom: 5px; font-family: Arial, Helvetica; font-size: 0.7em; }
+.ecolinks {border-bottom: 1px dotted #ccc; margin-right: 12px; height: 30px; font-family: Arial, Helvetica; font-size: 0.7em; }
 .ecolinks li {float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px; font-weight: bold;}
 /* .ecologo + .ruta + .fullbanner (468) = #page (990) */
 .ecologo {width: 300px; margin-left: 5px;}
-.ruta {width:188px; padding-left: 10px; padding-right: 5px;}
-
+.ruta {width:188px; padding-left: 10px; padding-right: 5px; border-left: 2px solid #666666; color: #666666; float: left; width: 176px; font-size: 1.4em;}
 .ecologo {margin-top:10px;}
 .ruta {margin-top:15px; padding-top: 5px;}
 
-.ecologin {line-height: 2.5em; float: right;}
-.ecologin a {margin-left: 5px; background-color: #f60; padding: 5px 20px 5px 5px; color: #fff; border-radius: 4px; font-style: normal; font-weight: bold; background-image:url(images/toggle_down_light.png);background-repeat:no-repeat;background-position:100% 50%;}
-.ecologin a:hover {background-color:#333;}
+.cont2 {float: right; margin-top: 10px;}
+#login-cont {position: relative;}
+.ecolinks a.login-boton {margin-left: 5px; background-color: #f60; padding: 5px 20px 5px 5px; color: #fff; border-radius: 4px; font-style: normal; font-weight: bold; background-image:url(images/toggle_down_light.png);background-repeat:no-repeat;background-position:100% 50%;}
+.ecolinks a.login-boton:hover {background-color:#333;}
 
+.ecoheader {margin-top: 5px;}
 .ecomenu {margin-left: 5px; /* as .ecologo */ margin-right: 12px; background-color:#f60; height: 25px; font-size: 0.8em;  border-bottom: 3px solid #C34E00; font-family: Arial, Helvetica; }
 .ecomenu li {float: left; background-color:#f60; padding: 5px; border-right:1px solid #C34E00;}
 .ecomenu li:last-child {border-right-width: 0px;}
-.ecomenu a {font-style: normal; color: #fff; font-weight: bold;}
+.ecomenu a, .ecolinks a {font-style: normal;}
+.ecomenu a:hover, .ecolinks ul a:hover {background-color: transparent;}
+.ecolinks a {color: #666; font-weight: bold;}
+.ecomenu a {color: #fff; font-weight: bold;}
+.ecomenu a:hover {color: #000;}
+
+.login-menu {clear: both;
+    margin-bottom: 0.5em; background-color: #ECEBE5;
+    border: 1px none transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #778899;
+    display: none;
+    font-size: 11px;
+    margin-right: 0;
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    margin-top: 9px;
+    width: 420px;
+    z-index: 9900;}
+
+.field1 {    border-right: 1px solid #CCCCCC;
+       float: left;
+       width: 240px;}
+.field2 {       float: left;
+        padding-left: 10px;
+        width: 160px;}  
+.field1 h4, .field2 h4 {        color: #666666; font-family: Georgia, "Times New Roman", Times, serif;
+           font-size: 13px; border: 0; padding-bottom: 0;
+           font-weight: bold;
+           margin: 0 0 5px;}     
+ .login-menu p.login-enlace, .login-menu p.complete {           clear: both;
+             margin: 5px 0;}
+ 
+ .login-menu p {                margin: 0; border: 0; padding: 0;
+             }
+             
+.login-menu input, .login-menu select {             border: 1px solid #C3C3C3;
+              margin: 0 3px;
+              padding: 2px;
+              vertical-align: middle;}
+              
+              .login-menu p a {font-weight: normal; text-decoration: underline;
+                  color: #2277BB;}
+                  
+                  
+                  .login-menu input[type="text"], .login-menu input[type="password"] {
+                      border: 1px solid #AACCEE;
+                      border-radius: 4px 4px 4px 4px;
+                      display: block;
+                      font-size: 13px;
+                      margin: 0 0 5px;
+                      padding: 5px;
+                      width: 203px;
+                  }                  
+                  
+                  #login-enviar {
+                      background: url("http://www.eleconomista.es/imag3/log-in/bg-btn-blue.png") repeat-x scroll 0 0 #3399DD;
+                      border: 1px solid #3399DD;
+                      border-radius: 4px 4px 4px 4px;
+                      color: #FFFFFF;
+                      font-size: 11px;
+                      font-weight: bold;
+                      margin: 0 5px 0 0;
+                      padding: 4px 10px 5px;
+                      text-shadow: 0 -1px 0 #3399DD;
+                  }
+                                 
+.ecofooter, .ecofooter li {background-color: #e7e6df;}
+.ecofooter li {margin-bottom: 3px;}
+.ecofooter img {border: 0px;}
+.ecofooter .login {width:auto; margin:0; float:right; text-align:left;}
+.ecofooter .inline {display: inline;}
+.ecofooter .login li.rb {border-right: 1px solid #333; margin-right: 4px; padding-right: 4px;}
+
+.ecofooter { text-align: left; border-top: 2px solid #333; padding: 10px; padding-bottom: 0px;}
+.ecofooter ul {float: left; margin-right: 20px; width: 140px;}
+.ecofooter ul, .ecofooter p {margin-top: 10px;}
+.ecofooter a {color: #333333; font-style: normal; }
+.ecofooter a:hover {color: #fff; background-color: #f60;}
+.ecofooter hr {clear: both; border: 0px; background-color: #ccc; height: 1px;}
+.ecofooter .ecobold {border-bottom: 1px dotted #CCCCCC; color: #333333; font-weight: bold; border-right: 0px;}
+.ecofooter a.ecobold {text-decoration: underline;}
+.editorial {background-color: #333; color: #ccc; padding: 0.5em;}
+.editorial a {color: #fff;}
+.editorial a:hover {color: #000;}
+.ecofooter .rss {background-image: url(http://www.eleconomista.es/imag/rss.gif); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
+.ecofooter .facebook {background-image: url(http://www.eleconomista.es/imag3/iconos/facebook.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
+.ecofooter .twitter {background-image: url(http://www.eleconomista.es/imag3/iconos/twitter.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
+.ecofooter .clubee {background-image: url(http://www.eleconomista.es/imag3/iconos/club-eE2.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
+.ecofooter .pago {background-image: url(http://www.eleconomista.es/imag3/iconos/pago2.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
+.trader {color:#f00}
