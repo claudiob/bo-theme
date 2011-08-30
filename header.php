@@ -157,6 +157,25 @@
                 </p>
               </div>
             </fieldset>
+
+            <script type="text/javascript" src="//secure-uk.imrworldwide.com/v60.js"></script>
+            <script type="text/javascript">
+                var pvar = { cid: "es-eleconomista", content: "0", SERVER: "secure-uk" };
+                var trac = nol_t(pvar);
+                trac.record().post();
+            </script>
+            <noscript><img src="//secure-uk.imrworldwide.com/cgi-bin/m?ci=es-eleconomista&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt=""></noscript>
+            <script>
+              var _comscore = _comscore || [];
+              _comscore.push({ c1: "2", c2: "7107810" });
+              (function() {
+                var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+                s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+                el.parentNode.insertBefore(s, el);
+              })();
+            </script>
+            <noscript><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=7107810&amp;cv=2.0&amp;cj=1"></noscript>
+
             <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1/prototype.js"></script>
             <script type="text/javascript" language="javascript" src="http://s01.s3c.es/js/eleconomista/cache/flowplayer-3.1.4,carousel,flp_galeria_videos,carousel,galeria,cookies,sondeos,masNoticias,galeria_fotos_thumbnails,php_valoracion.0.cache.js"></script>
             <script type="text/javascript">
