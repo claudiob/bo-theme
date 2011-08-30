@@ -132,21 +132,21 @@ th.theadright                           {background-position: 618px -128px;}
 li, h3, #left                           {background-position: right bottom;}
 li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 
-#top h2                                 {background-position:  -641px  -865px;}
-#top h3                                 {background-position:  -822px  -865px;}
-#top .espana h2                         {background-position:  -635px  -766px;}
+#top h2                                 {background-position:  -642px  -865px;}
+#top h3                                 {background-position:  -859px  -865px;}
+#top .espana h2                         {background-position:  -642px  -766px;}
 #top .espana.previsiones h2             {background-position:    -1px -1715px;}
-#top .espana h3                         {background-position:  -822px  -766px;}
-#top .eeuu h2                           {background-position:  -641px  -799px;}
+#top .espana h3                         {background-position:  -859px  -766px;}
+#top .eeuu h2                           {background-position:  -642px  -799px;}
 #top .eeuu.previsiones h2               {background-position:    -1px -1682px;}
-#top .eeuu h3                           {background-position:  -822px  -799px;}
+#top .eeuu h3                           {background-position:  -859px  -799px;}
 #top .world h2                          {background-position:    -1px -1616px;}
 #top .world.previsiones h2              {background-position:    -1px -1616px;}
 #top .world h3                          {background-position:  -181px -1616px;}
-#top .noticias h2                       {background-position:  -641px  -832px;}
-#top .noticias h3                       {background-position:  -822px  -832px;}
+#top .noticias h2                       {background-position:  -642px  -832px;}
+#top .noticias h3                       {background-position:  -859px  -832px;}
 #top .reportajes h2                     {background-position:    -1px -1649px;}
-#top .reportajes h3                     {background-position:  -181px -1649px;}
+#top .reportajes h3                     {background-position:  -218px -1649px;}
 #left li, #middle li.trailers, 
 #middle .reportajes                     {background-image: url(images/b.png)}
 #left li li                             {background-image: none}
@@ -270,8 +270,8 @@ form.search             {width: 216px; margin-right: 12px;}
 /* 3 x #top li = #page */
 #top li                 {width: 330px;} 
 /* #top h2 + #top h3 = #top li */
-#top h2                 {width: 182px;}
-#top h3                 {width: 129px; padding-right: 19px;}
+#top h2                 {width: 219px;}
+#top h3                 {width:  92px; padding-right: 19px;}
 /* .home #left + .home #middle = #left */
 #left                   {width: 793px; margin-right: 11px;}
 .home #left             {width: 480px;} 
