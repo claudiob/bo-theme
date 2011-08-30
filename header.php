@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/favicon_iphone.png" />
     <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
     <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-    <!-- link rel="stylesheet" media="all" href="<?php bloginfo('template_url'); ?>/style-max.css" type="text/css" /-->
+    <!--link rel="stylesheet" media="all" href="<?php bloginfo('template_url'); ?>/style-max.css" type="text/css" /-->
     <!--[if lt IE 9]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/table_padding.css" type="text/css" /><![endif]-->
     <!--[if lt IE 7]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/multiple_class.css" type="text/css" /><![endif]-->
     <!--[if lt IE 6]><link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/hack_box.css" type="text/css" /><![endif]-->
@@ -361,19 +361,19 @@
 
       </div>
       <ul class="ecomenu">
-        <li><a href="#">Portada</a></li>
-        <li><a href="#">Mercados y Cotizaciones</a></li>
-        <li><a href="#">Opini&oacute;n</a></li>
-        <li><a href="#">Empresas</a></li>
-        <li><a href="#">Econom&iacute;a</a></li>
-        <li><a href="#">Tecnolog&iacute;a</a></li>
-        <li><a href="#">Vivienda</a></li>
-        <li><a href="#">Ecoley</a></li>
-        <li><a href="#">Gesti&oacute;n</a></li>
-        <li><a href="#"><span style="color: #000;">Eco</span>trader</a></li>
-        <li><a href="#"><span style="color: #000;">Eco</span>motor</a></li>
-        <li><a href="#"><span>Evasión</span></a></li>
-        <li><a href="#"><span style="color: #000;">Eco</span>Diario</a></li>
+        <li><a href="http://www.eleconomista.es/">Portada</a></li>
+        <li><a href="http://www.eleconomista.es/mercados-cotizaciones/">Mercados y Cotizaciones</a></li>
+        <li><a href="http://www.eleconomista.es/opinion/">Opini&oacute;n</a></li>
+        <li><a href="http://www.eleconomista.es/empresas-finanzas/">Empresas</a></li>
+        <li><a href="http://www.eleconomista.es/economia/">Econom&iacute;a</a></li>
+        <li><a href="http://www.eleconomista.es/tecnologia/">Tecnolog&iacute;a</a></li>
+        <li><a href="http://www.eleconomista.es/vivienda/">Vivienda</a></li>
+        <li><a href="http://www.eleconomista.es/ecoley/">Ecoley</a></li>
+        <li><a href="http://www.eleconomista.es/gestion-empresarial/">Gesti&oacute;n</a></li>
+        <li class="inset"><a href="http://www.eleconomista.es/ecotrader/">Eco<span class="trader">trader</span></a></li>
+        <li class="inset"><a href="http://www.eleconomista.es/ecomotor/">Eco<span class="motor">motor</span></a></li>
+        <li class="inset"><a href="http://www.eleconomista.es/evasion/"><span class="evasion">Evasión</span></a></li>
+        <li class="inset"><a href="http://ecodiario.eleconomista.es/">Eco<span class="diario">Diario</span></a></li>
       </ul>
       <!-- eco end -->
 

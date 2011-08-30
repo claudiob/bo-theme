@@ -477,7 +477,7 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 .ecolinks li {float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px; font-weight: bold;}
 /* .ecologo + .ruta + .fullbanner (468) = #page (990) */
 .ecologo {width: 300px; margin-left: 5px;}
-.ruta {width:188px; padding-left: 10px; padding-right: 5px; border-left: 2px solid #666666; color: #666666; float: left; width: 176px; font-size: 1.4em;}
+.ruta {width:188px; padding-left: 10px; padding-right: 5px; border-left: 2px solid #666666; color: #666666; float: left; font-size: 1.4em;}
 .ecologo {margin-top:10px;}
 .ruta {margin-top:15px; padding-top: 5px;}
 
@@ -490,6 +490,15 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 .ecomenu {margin-left: 5px; /* as .ecologo */ margin-right: 12px; background-color:#f60; height: 25px; font-size: 0.8em;  border-bottom: 3px solid #C34E00; font-family: Arial, Helvetica; }
 .ecomenu li {float: left; background-color:#f60; padding: 5px; border-right:1px solid #C34E00;}
 .ecomenu li:last-child {border-right-width: 0px;}
+.ecomenu li.inset {background-color: #fff;
+  border-color: #999999 #999999 #FFFFFF;
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  height: 16px;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-top: -1px;}
+.ecomenu li.inset a {color: #000;}  
 .ecomenu a, .ecolinks a {font-style: normal;}
 .ecomenu a:hover, .ecolinks ul a:hover {background-color: transparent;}
 .ecolinks a {color: #666; font-weight: bold;}
@@ -568,7 +577,7 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 .ecofooter .inline {display: inline;}
 .ecofooter .login li.rb {border-right: 1px solid #333; margin-right: 4px; padding-right: 4px;}
 
-.ecofooter { text-align: left; border-top: 2px solid #333; padding: 10px; padding-bottom: 0px;}
+.ecofooter {font-family:Verdana,Helvetica,Arial,sans-serif; font-size: 0.9em; text-align: left; border-top: 2px solid #333; padding: 10px; padding-bottom: 0px;}
 .ecofooter ul {float: left; margin-right: 20px; width: 140px;}
 .ecofooter ul, .ecofooter p {margin-top: 10px;}
 .ecofooter a {color: #333333; font-style: normal; }
@@ -585,3 +594,6 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 .ecofooter .clubee {background-image: url(http://www.eleconomista.es/imag3/iconos/club-eE2.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
 .ecofooter .pago {background-image: url(http://www.eleconomista.es/imag3/iconos/pago2.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
 .trader {color:#f00}
+.motor {color: #3B7FCE;}
+.diario {color: #9B843B;}
+.evasion {color: #333333;}
