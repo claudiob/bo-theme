@@ -65,8 +65,8 @@
             <li><a href="http://www.eleconomista.es/especiales/declaracion-de-la-renta/2010/index.html">Renta</a></li>
         </ul>
         <hr />
-        <p class="ecobold">Nuestra red</p>
-        <ul>
+        <p class="nuestrared">Nuestra red</p>
+        <ul class="nuestraredlist">
             <li><a class="ecobold" href="http://www.eleconomista.es">elEconomista.es</a>
                 <ul>
                     <li><a href="http://www.eleconomista.es/mercados-cotizaciones/index.html">&middot; Mercados y cotizaciones</a></li>
@@ -77,13 +77,10 @@
                     <li><a href="http://www.eleconomista.es/vivienda/index.html">&middot; Vivienda</a></li>
                     <li><a href="http://www.eleconomista.es/ecoley/">&middot; Ecoley</a></li>
                     <li><a href="http://www.eleconomista.es/gestion-empresarial/index.html">&middot; Gesti&oacute;n</a></li>
-                    <li><a href="http://www.eleconomista.es/analisis-tecnico/">&middot; An&aacute;lisis t&eacute;cnico</a></li>
-                    <li><a href="http://www.eleconomista.es/fichas-de-empresas/index.html">&middot; Fichas valor</a></li>
-                    <li><a href="http://www.eleconomista.es/brokers/recomendaciones/index.html">&middot; Recomendaciones</a></li>
                 </ul>
             </li>
         </ul>
-        <ul>
+        <ul class="nuestraredlist">
             <li><a class="ecobold" href="http://www.eleconomista.es/ecotrader/">Eco<span class="trader">trader.es</span></a>
                 <ul>
                     <li class="pago"><a href="http://www.eleconomista.es/ecotrader/renta-variable/index.html">R. Variable Fundamental</a></li>
@@ -94,7 +91,7 @@
                 </ul>
             </li>
         </ul>
-        <ul>
+        <ul class="nuestraredlist">
             <li><a class="ecobold" href="http://ecodiario.eleconomista.es">Informaci&oacute;n general</a>
                 <ul>
                     <li><a href="http://ecodiario.eleconomista.es/internacional/index.html">&middot; Global</a></li>
@@ -106,7 +103,7 @@
                 </ul>
             </li>
         </ul>
-        <ul>
+        <ul class="nuestraredlist">
             <li><a class="ecobold" href="http://ecoaula.eleconomista.es">Formaci&oacute;n y empleo</a>
                 <ul>
                     <li><a href="http://ecoaula.eleconomista.es/universidades/">&middot; Universidades</a></li>
@@ -119,7 +116,7 @@
                 </ul>
             </li>
         </ul>
-        <ul>
+        <ul class="nuestraredlist">
             <li><a class="ecobold" href="http://ecodiario.eleconomista.es/ecomotor/">Informaci&oacute;n motor</a>
                 <ul>
                     <li><a href="http://www.eleconomista.es/ecomotor/novedades/index.html">&middot; Novedades</a></li>
@@ -134,7 +131,7 @@
                 </ul>
             </li>
         </ul>
-        <ul>
+        <ul class="nuestraredlist">
             <li><a class="ecobold" href="http://www.eleconomista.es/evasion/index.html">Estilo y Tendencias</a>
                 <ul>
                     <li><a href="http://www.eleconomista.es/evasion/moda-y-complementos/index.html">&middot; Moda y complementos</a></li>
