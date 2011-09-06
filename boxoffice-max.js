@@ -46,8 +46,8 @@ function addLoadEvent(func) {
 }
 
 function SlimStat() {
-  // NOTE: This won´t work locally where the ROOT is not /
-	var ssSrc = '/slimstat2.2/stats_js.php?ref=' + encodeURIComponent(document.referrer)
+  // This ALWAYS pings dreamhost :)
+	var ssSrc = 'http://dreamhost.boxoffice.es/slimstat2.2/stats_js.php?ref=' + encodeURIComponent(document.referrer)
 		+ '&url=' + encodeURIComponent(document.URL)
 		+ '&res=' + encodeURIComponent(screen.width+'x'+screen.height)
 		+ '&ttl=' + encodeURIComponent(document.title)
@@ -67,7 +67,7 @@ addLoadEvent(SlimStat);
 
 /// SLIMSTAT OLD (temporarily, store stats in BOTH systems)
 
-var slimstatfile = '/slimstat-js/js.stats.php';
+var slimstatfile = 'http://dreamhost.boxoffice.es/slimstat-js/js.stats.php';
 
 function SlimStatOld() {
   var ref = escape(document.referrer);

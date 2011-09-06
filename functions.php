@@ -179,7 +179,7 @@ function the_body_class() {
 function the_meta_facebook() {
   $title = get_the_title();
   $type = is_home() ? "website" : "article";
-  $image = "http://boxoffice.es/wp-content/themes/boxoffice10/images/logo/boxoffice_es_logo_twitter.png";
+  $image = "http://www.eleconomista.es/boxoffice/wp-content/themes/boxoffice-eco/images/logo/boxoffice_es_logo_twitter.png";
   $url = get_permalink();
   echo "    <meta name='og:title' content='$title' />\n";
   echo "    <meta name='og:type' content='$type' />\n";
@@ -192,7 +192,7 @@ function the_meta_facebook() {
   // $title = is_search() ? "" : get_the_h2();
   // $title += (!is_category() || is_year()) ? wp_title('&mdash;', False) : "";
   // $type = is_home() ? "website" : "article";
-  // $image = "http://boxoffice.es/wp-content/themes/boxoffice10/images/logo/boxoffice_es_logo_facebook.jpg";
+  // $image = "http://www.eleconomista.es/boxoffice/wp-content/themes/boxoffice-eco/images/logo/boxoffice_es_logo_facebook.jpg";
   // // $url = is_home() ? "boh" : is_search() ? "boh" : is_single() ? get_permalink() : is_404() ? "boh" : \
   //   is_page() ? get_page_link($page->ID);
 }

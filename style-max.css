@@ -477,6 +477,7 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 .ecolinks li {float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px; font-weight: bold;}
 /* .ecologo + .ruta + .fullbanner (468) = #page (990) */
 .ecologo {width: 300px; margin-left: 5px;}
+a.ecologo:hover {background-color: transparent;}
 .ruta {width:188px; padding-left: 10px; padding-right: 5px; border-left: 2px solid #666666; color: #666666; float: left; font-size: 1.4em;}
 .ecologo {margin-top:10px;}
 .ruta {margin-top:15px; padding-top: 5px;}
