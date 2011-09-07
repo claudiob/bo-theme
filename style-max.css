@@ -197,7 +197,7 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 #left li.about                          {background-position: -9046px  bottom;}
 .about #left li.about h2                {background-position:     0px -1066px;}
 #left li.about h3                       {background-position:  -500px  -366px;}
-#left li.criticas h2                    {background-position:     0px  -616px;}
+#left li.criticas h2                    {background-position:     0px -1316px;}
 .criticas #left li.criticas h2          {background-position:     0px -1316px;}
 
 #left li.reportajes                     {background-position: -5874px  bottom;}
