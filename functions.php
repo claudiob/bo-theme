@@ -645,8 +645,8 @@ function widget_boxoffice_newsletter() {
   echo $ddfm{1}->generate_data();
   echo "      </li>\n";
 }
-if (function_exists('register_sidebar_widget'))
-  register_sidebar_widget(__('Boxoffice Newsletter'), 'widget_boxoffice_newsletter');    
+if (function_exists('wp_register_sidebar_widget'))
+  wp_register_sidebar_widget('boxoffice_newsletter', __('Boxoffice Newsletter'), 'widget_boxoffice_newsletter');    
 
 function widget_boxoffice_pledge() {
   $page = get_page_by_slug('partners');
@@ -657,8 +657,8 @@ function widget_boxoffice_pledge() {
   echo "\">Contribuye a Boxoffice.es</a>\n";
   echo "      </li>\n";
 }
-if (function_exists('register_sidebar_widget'))
-  register_sidebar_widget(__('Boxoffice Pledge'), 'widget_boxoffice_pledge');    
+if (function_exists('wp_register_sidebar_widget'))
+  wp_register_sidebar_widget('boxoffice_pledge', __('Boxoffice Pledge'), 'widget_boxoffice_pledge');    
 
 function widget_boxoffice_twitter() {
   echo "      <li class=\"twitter\">\n";
@@ -667,8 +667,8 @@ function widget_boxoffice_twitter() {
   echo "        <ul id=\"twitter_update_list\"><li></li></ul>\n";
   echo "      </li>\n";
 }
-if (function_exists('register_sidebar_widget'))
-  register_sidebar_widget(__('Boxoffice Twitter'), 'widget_boxoffice_twitter');    
+if (function_exists('wp_register_sidebar_widget'))
+  wp_register_sidebar_widget('boxoffice_twitter', __('Boxoffice Twitter'), 'widget_boxoffice_twitter');    
 
 function get_last_feed_title($feed) {
   // TODO: If the feed is offline, this SHOULD NOT raise an error
@@ -729,8 +729,8 @@ function widget_boxoffice_fotogramas() {
   echo "        </a>\n";
   echo "      </li>\n";
 }    
-if (function_exists('register_sidebar_widget'))
-  register_sidebar_widget(__('Boxoffice Fotogramas'), 'widget_boxoffice_fotogramas');    
+if (function_exists('wp_register_sidebar_widget'))
+  wp_register_sidebar_widget('boxoffice_fotogramas', __('Boxoffice Fotogramas'), 'widget_boxoffice_fotogramas');    
 
 function my_category_link($catlink, $category_id) {
   // remove the original /all/ in front of the categories
