@@ -158,9 +158,11 @@
               </div>
             </fieldset>
 
+            <script type="text/javascript">
+                var pvar = { cid: "es-eleconomista", content: "0", server: "secure-uk" };
+            </script>
             <script type="text/javascript" src="//secure-uk.imrworldwide.com/v60.js"></script>
             <script type="text/javascript">
-                var pvar = { cid: "es-eleconomista", content: "0", SERVER: "secure-uk" };
                 var trac = nol_t(pvar);
                 trac.record().post();
             </script>
