@@ -53,9 +53,6 @@
             <li><a href="http://www.eleconomista.es/el-tiempo/">El tiempo</a></li>
             <li><a href="http://www.eleconomista.es/evasion/libros/">Libros</a></li>
             <li><a href="http://listas.eleconomista.es/">Listas</a></li>
-            <li><a href="http://www.eleconomista.es/analisis-tecnico/">An&aacute;lisis t&eacute;cnico</a></li>
-            <li><a href="http://www.eleconomista.es/fichas-de-empresas/index.html">Fichas valor</a></li>
-            <li><a href="http://www.eleconomista.es/brokers/recomendaciones/index.html">Recomendaciones</a></li>
         </ul>
         <ul>
             <li class="ecobold">Especiales</li>
@@ -77,6 +74,9 @@
                     <li><a href="http://www.eleconomista.es/vivienda/index.html">&middot; Vivienda</a></li>
                     <li><a href="http://www.eleconomista.es/ecoley/">&middot; Ecoley</a></li>
                     <li><a href="http://www.eleconomista.es/gestion-empresarial/index.html">&middot; Gesti&oacute;n</a></li>
+                    <li><a href="http://www.eleconomista.es/analisis-tecnico/">&middot; An&aacute;lisis t&eacute;cnico</a></li>
+                    <li><a href="http://www.eleconomista.es/fichas-de-empresas/index.html">&middot; Fichas valor</a></li>
+                    <li><a href="http://www.eleconomista.es/brokers/recomendaciones/index.html">&middot; Recomendaciones</a></li>
                 </ul>
             </li>
         </ul>

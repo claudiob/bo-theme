@@ -488,7 +488,7 @@ a.ecologo:hover {background-color: transparent;}
 .ecolinks a.login-boton:hover {background-color:#333;}
 
 .ecoheader {margin-top: 5px;}
-.ecomenu {margin-left: 5px; /* as .ecologo */ margin-right: 12px; background-color:#f60; height: 25px; font-size: 0.8em;  border-bottom: 3px solid #C34E00; font-family: Arial, Helvetica; }
+.ecomenu {clear: both; margin-left: 5px; /* as .ecologo */ margin-right: 12px; background-color:#f60; height: 25px; font-size: 0.8em;  border-bottom: 3px solid #C34E00; font-family: Arial, Helvetica; }
 .ecomenu li {float: left; background-color:#f60; padding: 5px 4px 5px 5px; border-right:1px solid #C34E00;}
 .ecomenu li:last-child {border-right-width: 0px;}
 .ecomenu li.inset {background-color: #fff;
@@ -591,9 +591,10 @@ a.ecologo:hover {background-color: transparent;}
 .editorial {background-color: #333; color: #ccc; padding: 0.5em;}
 .editorial a {color: #fff;}
 .editorial a:hover {color: #000;}
+.ecofooter .facebook, .ecofooter .twitter, .ecofooter .clubee {padding-top: 5px; padding-bottom: 5px;}
 .ecofooter .rss {background-image: url(http://www.eleconomista.es/imag/rss.gif); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
-.ecofooter .facebook {background-image: url(http://www.eleconomista.es/imag3/iconos/facebook.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
-.ecofooter .twitter {background-image: url(http://www.eleconomista.es/imag3/iconos/twitter.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
+.ecofooter .facebook {background-image: url(images/facebook.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
+.ecofooter .twitter {background-image: url(images/twitter.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
 .ecofooter .clubee {background-image: url(http://www.eleconomista.es/imag3/iconos/club-eE2.png); background-repeat: no-repeat; padding-left: 22px; background-position: 0% 50%;}
 .ecofooter .pago {background-image: url(http://www.eleconomista.es/imag3/iconos/pago2.png); background-repeat: no-repeat; padding-left: 15px; background-position: 0% 50%;}
 .trader {color:#f00}
