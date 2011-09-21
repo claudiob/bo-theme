@@ -15,21 +15,21 @@
           // IE does not support window.fbAsyncInit, so it's called directly
           FB.init({appId: '121079989452', status: true, cookie: true, xfbml: true});
           </script>
-          <fb:like href="<?php the_permalink(); ?>" show_faces="true" width="450" font=""></fb:like>
+          <fb:like href="<?php the_dreamhost_permalink(); ?>" show_faces="true" width="450" font=""></fb:like>
           <![endif]-->
           <!--[if !IE]><!-->
           <script type="text/javascript">
             window.fbAsyncInit = function() {
               // Like Button
               fan = document.createElement("fb:like");
-              fan.setAttribute("href", "<?php the_permalink(); ?>");
+              fan.setAttribute("href", "<?php the_dreamhost_permalink(); ?>");
               fan.setAttribute("width", "450");
               fan.setAttribute("show_faces", "true");
               fan.setAttribute("font", "");
               document.getElementById("fb-like").appendChild(fan);
               // Comment box
               fan = document.createElement("fb:comments");
-              fan.setAttribute("href", "<?php the_permalink(); ?>");
+              fan.setAttribute("href", "<?php the_dreamhost_permalink(); ?>");
               fan.setAttribute("width", "700");
               fan.setAttribute("num_posts", "2");
               document.getElementById("fb-like").appendChild(fan);

@@ -742,13 +742,22 @@ add_filter('category_link', 'my_category_link',1000,2);
 
 /* ****************** SHORTLINKS ******************* */
 
-// Bring back boxoffice.es in the short links (you never know) */
+// Bring back boxoffice.es in the short links and in Facebook href (you never know) */
 
 function my_get_shortlink($shortlink, $id = 0, $context = 'post', $allow_slugs = true) {
   $shortlink = preg_replace("/www\.eleconomista\.es\/boxoffice/i", "boxoffice.es", $shortlink);
   return $shortlink;
 }
 add_filter('get_shortlink', 'my_get_shortlink',1000,2);
+
+function get_dreamhost_permalink() {
+  $permalink = preg_replace("/www\.eleconomista\.es\/boxoffice/i", "boxoffice.es", get_permalink());
+  return $permalink;
+}
+
+function the_dreamhost_permalink() {
+  echo get_dreamhost_permalink();
+}
 
 /* ********************* TODO ********************** */
     
