@@ -378,8 +378,7 @@
       <div class="ecoheader">
         <a class="ecologo" href="/" style="float: left; margin-bottom: 0;"><img alt="elEconomista.es" style=" border:none;" src="http://s01.s3c.es/imag3/logo-h1.gif" /></a>
         <div class="ruta">Industria del cine</div>
-        <?php the_google_full_banner(); ?>
-
+        <!-- the_google_full_banner(); -->
       </div>
       <ul class="ecomenu">
         <li><a href="http://www.eleconomista.es/">Portada</a></li>
