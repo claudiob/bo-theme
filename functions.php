@@ -740,6 +740,15 @@ function my_category_link($catlink, $category_id) {
 }
 add_filter('category_link', 'my_category_link',1000,2);
 
+/* ****************** SHORTLINKS ******************* */
+
+// Bring back boxoffice.es in the short links (you never know) */
+
+function my_get_shortlink($shortlink, $id = 0, $context = 'post', $allow_slugs = true) {
+  $shortlink = preg_replace("/www\.eleconomista\.es\/boxoffice/i", "boxoffice.es", $shortlink);
+  return $shortlink;
+}
+add_filter('get_shortlink', 'my_get_shortlink',1000,2);
 
 /* ********************* TODO ********************** */
     
