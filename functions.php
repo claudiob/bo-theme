@@ -399,6 +399,18 @@ function the_google_leaderboard_banner() {
   echo $google_code;
 }
 
+function the_eco_leaderboard_banner() {
+  $google_code = '
+    <script type="text/javascript">
+    var time = new Date() ;
+    randnum= (time.getTime()) ;
+    document.write("<scr"+"ipt language=\"javascript\" src=\"http://ad.es.doubleclick.net/adj/eleconomista.es/economista_boxoffice;tile=1;sz=728x90;isnt=;ord="+randnum+"?\"></scr"+"ipt>") ;
+    </script>
+    <noscript><a href="http://ad.doubleclick.net/jump/eleconomista.es/economista_boxoffice;tile=1;sz=728x90;ord=123456789?" target="_blank" rel="nofollow"><img src="http://ad.doubleclick.net/ad/eleconomista.es/economista_boxoffice;sz=728x90;ord=123456789?" width="728" height="90" border="0"></a></noscript>
+  ';
+  echo $google_code;
+}
+
 function the_sky_banner() {
   if (!function_exists('adrotate_banner')) return;
   // echo '<span class="ir publ">Publicidad</span>';
@@ -452,6 +464,17 @@ function the_google_medium_banner() {
   echo $google_code;
 }
 
+function the_eco_medium_banner() {
+  $google_code = '
+    <script type="text/javascript">
+    var time = new Date() ;
+    randnum= (time.getTime()) ;
+    document.write("<scr"+"ipt language=\"javascript\" src=\"http://ad.es.doubleclick.net/adj/eleconomista.es/economista_boxoffice;tile=1;sz=300x250;isnt=;ord="+randnum+"?\"></scr"+"ipt>") ;
+    </script>
+    <noscript><a href="http://ad.doubleclick.net/jump/eleconomista.es/economista_boxoffice;tile=1;sz=300x250;ord=123456789?" target="_blank" rel="nofollow"><img src="http://ad.doubleclick.net/ad/eleconomista.es/economista_boxoffice;sz=300x250;ord=123456789?" width="300" height="250" border="0"></a></noscript>
+  ';
+  echo $google_code;
+}
    
 
 
@@ -551,9 +574,10 @@ function get_the_years($cat) {
 // Returns wp_upload_dir but from a cookie-less subdomain (for static files)
 function static_upload_dir() {
   $upload_dir = wp_upload_dir(); 
-  if(preg_match('@^(.*?)://(?:|www\.)eleconomista.es/boxoffice/(.*?)$@i', $upload_dir['url'], $matches)) {
-    $upload_dir['url'] = "$matches[1]://s01.s3c.es/boxoffice/$matches[2]";
-  }
+  // 2011.09.22 - commented temporarily because creating thumbnails is slow!
+  # if(preg_match('@^(.*?)://(?:|www\.)eleconomista.es/boxoffice/(.*?)$@i', $upload_dir['url'], $matches)) {
+  #   $upload_dir['url'] = "$matches[1]://s01.s3c.es/boxoffice/$matches[2]";
+  # }
   return $upload_dir;
 }
 

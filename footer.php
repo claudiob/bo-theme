@@ -23,8 +23,10 @@
             <li><a href="http://www.eleconomista.es/castilla_y_leon/">Castilla y Le&oacute;n</a></li>
             <li><a href="http://www.eleconomista.es/catalunya/">Catalu&ntilde;a</a></li>
             <li><a href="http://www.eleconomista.es/pais_vasco/">Euskadi</a></li>
-            <li><a href="http://www.eleconomista.es/valenciana/">C. Valenciana</a></li>
-            <li><a href="http://www.eleconomista.es/english/">English edition</a></li>
+            <li><a href="http://www.eleconomista.es/valenciana/">C. Valenciana</a></li> 
+            <li class="ecobold added"><a href="http://www.eleconomista.es/english/">English edition</a></li>
+            <li class="ecobold added"><a href="http://www.eleconomista.es/boxoffice/">Industria del cine</a></li>
+            <li class="ecobold added"><a href="http://www.eleconomista.es/videos/index.php">Zona Multimedia</a></li>
         </ul>
         <ul>
             <li class="ecobold">Blogs</li>
