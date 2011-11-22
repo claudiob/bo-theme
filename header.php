@@ -376,7 +376,13 @@
 
       </div>
       <div class="ecoheader">
-        <a class="ecologo" href="/" style="float: left; margin-bottom: 0;"><img alt="elEconomista.es" style=" border:none;" src="http://s01.s3c.es/imag3/logo-h1.gif" /></a>
+        <?php if(is_home()) { ?>    
+          <a class="ecologo" href="/" style="float: left; margin-bottom: 0;">
+        <?php } else { ?>
+          <a class="ecologo" href="<?php bloginfo('url'); ?>" style="float: left;margin-bottom: 0;">
+        <?php } ?>
+          <img alt="elEconomista.es" style=" border:none;" src="http://s01.s3c.es/imag3/logo-h1.gif" />
+        </a>
         <div class="ruta">Industria del cine</div>
         <!-- the_google_full_banner(); -->
       </div>
