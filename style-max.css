@@ -469,7 +469,9 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 #middle .trailers big     {background-color: #fff;}
 
 /* IE7 does non properly clear floats. Fixed with: */
-#menu, .publ, #left       {clear: none;}
+#menu, .publ, /*#left*/   {clear: none;}
+/* #left is commented because if the three #top LIs have different heights,
+   then .home #left might be displaced in Safari */
 
 /* ECO begins */
 
