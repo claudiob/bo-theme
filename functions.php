@@ -366,11 +366,13 @@ function the_full_banner() {
 }
 
 function the_google_full_banner() {
+  // bo.es google_ad_slot   = 9196645418;
+  // bo.es google_ad_client = "ca-pub-2975283179368133"
   $google_code = '
     <script type="text/javascript">
-    google_ad_client = "ca-pub-2975283179368133";
+    google_ad_client = "ca-pub-2866707026894500";
     /* 2011-Full BAnner */
-    google_ad_slot = "9196645418";
+    google_ad_slot = "0897108108";
     google_ad_width = 468;
     google_ad_height = 60;
     </script>
@@ -384,11 +386,13 @@ function the_google_full_banner() {
 
 
 function the_google_leaderboard_banner() {
+  // bo.es google_ad_slot   = 0854595069;
+  // bo.es google_ad_client = "ca-pub-2975283179368133"
   $google_code = '
     <script type="text/javascript">
-    google_ad_client = "ca-pub-2975283179368133";
+    google_ad_client = "ca-pub-2866707026894500";
     /* 2011-Leaderboard Banner */
-    google_ad_slot = "0854595069";
+    google_ad_slot = "8428966109";
     google_ad_width = 728;
     google_ad_height = 90;
     </script>
@@ -422,11 +426,13 @@ function the_sky_banner() {
 }
 
 function the_google_sky_banner() {
+  // bo.es google_ad_slot   = 9490306656;
+  // bo.es google_ad_client = "ca-pub-2975283179368133"
   $google_code = '
     <script type="text/javascript"><!--
-    google_ad_client = "ca-pub-2975283179368133";
+    google_ad_client = "ca-pub-2866707026894500";
     /* 2011-Skyscraper */
-    google_ad_slot = "9490306656";
+    google_ad_slot = "4656299497";
     google_ad_width = 120;
     google_ad_height = 600;
     //-->
@@ -447,11 +453,13 @@ function the_medium_banner() {
 }
 
 function the_google_medium_banner() {
+  // bo.es google_ad_slot   = 3374876557;
+  // bo.es google_ad_client = "ca-pub-2975283179368133"
   $google_code = '
     <script type="text/javascript"><!--
-    google_ad_client = "ca-pub-2975283179368133";
+    google_ad_client = "ca-pub-2866707026894500";
     /* Medium Rectangle */
-    google_ad_slot = "3374876557";
+    google_ad_slot = "5334856350";
     google_ad_width = 300;
     google_ad_height = 250;
     //-->

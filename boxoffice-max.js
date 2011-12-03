@@ -161,7 +161,7 @@ function activate_analytics() { // loaded with a delay to improve site performan
   import_script('http://www.google-analytics.com/ga.js');
   setTimeout(function() {
     if(typeof(_gat)=='object') {
-      var pageTracker = _gat._getTracker("UA-1010908-1");
+      var pageTracker = _gat._getTracker("UA-754675-1");
       pageTracker._trackPageview();
     }
   }, 1500);
