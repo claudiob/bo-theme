@@ -47,7 +47,7 @@ h3, h4, fieldset, #footer, .halftitle   {font-size: 0.75em;}
 #middle .reportajes small               {font-size: 0.7em;}
 
 #top .more-link, #middle big, #middle small, #footer, .twitter .username, 
-.twitter small, .licencia textarea, caption, .banner.leaderboard,
+.twitter small, .licencia textarea, caption, #leaderboard,
 form.donate                             {text-align: center;}
 h3, .firma                              {text-align: right;}
 
@@ -91,7 +91,7 @@ big, big a, h4, #middle .reportajes small, fieldset, .twitter .time,
 
 big, .excerpt, small, .item, img, a img, li.newsletter form, #footer, 
 #left li li, .single table, .single #left form, .single h4, .single p, 
-.single dl, #fb-like,  li.search p, 
+.single dl, #fb-like,  li.search p, .medium object, #leaderboard object,
 #middle .trailers object, #page         {border-color: #cecac3;}
 #left .item                             {border-top-color: #ede7e0;}
 img, a img                              {border-top-color:#7e7e7e;}
@@ -228,18 +228,18 @@ li, h2, h3, #left, th                   {background-repeat: no-repeat;}
 
 /* LAYOUT */
 
-h1, .banner.full, #menu, #menu li, #top li, li h2,
+h1, /* .banner.full,*/ #menu, #menu li, #top li, li h2,
 #top li img, #left, #middle, #right, .twitter img,  #left img, .pledge a,
 #left .item img, .prev, li.sponsors a   {float: left;}
 .publ, form.search, form.search fieldset, li h3,  
 .next, #left img.alignright             {float: right;}
 
 h1, #menu, #left, .colab                {clear: left;}
-.banner.full, form.search, #right,.publ, 
+/*.banner.full,*/ form.search, #right,.publ, 
 .home #left big                         {clear: right;}
 #top, #top .more-link, #left li, #footer, .twitter ul, .twitter .status, 
 .twitter small, #left .item, .firma, .single #left big,  #middle big, #top a, 
-#right .banner, dl, dt, .leaderboard    {clear: both;}
+#right .banner, dl, dt, #leaderboard    {clear: both;}
 h1 a, table, #top a, big, small, object, iframe, #top .more-link, #menu li a, .excerpt, 
 .twitter .username, .twitter .time, .twitter .status, #left .item, .sponsors a,
 .colaboraciones a, #left .item .halftitle, #middle .publ, .colab, .pledge a,
@@ -261,12 +261,20 @@ body, #page             {margin-left: auto; margin-right: auto;}
 /* 
 .banner.full            {width: 468px; border-left-width: 1px; border-right-width: 1px; margin-right: 12px; padding-left: 0px; padding-right: 0px;}
 */
+/* #leaderboard = #page (NOTE: not centered to right-align with form.search and #top for now) */
+#leaderboard     {width: 975px;}
+#leaderboard object {padding: 0px}
+#leaderboard object[width="960"], #leaderboard img[width="960"] {width: 960px; margin-left: 13px;  margin-right: 0px}
+#leaderboard object[width="728"], #leaderboard img[width="728"] {width: 728px; margin-left: 129px; margin-right: 116px}
 /* h1 = h1 img */
 h1, h1 img, h1 a        {width: 150px;}
 /* h1 + menu + form.search = #page */
-h1                      {padding-right: 77px; margin-left: 3px;}
+h1, #leaderboard {margin-left: 3px;}
+h1                      {padding-right: 77px;}
 #menu                   {width: 522px;}
-form.search             {width: 226px; margin-right: 12px;}
+form.search             {width: 226px;}
+form.search, 
+#leaderboard     {margin-right: 12px;}
 /* 3 x #top li = #page */
 #top li                 {width: 330px;} 
 /* #top h2 + #top h3 = #top li */
@@ -331,12 +339,12 @@ li.newsletter fieldset                  {padding-left: 6px; padding-right: 6px;}
 .twitter li                             {margin-left: 6px; margin-right: 6px;}
 
 #middle big, #middle .excerpt, small, td.first,
-#left li li, /*.single #left form, #fb-like, .single dl, .single h4, */
+#left li li, .medium object, #leaderboard object, /*.single #left form, #fb-like, .single dl, .single h4, */
 #middle .trailers object, #page         {border-left-width: 1px; border-left-style: solid;}
 
 
 big, .excerpt, small, .item, .single p, .single h4, .single dl, li.search p, 
-#left li li, .single table, .single #left form, #fb-like,
+#left li li, .medium object, #leaderboard object, .single table, .single #left form, #fb-like,
 #middle .trailers object, #page         {border-right-width: 1px; border-right-style: solid;}
 
 #top big, .item big, #top .excerpt, .item .excerpt, #top small,
@@ -345,7 +353,8 @@ big, .excerpt, small, .item, .single p, .single h4, .single dl, li.search p,
 /* HEIGHTS */
 
 /* #page                   {margin-top: 15px;} */
-.banner.full            {height: 60px; margin-top: 3px; margin-bottom: 3px;}
+/* .banner.full            {height: 60px; margin-top: 3px; margin-bottom: 3px;} */
+#leaderboard     {height: 90px; margin-top: 3px; margin-bottom: 7px;}
 .publ, .colab           {height: 17px;}
 /* #top h2 = #top h3 */
 #top h2                 {height: 33px;}
@@ -424,10 +433,10 @@ p, table, h4, dl, .single #left form,
 #left .item img                       {width: 75px; height: 111px;}
 #top img, #left img, .twitter img     {margin-bottom: 2px; margin-right: 5px;}
 .single #left img                     {margin-left: 10px; margin-right: 10px;}
-.banner.medium                        {width: 300px; height: 250px;}
 img.banner.sky                        {width: 120px; height: 600px; margin-left: 24px; margin-right: 24px;}
 span.banner.sky                       {margin-left: 12px; margin-right: 12px; display: block;} /* Google already adds 12px margin on each side */
 .twitter img                          {width: 32px; height: 32px;}
+.medium object, .medium img           {width: 300px; height: 250px;}
 #middle .trailers object, 
 #middle .trailers img                 {width: 300px; height: 190px;}
 .single .trailers object,
@@ -441,8 +450,10 @@ h1 img, .colaboraciones img, .sponsors img {border-width: 0px;}
 img.banner                            {border-style: dotted;}
 
 #right li.newsletter form             {border-width: 1px; border-style: solid;}
-.twitter li                           {border-top-width: 1px; border-top-style: solid;}
-#footer, .twitter ul                  {border-bottom-width: 1px; border-bottom-style: solid;}
+.twitter li, .medium object,
+#leaderboard object                   {border-top-width: 1px; border-top-style: solid;}
+#footer, .twitter ul, .medium object,
+#leaderboard object                   {border-bottom-width: 1px; border-bottom-style: solid;}
 
 tbody, tr, td hr          {width: 767px;}
 th, td                    {padding-left: 0.5em; padding-right: 0.5em; border-right-width: 1px; border-right-style: solid; border-bottom-width: 1px; border-bottom-style: solid;}
@@ -467,9 +478,11 @@ tr.empty td hr            {border: 0; border-top: 1px dotted #aaa;}
 #middle .trailers object  {border-left: 0; border-right: 0; margin-left: 1px; margin-right: 1px;}
 #middle .trailers         {background-color: #cecac3;}
 #middle .trailers big     {background-color: #fff;}
+.medium object            {border: 0px; padding: 0px; margin: 1px;}
+.medium                   {background-color: #cecac3;}
 
 /* IE7 does non properly clear floats. Fixed with: */
-#menu, .publ, /*#left*/   {clear: none;}
+#menu, .publ  /*#left*/   {clear: none;}
 /* #left is commented because if the three #top LIs have different heights,
    then .home #left might be displaced in Safari */
 

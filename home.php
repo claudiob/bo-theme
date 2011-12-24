@@ -58,8 +58,8 @@
         </script>
         <!--<![endif]-->
       </li>
-      <li class="transparent">
-        <?php the_google_medium_banner(); ?>
+      <li class="medium">
+        <?php the_eco_medium_banner(); ?>
       </li>
       <li class="trailers">
         <h2>Trailers</h2>
